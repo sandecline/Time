@@ -1,0 +1,54 @@
+# Unity 生成目录
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# 构建产物
+/[Bb]uild/
+/[Bb]uilds/
+*.apk
+*.aab
+*.app
+
+# IDE 生成文件
+/.vs/
+/.idea/
+*.csproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.DotSettings.user
+
+# Unity 与系统临时文件
+ExportedObj/
+.consulo/
+sysinfo.txt
+mono_crash.*
+crashlytics-build.properties
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# 自动生成内容
+/[Aa]ssets/Plugins/Editor/JetBrains*
+/[Aa]ssets/Unity.VisualScripting.Generated/
+/UIElementsSchema/
+/[Aa]ssets/[Ss]ceneDependencyCache*
+/ServerData/
+/[Aa]ssets/Addressables_Temp/
+/[Aa]ssets/StreamingAssets/aa*
+
