@@ -1,0 +1,1626 @@
+fileFormatVersion: 2
+guid: f0864e791746dbb439ded4835949ae15
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -267380396713754196
+    second: Time_VFX_Master_0
+  - first:
+      213: 3154498884752968848
+    second: Time_VFX_Master_1
+  - first:
+      213: 8445819054541451161
+    second: Time_VFX_Master_2
+  - first:
+      213: 3128529063340431341
+    second: Time_VFX_Master_3
+  - first:
+      213: 7883663726803802390
+    second: Time_VFX_Master_4
+  - first:
+      213: 8968645279932667451
+    second: Time_VFX_Master_5
+  - first:
+      213: -838069569086854000
+    second: Time_VFX_Master_6
+  - first:
+      213: -624310976333271873
+    second: Time_VFX_Master_7
+  - first:
+      213: -6754948738555498070
+    second: Time_VFX_Master_8
+  - first:
+      213: -1909201747564652217
+    second: Time_VFX_Master_9
+  - first:
+      213: 4804537117580295489
+    second: Time_VFX_Master_10
+  - first:
+      213: 4368880111008078050
+    second: Time_VFX_Master_11
+  - first:
+      213: -6032895322942802479
+    second: Time_VFX_Master_12
+  - first:
+      213: 7497119012446886708
+    second: Time_VFX_Master_13
+  - first:
+      213: -6336917833883819846
+    second: Time_VFX_Master_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VFX_SlowCharge_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1089
+        width: 209
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1fba6f6fd29d24e95f1e048096f3a4
+      internalID: 1027142464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowCharge_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1089
+        width: 209
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04788f7f2b8f2864fbf39a5e8da1e05f
+      internalID: -1664597256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowCharge_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1089
+        width: 209
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1afd840475a4ef4cae7fb51b5ccd47f
+      internalID: -1140344374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowCharge_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1089
+        width: 209
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4918358f8129bb7409d8409e4b8082bc
+      internalID: -1061888490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowCharge_4
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1089
+        width: 209
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42394e85bd238364f989aecdd69146d4
+      internalID: -159490267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowCharge_5
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 1089
+        width: 209
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b5b782e73b46f46abffc83d757e35a
+      internalID: 1279099945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowReady_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 934
+        width: 209
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f989926fa3d56445b2a28bfdad055b7
+      internalID: -1052913973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowReady_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 934
+        width: 209
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5face26ed883e34a8425cd9d2868dd5
+      internalID: 1147310159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowReady_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 934
+        width: 209
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26d5d9882477794bb9b9d8055700139
+      internalID: 664848298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowReady_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 934
+        width: 209
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45cd19fbe78694a4f9a704a3cfe867a7
+      internalID: 736366357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowReady_4
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 934
+        width: 209
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a404206a7586c6742a64a1b61eb98d0b
+      internalID: -248480359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowReady_5
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 934
+        width: 209
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5c4b681b3b648438ffdc733f769751
+      internalID: -80523605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowStart_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 794
+        width: 156.75
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c2a9c3db841644284e64be36e19f38
+      internalID: 1848118827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowStart_1
+      rect:
+        serializedVersion: 2
+        x: 156.75
+        y: 794
+        width: 156.75
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb599ae59d314f4d80af0b8d201abd4
+      internalID: -1889137531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowStart_2
+      rect:
+        serializedVersion: 2
+        x: 313.5
+        y: 794
+        width: 156.75
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7b68c8e51608548bea8e419c6ed5dd
+      internalID: -695634889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowStart_3
+      rect:
+        serializedVersion: 2
+        x: 470.25
+        y: 794
+        width: 156.75
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d199ee3898f12478889df45a5cc9a1
+      internalID: 1430812623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowStart_4
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 794
+        width: 156.75
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1552a23e2b447234fa5aaa9afdbf4acc
+      internalID: -1327648886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowStart_5
+      rect:
+        serializedVersion: 2
+        x: 783.75
+        y: 794
+        width: 156.75
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a405df59fde0a4b4ca96c87aac21c352
+      internalID: -2040631367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowStart_6
+      rect:
+        serializedVersion: 2
+        x: 940.5
+        y: 794
+        width: 156.75
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4b8eddfb42a4546a9a875367d7caf6
+      internalID: -680710447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_SlowStart_7
+      rect:
+        serializedVersion: 2
+        x: 1097.25
+        y: 794
+        width: 156.75
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373d7f4d1439e1c42996702aac55a982
+      internalID: -2080816375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_TimeStop_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 629
+        width: 156.75
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b6f61f0adf57344b3c1cd24349d075
+      internalID: 1938955916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_TimeStop_1
+      rect:
+        serializedVersion: 2
+        x: 156.75
+        y: 629
+        width: 156.75
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0742f71db5e479d469595367e28f1a57
+      internalID: -1282228167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_TimeStop_2
+      rect:
+        serializedVersion: 2
+        x: 313.5
+        y: 629
+        width: 156.75
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbee61e0b26d6b4ca6b837fba4db02f
+      internalID: 1792077811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_TimeStop_3
+      rect:
+        serializedVersion: 2
+        x: 470.25
+        y: 629
+        width: 156.75
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d74ac2da880cb4fac3943251817da1
+      internalID: 1896031892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_TimeStop_4
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 629
+        width: 156.75
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31f2619f8c519840979aafc37384b20
+      internalID: -1371409816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_TimeStop_5
+      rect:
+        serializedVersion: 2
+        x: 783.75
+        y: 629
+        width: 156.75
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c298a0fab9ebf40805a057b612bdb8
+      internalID: 654798492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_TimeStop_6
+      rect:
+        serializedVersion: 2
+        x: 940.5
+        y: 629
+        width: 156.75
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28ff668355b60948bf81f38ca8bdfee
+      internalID: -910308061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_TimeStop_7
+      rect:
+        serializedVersion: 2
+        x: 1097.25
+        y: 629
+        width: 156.75
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6000f6d1eeaafb24f935586421def9b1
+      internalID: 1731745240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_TimeAnchor_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 474
+        width: 156.75
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32e1f00ddd2d5940b5deb457f6a14cb
+      internalID: -1574560913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_TimeAnchor_1
+      rect:
+        serializedVersion: 2
+        x: 156.75
+        y: 474
+        width: 156.75
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b75eb8e820507d48af80b98c6de9959
+      internalID: 1837914362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_TimeAnchor_2
+      rect:
+        serializedVersion: 2
+        x: 313.5
+        y: 474
+        width: 156.75
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3effddac96b8f4b9601d3f5cfb9578
+      internalID: 691571845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_TimeAnchor_3
+      rect:
+        serializedVersion: 2
+        x: 470.25
+        y: 474
+        width: 156.75
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde0cd88cdede7e42b967a6163b53517
+      internalID: 1001459338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_TimeAnchor_4
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 474
+        width: 156.75
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba61cc754f755341861c94f71389d3e
+      internalID: 200324611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_TimeAnchor_5
+      rect:
+        serializedVersion: 2
+        x: 783.75
+        y: 474
+        width: 156.75
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0efcc42a435d949a966e8fad168cf2
+      internalID: 1202180096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_TimeAnchor_6
+      rect:
+        serializedVersion: 2
+        x: 940.5
+        y: 474
+        width: 156.75
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05eaf8adac7123e488833a891310138c
+      internalID: -628558988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_TimeAnchor_7
+      rect:
+        serializedVersion: 2
+        x: 1097.25
+        y: 474
+        width: 156.75
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec36f903e649d2a47bd50390a5d3297b
+      internalID: -1815696101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Heal_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 156.75
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47689c5a4d4308c448464e53931f90f4
+      internalID: 2077357595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Heal_1
+      rect:
+        serializedVersion: 2
+        x: 156.75
+        y: 324
+        width: 156.75
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33f55e2a78ce93439f64b8a4b71d122
+      internalID: -267784330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Heal_2
+      rect:
+        serializedVersion: 2
+        x: 313.5
+        y: 324
+        width: 156.75
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a01788aedad6974c8f009b93d019807
+      internalID: 2050115206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Heal_3
+      rect:
+        serializedVersion: 2
+        x: 470.25
+        y: 324
+        width: 156.75
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b781e57e782d5b428c6c6833beb948a
+      internalID: -1469332477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Heal_4
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 324
+        width: 156.75
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d01feace711e9408bc34446157215d
+      internalID: -1880898952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Heal_5
+      rect:
+        serializedVersion: 2
+        x: 783.75
+        y: 324
+        width: 156.75
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489a8db7819fd9d4b91486de11941c6e
+      internalID: 392283981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Heal_6
+      rect:
+        serializedVersion: 2
+        x: 940.5
+        y: 324
+        width: 156.75
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5097cad2066d7a4f9ef0ff4cdb140d7
+      internalID: 1310399041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Heal_7
+      rect:
+        serializedVersion: 2
+        x: 1097.25
+        y: 324
+        width: 156.75
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97dfad6bcc880845be1d6dea5ace06b
+      internalID: -293319968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_HealBreak_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 194
+        width: 250.8
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1557085a0f07842a84734c55e7547f
+      internalID: 895322836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_HealBreak_1
+      rect:
+        serializedVersion: 2
+        x: 250.8
+        y: 194
+        width: 250.8
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564ddabd54177404a83a42b549e882c8
+      internalID: 924333741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_HealBreak_2
+      rect:
+        serializedVersion: 2
+        x: 501.6
+        y: 194
+        width: 250.8
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c7fcb7d948aeb45af5d48618122e23
+      internalID: 1335023055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_HealBreak_3
+      rect:
+        serializedVersion: 2
+        x: 752.4
+        y: 194
+        width: 250.8
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efc51791339f28458d448a1e0739db6
+      internalID: 1146958209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_HealBreak_4
+      rect:
+        serializedVersion: 2
+        x: 1003.2
+        y: 194
+        width: 250.79999
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1fc2be3e9b28b446b3c9c90034a5085
+      internalID: 495317622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Dash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 313.5
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319840aa26f0dc94dbefe04dbcbc77cb
+      internalID: -1557329006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Dash_1
+      rect:
+        serializedVersion: 2
+        x: 313.5
+        y: 104
+        width: 313.5
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43632ce315515f42ab5be19b988c020
+      internalID: -1683511958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Dash_2
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 104
+        width: 313.5
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f894795f8a87944b21d19ceb13728d
+      internalID: 1243564269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Dash_3
+      rect:
+        serializedVersion: 2
+        x: 940.5
+        y: 104
+        width: 313.5
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990fcc39b7b553c4692ef218c21195f2
+      internalID: 1175449962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_DeathRewind_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 125.4
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288ce52955b0ab84eb8d37652d16085a
+      internalID: -1125229173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_DeathRewind_1
+      rect:
+        serializedVersion: 2
+        x: 125.4
+        y: 0
+        width: 125.4
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90196461e1b2a74e9e45a1bb53e7ad6
+      internalID: -1294377403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_DeathRewind_2
+      rect:
+        serializedVersion: 2
+        x: 250.8
+        y: 0
+        width: 125.4
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9fca26d6405f843a7c429088d48df9
+      internalID: 106711178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_DeathRewind_3
+      rect:
+        serializedVersion: 2
+        x: 376.2
+        y: 0
+        width: 125.4
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4741f57ce47024d45a47808be2b460b5
+      internalID: -97033779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_DeathRewind_4
+      rect:
+        serializedVersion: 2
+        x: 501.6
+        y: 0
+        width: 125.4
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4023aede473fbc2428ee59b15a196273
+      internalID: 1338972725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_DeathRewind_5
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 0
+        width: 125.4
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aacd4a2aab3d41647afaa611d368a266
+      internalID: 1963848456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_DeathRewind_6
+      rect:
+        serializedVersion: 2
+        x: 752.4
+        y: 0
+        width: 125.4
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55be9b2fe8b6a0e46b0ed05ba95d0236
+      internalID: -799958458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_DeathRewind_7
+      rect:
+        serializedVersion: 2
+        x: 877.8
+        y: 0
+        width: 125.4
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd92e636cd36b564ab38affd7fb8e117
+      internalID: 120796994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_DeathRewind_8
+      rect:
+        serializedVersion: 2
+        x: 1003.2
+        y: 0
+        width: 125.4
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3cc2a5ccd3f284aa1ec2d4c344a02e
+      internalID: 1674594100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_DeathRewind_9
+      rect:
+        serializedVersion: 2
+        x: 1128.6
+        y: 0
+        width: 125.400024
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3582601b3e503f448a1fed873e4f83de
+      internalID: -282605268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c1bd289e88261744c8a0728f1221a4cb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Time_VFX_Master_0: -267380396713754196
+      Time_VFX_Master_1: 3154498884752968848
+      Time_VFX_Master_10: 4804537117580295489
+      Time_VFX_Master_11: 4368880111008078050
+      Time_VFX_Master_12: -6032895322942802479
+      Time_VFX_Master_13: 7497119012446886708
+      Time_VFX_Master_14: -6336917833883819846
+      Time_VFX_Master_2: 8445819054541451161
+      Time_VFX_Master_3: 3128529063340431341
+      Time_VFX_Master_4: 7883663726803802390
+      Time_VFX_Master_5: 8968645279932667451
+      Time_VFX_Master_6: -838069569086854000
+      Time_VFX_Master_7: -624310976333271873
+      Time_VFX_Master_8: -6754948738555498070
+      Time_VFX_Master_9: -1909201747564652217
+      VFX_Dash_0: -1557329006
+      VFX_Dash_1: -1683511958
+      VFX_Dash_2: 1243564269
+      VFX_Dash_3: 1175449962
+      VFX_DeathRewind_0: -1125229173
+      VFX_DeathRewind_1: -1294377403
+      VFX_DeathRewind_2: 106711178
+      VFX_DeathRewind_3: -97033779
+      VFX_DeathRewind_4: 1338972725
+      VFX_DeathRewind_5: 1963848456
+      VFX_DeathRewind_6: -799958458
+      VFX_DeathRewind_7: 120796994
+      VFX_DeathRewind_8: 1674594100
+      VFX_DeathRewind_9: -282605268
+      VFX_HealBreak_0: 895322836
+      VFX_HealBreak_1: 924333741
+      VFX_HealBreak_2: 1335023055
+      VFX_HealBreak_3: 1146958209
+      VFX_HealBreak_4: 495317622
+      VFX_Heal_0: 2077357595
+      VFX_Heal_1: -267784330
+      VFX_Heal_2: 2050115206
+      VFX_Heal_3: -1469332477
+      VFX_Heal_4: -1880898952
+      VFX_Heal_5: 392283981
+      VFX_Heal_6: 1310399041
+      VFX_Heal_7: -293319968
+      VFX_SlowCharge_0: 1027142464
+      VFX_SlowCharge_1: -1664597256
+      VFX_SlowCharge_2: -1140344374
+      VFX_SlowCharge_3: -1061888490
+      VFX_SlowCharge_4: -159490267
+      VFX_SlowCharge_5: 1279099945
+      VFX_SlowReady_0: -1052913973
+      VFX_SlowReady_1: 1147310159
+      VFX_SlowReady_2: 664848298
+      VFX_SlowReady_3: 736366357
+      VFX_SlowReady_4: -248480359
+      VFX_SlowReady_5: -80523605
+      VFX_SlowStart_0: 1848118827
+      VFX_SlowStart_1: -1889137531
+      VFX_SlowStart_2: -695634889
+      VFX_SlowStart_3: 1430812623
+      VFX_SlowStart_4: -1327648886
+      VFX_SlowStart_5: -2040631367
+      VFX_SlowStart_6: -680710447
+      VFX_SlowStart_7: -2080816375
+      VFX_TimeAnchor_0: -1574560913
+      VFX_TimeAnchor_1: 1837914362
+      VFX_TimeAnchor_2: 691571845
+      VFX_TimeAnchor_3: 1001459338
+      VFX_TimeAnchor_4: 200324611
+      VFX_TimeAnchor_5: 1202180096
+      VFX_TimeAnchor_6: -628558988
+      VFX_TimeAnchor_7: -1815696101
+      VFX_TimeStop_0: 1938955916
+      VFX_TimeStop_1: -1282228167
+      VFX_TimeStop_2: 1792077811
+      VFX_TimeStop_3: 1896031892
+      VFX_TimeStop_4: -1371409816
+      VFX_TimeStop_5: 654798492
+      VFX_TimeStop_6: -910308061
+      VFX_TimeStop_7: 1731745240
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

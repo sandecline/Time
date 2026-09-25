@@ -1,0 +1,20 @@
+{
+  "name": "TimeMetroidvania.PlayModeTests",
+  "rootNamespace": "TimeMetroidvania.Tests",
+  "references": [
+    "TimeMetroidvania.Runtime",
+    "Unity.InputSystem"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}
