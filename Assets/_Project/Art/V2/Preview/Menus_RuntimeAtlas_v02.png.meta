@@ -1,0 +1,349 @@
+fileFormatVersion: 2
+guid: dce5f437c233a9d4dbfc9e379b8fdbb4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2915633870564023626
+    second: Menus_RuntimeAtlas_v02_0
+  - first:
+      213: 7457836284653189015
+    second: Menus_RuntimeAtlas_v02_1
+  - first:
+      213: -8379918065383027524
+    second: Menus_RuntimeAtlas_v02_2
+  - first:
+      213: -6670082746005334648
+    second: Menus_RuntimeAtlas_v02_3
+  - first:
+      213: 563900113759018331
+    second: Menus_RuntimeAtlas_v02_4
+  - first:
+      213: 5307259810262494431
+    second: Menus_RuntimeAtlas_v02_5
+  - first:
+      213: -4226620345577472977
+    second: Menus_RuntimeAtlas_v02_6
+  - first:
+      213: 6106914748189297492
+    second: Menus_RuntimeAtlas_v02_7
+  - first:
+      213: 749103974937251310
+    second: Menus_RuntimeAtlas_v02_8
+  - first:
+      213: 8968199842021850409
+    second: Menus_RuntimeAtlas_v02_9
+  - first:
+      213: -8023940599951729182
+    second: Menus_RuntimeAtlas_v02_10
+  - first:
+      213: 1894964834617057476
+    second: Menus_RuntimeAtlas_v02_11
+  - first:
+      213: -1284688646202322017
+    second: Menus_RuntimeAtlas_v02_12
+  - first:
+      213: -1889642928846212482
+    second: Menus_RuntimeAtlas_v02_13
+  - first:
+      213: 8737991049601148772
+    second: Menus_RuntimeAtlas_v02_14
+  - first:
+      213: -8657300392294210963
+    second: Menus_RuntimeAtlas_v02_15
+  - first:
+      213: 1688606221064350981
+    second: Menus_RuntimeAtlas_v02_16
+  - first:
+      213: 4648803034469992601
+    second: Menus_RuntimeAtlas_v02_17
+  - first:
+      213: -7700474256027025206
+    second: Menus_RuntimeAtlas_v02_18
+  - first:
+      213: -6179586963332633683
+    second: Menus_RuntimeAtlas_v02_19
+  - first:
+      213: 6255837008618598730
+    second: Menus_RuntimeAtlas_v02_20
+  - first:
+      213: -1827986830949825774
+    second: Menus_RuntimeAtlas_v02_21
+  - first:
+      213: 4452749383640329099
+    second: Menus_RuntimeAtlas_v02_22
+  - first:
+      213: -1319130644350189059
+    second: Menus_RuntimeAtlas_v02_23
+  - first:
+      213: 3165522422128544563
+    second: Menus_RuntimeAtlas_v02_24
+  - first:
+      213: -3076519304688159581
+    second: Menus_RuntimeAtlas_v02_25
+  - first:
+      213: -6263498274321280162
+    second: Menus_RuntimeAtlas_v02_26
+  - first:
+      213: -3596974413275889739
+    second: Menus_RuntimeAtlas_v02_27
+  - first:
+      213: 447455872726849838
+    second: Menus_RuntimeAtlas_v02_28
+  - first:
+      213: 5240601992057842366
+    second: Menus_RuntimeAtlas_v02_29
+  - first:
+      213: -8424137575272585659
+    second: Menus_RuntimeAtlas_v02_30
+  - first:
+      213: -2253041820637236688
+    second: Menus_RuntimeAtlas_v02_31
+  - first:
+      213: 8405268650137840789
+    second: TitlePlaque
+  - first:
+      213: -5186152976171077549
+    second: PausePanel
+  - first:
+      213: -4539375447701372075
+    second: DeathPlaque
+  - first:
+      213: -4038378192132319756
+    second: EndingPlaque
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TitlePlaque
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 665
+        width: 693
+        height: 197
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c6135ed4385a470800000000000000
+      internalID: 8405268650137840789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PausePanel
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 600
+        width: 597
+        height: 329
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350fc7878551708b0800000000000000
+      internalID: -5186152976171077549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathPlaque
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 71
+        width: 582
+        height: 428
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55341a9b416e001c0800000000000000
+      internalID: -4539375447701372075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EndingPlaque
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 94
+        width: 618
+        height: 382
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5d4453e6cc4f7c0800000000000000
+      internalID: -4038378192132319756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DeathPlaque: -4539375447701372075
+      EndingPlaque: -4038378192132319756
+      Menus_RuntimeAtlas_v02_0: 2915633870564023626
+      Menus_RuntimeAtlas_v02_1: 7457836284653189015
+      Menus_RuntimeAtlas_v02_10: -8023940599951729182
+      Menus_RuntimeAtlas_v02_11: 1894964834617057476
+      Menus_RuntimeAtlas_v02_12: -1284688646202322017
+      Menus_RuntimeAtlas_v02_13: -1889642928846212482
+      Menus_RuntimeAtlas_v02_14: 8737991049601148772
+      Menus_RuntimeAtlas_v02_15: -8657300392294210963
+      Menus_RuntimeAtlas_v02_16: 1688606221064350981
+      Menus_RuntimeAtlas_v02_17: 4648803034469992601
+      Menus_RuntimeAtlas_v02_18: -7700474256027025206
+      Menus_RuntimeAtlas_v02_19: -6179586963332633683
+      Menus_RuntimeAtlas_v02_2: -8379918065383027524
+      Menus_RuntimeAtlas_v02_20: 6255837008618598730
+      Menus_RuntimeAtlas_v02_21: -1827986830949825774
+      Menus_RuntimeAtlas_v02_22: 4452749383640329099
+      Menus_RuntimeAtlas_v02_23: -1319130644350189059
+      Menus_RuntimeAtlas_v02_24: 3165522422128544563
+      Menus_RuntimeAtlas_v02_25: -3076519304688159581
+      Menus_RuntimeAtlas_v02_26: -6263498274321280162
+      Menus_RuntimeAtlas_v02_27: -3596974413275889739
+      Menus_RuntimeAtlas_v02_28: 447455872726849838
+      Menus_RuntimeAtlas_v02_29: 5240601992057842366
+      Menus_RuntimeAtlas_v02_3: -6670082746005334648
+      Menus_RuntimeAtlas_v02_30: -8424137575272585659
+      Menus_RuntimeAtlas_v02_31: -2253041820637236688
+      Menus_RuntimeAtlas_v02_4: 563900113759018331
+      Menus_RuntimeAtlas_v02_5: 5307259810262494431
+      Menus_RuntimeAtlas_v02_6: -4226620345577472977
+      Menus_RuntimeAtlas_v02_7: 6106914748189297492
+      Menus_RuntimeAtlas_v02_8: 749103974937251310
+      Menus_RuntimeAtlas_v02_9: 8968199842021850409
+      PausePanel: -5186152976171077549
+      TitlePlaque: 8405268650137840789
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

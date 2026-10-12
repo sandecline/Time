@@ -1,0 +1,413 @@
+fileFormatVersion: 2
+guid: d5082d1fd6f710641b01d86f137d0929
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7504734332543430605
+    second: Map_Markers_v02_0
+  - first:
+      213: 7337969889252067707
+    second: Map_Markers_v02_1
+  - first:
+      213: -1083277284374581133
+    second: Map_Markers_v02_2
+  - first:
+      213: -5895648651456203392
+    second: Map_Markers_v02_3
+  - first:
+      213: 5192086310157285769
+    second: Map_Markers_v02_4
+  - first:
+      213: -6229801453037795555
+    second: Map_Markers_v02_5
+  - first:
+      213: 5821275933888551736
+    second: Map_Markers_v02_6
+  - first:
+      213: -745949808921817573
+    second: Map_Markers_v02_7
+  - first:
+      213: -1019743573084987672
+    second: Map_Markers_v02_8
+  - first:
+      213: 2049884855122805135
+    second: Map_Markers_v02_9
+  - first:
+      213: -7064930213818360284
+    second: Map_Markers_v02_10
+  - first:
+      213: 762450163649472932
+    second: Map_Markers_v02_11
+  - first:
+      213: 1962925950270427614
+    second: Map_Markers_v02_12
+  - first:
+      213: -4068447439932327398
+    second: Map_Markers_v02_13
+  - first:
+      213: 6584348680739417356
+    second: Map_Markers_v02_14
+  - first:
+      213: 913467252869905652
+    second: Map_Markers_v02_15
+  - first:
+      213: 3298087111290410544
+    second: Map_Markers_v02_16
+  - first:
+      213: 168382759987386594
+    second: Map_Markers_v02_17
+  - first:
+      213: 4898061614614343225
+    second: Map_Markers_v02_18
+  - first:
+      213: -175841533808583702
+    second: Map_Markers_v02_19
+  - first:
+      213: 935289479735711756
+    second: Map_Markers_v02_20
+  - first:
+      213: 7658121887692242154
+    second: Map_Markers_v02_21
+  - first:
+      213: -2626447319837686824
+    second: Map_Markers_v02_22
+  - first:
+      213: -1791520500680723562
+    second: Map_Markers_v02_23
+  - first:
+      213: -6520981414161685771
+    second: Map_Markers_v02_24
+  - first:
+      213: 2137789172104151651
+    second: Map_Markers_v02_25
+  - first:
+      213: -821636390340169266
+    second: Map_Markers_v02_26
+  - first:
+      213: 5644265915634259675
+    second: Map_Markers_v02_27
+  - first:
+      213: 4899060462952927723
+    second: Map_Markers_v02_28
+  - first:
+      213: 6282642169173987901
+    second: Map_Markers_v02_29
+  - first:
+      213: -8688267563281202095
+    second: Map_Markers_v02_30
+  - first:
+      213: -2143511964367711244
+    second: Map_Markers_v02_31
+  - first:
+      213: -8727641708390251064
+    second: Map_Markers_v02_32
+  - first:
+      213: -4535419553547112802
+    second: Map_Markers_v02_33
+  - first:
+      213: -3242091937060982192
+    second: Map_Markers_v02_34
+  - first:
+      213: -3087721651558623507
+    second: RoomDiscovered
+  - first:
+      213: -1709434386915144075
+    second: RoomCurrent
+  - first:
+      213: -6235781013334434013
+    second: RoomUnknown
+  - first:
+      213: -1449820842329559752
+    second: MapLink
+  - first:
+      213: 7637353448396032587
+    second: MapGate
+  - first:
+      213: -8117711990553998650
+    second: MapCheckpoint
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RoomDiscovered
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 598
+        width: 355
+        height: 189
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6d09174853625d0800000000000000
+      internalID: -3087721651558623507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoomCurrent
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 598
+        width: 354
+        height: 189
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ec5196b7ed648e0800000000000000
+      internalID: -1709434386915144075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoomUnknown
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 597
+        width: 355
+        height: 190
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32f531bf43e0679a0800000000000000
+      internalID: -6235781013334434013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapLink
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 224
+        width: 239
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d2df810a331ebe0800000000000000
+      internalID: -1449820842329559752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapGate
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 182
+        width: 201
+        height: 181
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a00c33f745df960800000000000000
+      internalID: 7637353448396032587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapCheckpoint
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 140
+        width: 262
+        height: 255
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca891e34f7185f80800000000000000
+      internalID: -8117711990553998650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MapCheckpoint: -8117711990553998650
+      MapGate: 7637353448396032587
+      MapLink: -1449820842329559752
+      Map_Markers_v02_0: 7504734332543430605
+      Map_Markers_v02_1: 7337969889252067707
+      Map_Markers_v02_10: -7064930213818360284
+      Map_Markers_v02_11: 762450163649472932
+      Map_Markers_v02_12: 1962925950270427614
+      Map_Markers_v02_13: -4068447439932327398
+      Map_Markers_v02_14: 6584348680739417356
+      Map_Markers_v02_15: 913467252869905652
+      Map_Markers_v02_16: 3298087111290410544
+      Map_Markers_v02_17: 168382759987386594
+      Map_Markers_v02_18: 4898061614614343225
+      Map_Markers_v02_19: -175841533808583702
+      Map_Markers_v02_2: -1083277284374581133
+      Map_Markers_v02_20: 935289479735711756
+      Map_Markers_v02_21: 7658121887692242154
+      Map_Markers_v02_22: -2626447319837686824
+      Map_Markers_v02_23: -1791520500680723562
+      Map_Markers_v02_24: -6520981414161685771
+      Map_Markers_v02_25: 2137789172104151651
+      Map_Markers_v02_26: -821636390340169266
+      Map_Markers_v02_27: 5644265915634259675
+      Map_Markers_v02_28: 4899060462952927723
+      Map_Markers_v02_29: 6282642169173987901
+      Map_Markers_v02_3: -5895648651456203392
+      Map_Markers_v02_30: -8688267563281202095
+      Map_Markers_v02_31: -2143511964367711244
+      Map_Markers_v02_32: -8727641708390251064
+      Map_Markers_v02_33: -4535419553547112802
+      Map_Markers_v02_34: -3242091937060982192
+      Map_Markers_v02_4: 5192086310157285769
+      Map_Markers_v02_5: -6229801453037795555
+      Map_Markers_v02_6: 5821275933888551736
+      Map_Markers_v02_7: -745949808921817573
+      Map_Markers_v02_8: -1019743573084987672
+      Map_Markers_v02_9: 2049884855122805135
+      RoomCurrent: -1709434386915144075
+      RoomDiscovered: -3087721651558623507
+      RoomUnknown: -6235781013334434013
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

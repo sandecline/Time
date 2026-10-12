@@ -6,6 +6,9 @@ namespace TimeMetroidvania.Boss
         Sweep,
         LeapSlam,
         ProjectileVolley,
-        TimeAnchor
+        TimeAnchor,
+        ClockFan,
+        Rain,
+        Crossfire
     }
 }

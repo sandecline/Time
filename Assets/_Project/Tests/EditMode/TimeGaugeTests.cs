@@ -38,6 +38,41 @@ namespace TimeMetroidvania.Tests
         }
 
         [Test]
+        public void 一秒未命中后以每秒五点恢复至二十()
+        {
+            TimeGauge gauge = player.AddComponent<TimeGauge>();
+            gauge.Clear();
+            float start = Time.unscaledTime;
+
+            gauge.AdvanceAutomaticRecovery(0.5f, start + 0.5f, false);
+            Assert.That(gauge.CurrentValue, Is.Zero);
+
+            gauge.AdvanceAutomaticRecovery(1f, start + 1f, true);
+            Assert.That(gauge.CurrentValue, Is.Zero);
+
+            gauge.AdvanceAutomaticRecovery(1f, start + 1.01f, false);
+            Assert.That(gauge.CurrentValue, Is.EqualTo(5f));
+            gauge.AdvanceAutomaticRecovery(3f, start + 4f, false);
+            Assert.That(gauge.CurrentValue, Is.EqualTo(20f));
+            gauge.AdvanceAutomaticRecovery(10f, start + 14f, false);
+            Assert.That(gauge.CurrentValue, Is.EqualTo(20f));
+        }
+
+        [Test]
+        public void 有效命中会立即加槽并重新开始恢复延迟()
+        {
+            TimeGauge gauge = player.AddComponent<TimeGauge>();
+            gauge.Clear();
+            gauge.GainFromSuccessfulHit(10f);
+            float hitTime = Time.unscaledTime;
+
+            gauge.AdvanceAutomaticRecovery(1f, hitTime + 0.99f, false);
+            Assert.That(gauge.CurrentValue, Is.EqualTo(10f));
+            gauge.AdvanceAutomaticRecovery(1f, hitTime + 1.01f, false);
+            Assert.That(gauge.CurrentValue, Is.EqualTo(15f));
+        }
+
+        [Test]
         public void 玩家死亡会清空时间槽()
         {
             player.AddComponent<Rigidbody2D>();
@@ -66,21 +101,6 @@ namespace TimeMetroidvania.Tests
                 BindingFlags.Instance | BindingFlags.NonPublic);
             Assert.That(method, Is.Not.Null);
             method.Invoke(component, null);
-        }
-
-        [TestCase(0f, 0.3f, false, true)]
-        [TestCase(0.299f, 0.3f, false, true)]
-        [TestCase(0.3f, 0.3f, false, false)]
-        [TestCase(0.1f, 0.3f, true, false)]
-        public void 短按判定严格小于阈值(
-            float heldDuration,
-            float threshold,
-            bool longPressResolved,
-            bool expected)
-        {
-            Assert.That(
-                PlayerHealing.ShouldRequestShortPress(heldDuration, threshold, longPressResolved),
-                Is.EqualTo(expected));
         }
     }
 }

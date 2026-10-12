@@ -141,7 +141,7 @@ namespace TimeMetroidvania.Flow
             playerHealth?.ResetForEncounter();
             deathVisible = false;
             SetState(GameFlowState.Playing);
-            level?.ShowMessage("测试模式：本次运行不读取或写入存档。M 查看地图，Esc 暂停。");
+            level?.ShowMessage("试玩版：本次运行不读取或写入存档。M 查看地图，Esc 暂停。");
         }
 
         public void PauseGame()
@@ -284,17 +284,17 @@ namespace TimeMetroidvania.Flow
             Rect panel = CenteredRect(600f, 390f);
             GUI.Box(panel, GUIContent.none);
             GUI.Label(new Rect(panel.x, panel.y + 35f, panel.width, 55f),
-                "时间回廊 · 测试 Demo", titleStyle);
+                "时序旅人 · 可玩 Demo", titleStyle);
             GUI.Label(new Rect(panel.x + 30f, panel.y + 100f, panel.width - 60f, 55f),
-                "测试模式不会读取或写入任何存档\n每次进入 Play Mode 都从房间 1 开始", bodyStyle);
+                "当前版本不会读取或写入存档\n每次启动游戏都从房间 1 开始", bodyStyle);
             if (GUI.Button(new Rect(panel.x + 150f, panel.y + 185f, 300f, 52f),
-                    "开始测试（Enter）"))
+                    "开始游戏（Enter）"))
             {
                 StartNewGame();
             }
             GUI.enabled = false;
             GUI.Button(new Rect(panel.x + 150f, panel.y + 248f, 300f, 44f),
-                "继续游戏（测试模式关闭）");
+                "继续游戏（当前版本不可用）");
             GUI.enabled = true;
             if (GUI.Button(new Rect(panel.x + 150f, panel.y + 303f, 300f, 44f),
                     "退出"))
@@ -362,9 +362,9 @@ namespace TimeMetroidvania.Flow
             GUI.Label(new Rect(panel.x, panel.y + 38f, panel.width, 58f),
                 "时间回廊恢复了流动", titleStyle);
             GUI.Label(new Rect(panel.x + 40f, panel.y + 110f, panel.width - 80f, 60f),
-                "Boss 已击败，测试流程完成。\n本次进度不会写入存档。", bodyStyle);
+                "Boss 已击败，试玩流程完成。\n本次进度不会写入存档。", bodyStyle);
             if (GUI.Button(new Rect(panel.x + 160f, panel.y + 205f, 320f, 50f),
-                    "重新开始测试"))
+                    "重新开始"))
             {
                 ReturnToTitle();
             }

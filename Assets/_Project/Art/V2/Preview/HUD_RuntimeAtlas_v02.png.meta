@@ -1,0 +1,345 @@
+fileFormatVersion: 2
+guid: 8559e65cf4af9644083426de6d86fd67
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7993680564489413899
+    second: HUD_RuntimeAtlas_v02_0
+  - first:
+      213: 5781642731932444137
+    second: HUD_RuntimeAtlas_v02_1
+  - first:
+      213: 6769574388663537979
+    second: HUD_RuntimeAtlas_v02_2
+  - first:
+      213: -6110825085120929043
+    second: HUD_RuntimeAtlas_v02_3
+  - first:
+      213: 3972571590355255177
+    second: HUD_RuntimeAtlas_v02_4
+  - first:
+      213: 2762680569318237544
+    second: HUD_RuntimeAtlas_v02_5
+  - first:
+      213: -7604771501024376307
+    second: HUD_RuntimeAtlas_v02_6
+  - first:
+      213: -1430184290530893110
+    second: HUD_RuntimeAtlas_v02_7
+  - first:
+      213: 4313330472565959688
+    second: HUD_RuntimeAtlas_v02_8
+  - first:
+      213: 8495939318555497336
+    second: HUD_RuntimeAtlas_v02_9
+  - first:
+      213: -6368671394835560217
+    second: HUD_RuntimeAtlas_v02_10
+  - first:
+      213: -7277235718439886611
+    second: HUD_RuntimeAtlas_v02_11
+  - first:
+      213: 8964802745874476292
+    second: HUD_RuntimeAtlas_v02_12
+  - first:
+      213: -2447338063312786305
+    second: HUD_RuntimeAtlas_v02_13
+  - first:
+      213: 9028408470646361069
+    second: HUD_RuntimeAtlas_v02_14
+  - first:
+      213: 6500022776597424043
+    second: HUD_RuntimeAtlas_v02_15
+  - first:
+      213: -2383238016513244626
+    second: HUD_RuntimeAtlas_v02_16
+  - first:
+      213: -4628799726894297830
+    second: HUD_RuntimeAtlas_v02_17
+  - first:
+      213: -5461963044359383246
+    second: HealthFull
+  - first:
+      213: 3083798214863361829
+    second: HealthEmpty
+  - first:
+      213: 9064281785261386052
+    second: TimeStopIcon
+  - first:
+      213: -7399358924821718829
+    second: TimeBarFrame
+  - first:
+      213: 6460287774787264067
+    second: TimeBarFill
+  - first:
+      213: -1073566507340867576
+    second: BossBarFrame
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HealthFull
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 512
+        width: 344
+        height: 344
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237d5a4cc853334b0800000000000000
+      internalID: -5461963044359383246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthEmpty
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 512
+        width: 348
+        height: 344
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5271ae3432adbca20800000000000000
+      internalID: 3083798214863361829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeStopIcon
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 512
+        width: 382
+        height: 358
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4496c82524ccacd70800000000000000
+      internalID: 9064281785261386052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeBarFrame
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 159
+        width: 481
+        height: 353
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d89268e242305990800000000000000
+      internalID: -7399358924821718829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeBarFill
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 147
+        width: 512
+        height: 365
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e5efac08d87a950800000000000000
+      internalID: 6460287774787264067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBarFrame
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 129
+        width: 496
+        height: 383
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 808d03713fce911f0800000000000000
+      internalID: -1073566507340867576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BossBarFrame: -1073566507340867576
+      HUD_RuntimeAtlas_v02_0: -7993680564489413899
+      HUD_RuntimeAtlas_v02_1: 5781642731932444137
+      HUD_RuntimeAtlas_v02_10: -6368671394835560217
+      HUD_RuntimeAtlas_v02_11: -7277235718439886611
+      HUD_RuntimeAtlas_v02_12: 8964802745874476292
+      HUD_RuntimeAtlas_v02_13: -2447338063312786305
+      HUD_RuntimeAtlas_v02_14: 9028408470646361069
+      HUD_RuntimeAtlas_v02_15: 6500022776597424043
+      HUD_RuntimeAtlas_v02_16: -2383238016513244626
+      HUD_RuntimeAtlas_v02_17: -4628799726894297830
+      HUD_RuntimeAtlas_v02_2: 6769574388663537979
+      HUD_RuntimeAtlas_v02_3: -6110825085120929043
+      HUD_RuntimeAtlas_v02_4: 3972571590355255177
+      HUD_RuntimeAtlas_v02_5: 2762680569318237544
+      HUD_RuntimeAtlas_v02_6: -7604771501024376307
+      HUD_RuntimeAtlas_v02_7: -1430184290530893110
+      HUD_RuntimeAtlas_v02_8: 4313330472565959688
+      HUD_RuntimeAtlas_v02_9: 8495939318555497336
+      HealthEmpty: 3083798214863361829
+      HealthFull: -5461963044359383246
+      TimeBarFill: 6460287774787264067
+      TimeBarFrame: -7399358924821718829
+      TimeStopIcon: 9064281785261386052
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

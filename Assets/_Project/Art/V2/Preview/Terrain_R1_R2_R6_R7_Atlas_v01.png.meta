@@ -1,0 +1,357 @@
+fileFormatVersion: 2
+guid: 408bb9e775f6b0f4caf87c220447b3b7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8607733588334837055
+    second: Terrain_R1_R2_R6_R7_Atlas_v01_0
+  - first:
+      213: 6518466753718945787
+    second: Terrain_R1_R2_R6_R7_Atlas_v01_1
+  - first:
+      213: -1832313154530171826
+    second: Terrain_R1_R2_R6_R7_Atlas_v01_2
+  - first:
+      213: -6546411368532490331
+    second: Terrain_R1_R2_R6_R7_Atlas_v01_3
+  - first:
+      213: -1528882834527523934
+    second: Terrain_R1_R2_R6_R7_Atlas_v01_4
+  - first:
+      213: -1896212127635294656
+    second: Terrain_R1_R2_R6_R7_Atlas_v01_5
+  - first:
+      213: -421402333467157669
+    second: Terrain_R1_R2_R6_R7_Atlas_v01_6
+  - first:
+      213: 3432594763771746746
+    second: Terrain_R1_R2_R6_R7_Atlas_v01_7
+  - first:
+      213: -5985853135672082929
+    second: SunFill
+  - first:
+      213: 4349007511976607628
+    second: SunEdge
+  - first:
+      213: -3665758250953441088
+    second: GalleryFill
+  - first:
+      213: -3938820175160264029
+    second: GalleryEdge
+  - first:
+      213: -5868471390088057638
+    second: MistFill
+  - first:
+      213: 712043510776583930
+    second: MistEdge
+  - first:
+      213: 8589080198613676692
+    second: ShrineFill
+  - first:
+      213: 194925190220654538
+    second: ShrineEdge
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SunFill
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 335
+        width: 386
+        height: 390
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e7b9a994afdeca0800000000000000
+      internalID: -5985853135672082929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SunEdge
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 112
+        width: 389
+        height: 85
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ffed44a47ca5c30800000000000000
+      internalID: 4349007511976607628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GalleryFill
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 335
+        width: 388
+        height: 390
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c08673fa4c902dc0800000000000000
+      internalID: -3665758250953441088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GalleryEdge
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 108
+        width: 391
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aa3e616bef7659c0800000000000000
+      internalID: -3938820175160264029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MistFill
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 335
+        width: 387
+        height: 390
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc224bfc500f8ea0800000000000000
+      internalID: -5868471390088057638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MistEdge
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 112
+        width: 389
+        height: 87
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6d57ceccfa1e900800000000000000
+      internalID: 712043510776583930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShrineFill
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 335
+        width: 387
+        height: 390
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492b5b90fea823770800000000000000
+      internalID: 8589080198613676692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShrineEdge
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 110
+        width: 390
+        height: 89
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7a0e08d6384b200800000000000000
+      internalID: 194925190220654538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GalleryEdge: -3938820175160264029
+      GalleryFill: -3665758250953441088
+      MistEdge: 712043510776583930
+      MistFill: -5868471390088057638
+      ShrineEdge: 194925190220654538
+      ShrineFill: 8589080198613676692
+      SunEdge: 4349007511976607628
+      SunFill: -5985853135672082929
+      Terrain_R1_R2_R6_R7_Atlas_v01_0: -8607733588334837055
+      Terrain_R1_R2_R6_R7_Atlas_v01_1: 6518466753718945787
+      Terrain_R1_R2_R6_R7_Atlas_v01_2: -1832313154530171826
+      Terrain_R1_R2_R6_R7_Atlas_v01_3: -6546411368532490331
+      Terrain_R1_R2_R6_R7_Atlas_v01_4: -1528882834527523934
+      Terrain_R1_R2_R6_R7_Atlas_v01_5: -1896212127635294656
+      Terrain_R1_R2_R6_R7_Atlas_v01_6: -421402333467157669
+      Terrain_R1_R2_R6_R7_Atlas_v01_7: 3432594763771746746
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

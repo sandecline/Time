@@ -6,39 +6,33 @@ using UnityEngine.InputSystem;
 namespace TimeMetroidvania.Player
 {
     /// <summary>
-    /// 处理 I 键短按/长按分流，以及可被松键、受伤和离地打断的持续治疗。
+    /// 使用独立 U 键处理可移动、可打断且持续消耗时间槽的治疗。
     /// </summary>
     [RequireComponent(typeof(PlayerStateMachine), typeof(PlayerMovement), typeof(HealthSystem))]
     [RequireComponent(typeof(TimeGauge))]
     public sealed class PlayerHealing : MonoBehaviour
     {
         [Header("输入")]
-        [SerializeField] private InputActionReference timeAbilityAction;
-
-        [Header("长按判定")]
-        [SerializeField, Min(0.01f)] private float holdThreshold = 0.3f;
+        [SerializeField] private InputActionReference healAction;
 
         [Header("治疗")]
         [SerializeField, Min(0.01f)] private float healingDuration = 1.5f;
-        [SerializeField, Min(0f)] private float healingCost = 60f;
+        [SerializeField, Min(0f)] private float healingCost = 50f;
+        [SerializeField, Min(1)] private int healingAmount = 1;
         [SerializeField] private WorldTimeService worldTime;
 
         private PlayerStateMachine stateMachine;
         private PlayerMovement movement;
         private HealthSystem health;
         private TimeGauge timeGauge;
-        private bool inputHeld;
-        private bool longPressResolved;
-        private float holdElapsed;
         private float healingElapsed;
         private float healingSpent;
-        private bool suppressUntilRelease;
 
-        public event Action ShortPressRequested;
         public event Action<float> HealingProgressChanged;
         public event Action<string> HealingUnavailable;
 
-        public bool IsHealing => stateMachine != null && stateMachine.CurrentState == PlayerState.Healing;
+        public bool IsHealing => stateMachine != null
+            && stateMachine.CurrentState == PlayerState.Healing;
         public float HealingProgress => IsHealing
             ? Mathf.Clamp01(healingElapsed / healingDuration)
             : 0f;
@@ -53,15 +47,15 @@ namespace TimeMetroidvania.Player
 
         private void OnEnable()
         {
-            if (timeAbilityAction == null)
+            if (healAction == null)
             {
-                Debug.LogError("PlayerHealing 未配置 TimeAbility 输入动作。", this);
+                Debug.LogError("PlayerHealing 未配置 Heal 输入动作。", this);
                 enabled = false;
                 return;
             }
 
             health.Damaged += HandleDamaged;
-            timeAbilityAction.action.Enable();
+            healAction.action.Enable();
         }
 
         private void OnDisable()
@@ -71,60 +65,38 @@ namespace TimeMetroidvania.Player
                 health.Damaged -= HandleDamaged;
             }
 
-            timeAbilityAction?.action.Disable();
-            CancelHealing();
-            ResetPress();
+            healAction?.action.Disable();
+            // 暂停菜单会临时禁用控制组件，保留治疗进度以便恢复后继续判定按键。
+            if (Time.timeScale > 0f || !gameObject.activeInHierarchy)
+            {
+                CancelHealing();
+            }
         }
 
         private void Update()
         {
-            if (suppressUntilRelease)
-            {
-                if (timeAbilityAction.action.WasReleasedThisFrame())
-                {
-                    suppressUntilRelease = false;
-                    ResetPress();
-                }
-
-                return;
-            }
-
-            if (timeAbilityAction.action.WasPressedThisFrame())
-            {
-                if (worldTime != null && worldTime.CurrentMode == WorldTimeMode.Stopped)
-                {
-                    worldTime.EndTimeStopEarly();
-                    suppressUntilRelease = true;
-                    ResetPress();
-                    return;
-                }
-
-                BeginPress();
-            }
-
-            if (!inputHeld)
+            if (Time.timeScale <= 0f)
             {
                 return;
             }
 
-            if (IsHealing)
+            if (!IsHealing && healAction.action.WasPressedThisFrame())
             {
-                UpdateHealing();
-            }
-            else if (timeAbilityAction.action.IsPressed() && !longPressResolved)
-            {
-                holdElapsed += Time.deltaTime;
-                if (holdElapsed >= holdThreshold)
-                {
-                    longPressResolved = true;
-                    TryBeginHealing();
-                }
+                TryBeginHealing();
             }
 
-            if (timeAbilityAction.action.WasReleasedThisFrame())
+            if (!IsHealing)
             {
-                ResolveRelease();
+                return;
             }
+
+            if (!healAction.action.IsPressed() || !movement.IsGrounded)
+            {
+                CancelHealing();
+                return;
+            }
+
+            AdvanceHealing(Time.deltaTime);
         }
 
         public bool TryBeginHealing()
@@ -165,38 +137,6 @@ namespace TimeMetroidvania.Player
             return true;
         }
 
-        private void BeginPress()
-        {
-            inputHeld = true;
-            longPressResolved = false;
-            holdElapsed = 0f;
-        }
-
-        private void ResolveRelease()
-        {
-            if (IsHealing)
-            {
-                CancelHealing();
-            }
-            else if (ShouldRequestShortPress(holdElapsed, holdThreshold, longPressResolved))
-            {
-                ShortPressRequested?.Invoke();
-            }
-
-            ResetPress();
-        }
-
-        private void UpdateHealing()
-        {
-            if (!timeAbilityAction.action.IsPressed() || !movement.IsGrounded)
-            {
-                CancelHealing();
-                return;
-            }
-
-            AdvanceHealing(Time.deltaTime);
-        }
-
         internal void AdvanceHealing(float deltaTime)
         {
             if (!IsHealing || deltaTime <= 0f)
@@ -227,18 +167,11 @@ namespace TimeMetroidvania.Player
                 return;
             }
 
-            health.RestoreToFull();
+            health.Restore(healingAmount);
             stateMachine.TryReturnToNormal(PlayerState.Healing);
+            healingElapsed = 0f;
+            healingSpent = 0f;
             HealingProgressChanged?.Invoke(0f);
-            ResetPress();
-        }
-
-        internal static bool ShouldRequestShortPress(
-            float heldDuration,
-            float threshold,
-            bool longPressResolved)
-        {
-            return !longPressResolved && heldDuration < threshold;
         }
 
         private void HandleDamaged(DamageInfo damageInfo)
@@ -259,13 +192,6 @@ namespace TimeMetroidvania.Player
             healingElapsed = 0f;
             healingSpent = 0f;
             HealingProgressChanged?.Invoke(0f);
-        }
-
-        private void ResetPress()
-        {
-            inputHeld = false;
-            longPressResolved = false;
-            holdElapsed = 0f;
         }
 
         private void ReportUnavailable(string reason)

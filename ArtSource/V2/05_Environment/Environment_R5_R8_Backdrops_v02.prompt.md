@@ -1,0 +1,7 @@
+# R5～R8 远景
+
+2026-09-29，内置 image_gen，2 × 2 四格，RGB 不透明，无参考图。象限依次 R5、R6、R7、R8。仅用于房间背景。
+
+```text
+Create a 2 by 2 atlas of FOUR distinct equal-size distant background vista panels for an original 2D side-scrolling adventure in an overgrown ancient clockwork ruin. Pixel-painted game art, softened lower contrast so player/enemy sprites in foreground pop. Top left R5 hidden time ability chamber: cool blue-white illuminated far stone observatory and suspended quiet clock discs, NO collectible item drawn. Top right R6 open ruined bridge junction: pale misty blue-green distance, receding arcades and broken gears under overcast sky, two branches suggested only by distant architecture. Bottom left R7 safe checkpoint sanctuary: quiet sheltered small clock shrine and blue-gold shafts of light, stone arch, calm moss, NO interactive checkpoint object or readable time dial in the background. Bottom right R8 Boss arena backdrop: dark indigo storm light, monumental shattered clock ring and tall ancient columns looming far behind, wide uncluttered center for large boss and projectiles, no boss, arena lock or floor art. Same gray-green stone, moss and restrained antique brass across all panels. Each panel fully fills its rectangular quadrant; exact straight 2x2 grid, no separators. NO characters, objects to pick up, arrows, readable signs, text, UI, foreground platforms, floor or collision silhouettes, weapon effects or excessive bloom.
+```

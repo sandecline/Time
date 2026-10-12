@@ -14,9 +14,13 @@ namespace TimeMetroidvania.Presentation
         [SerializeField] private Sprite[] idle;
         [SerializeField] private Sprite[] run;
         [SerializeField] private Sprite[] jumpRise;
+        [SerializeField] private Sprite[] jumpApex;
         [SerializeField] private Sprite[] fall;
         [SerializeField] private Sprite[] attackGround;
         [SerializeField] private Sprite[] attackAir;
+        [SerializeField] private Sprite[] attackUp;
+        [SerializeField] private Sprite[] attackDown;
+        [SerializeField, Min(0.1f)] private float attackVisualScale = 1f;
         [SerializeField] private Sprite[] dash;
         [SerializeField] private Sprite[] hurt;
         [SerializeField] private Sprite[] death;
@@ -30,6 +34,7 @@ namespace TimeMetroidvania.Presentation
         private PlayerStateMachine stateMachine;
         private PlayerMovement movement;
         private PlayerCombat combat;
+        private PlayerDash dashAbility;
         private PlayerTimeAbilities timeAbilities;
         private HealthSystem health;
         private Rigidbody2D body;
@@ -42,6 +47,7 @@ namespace TimeMetroidvania.Presentation
             stateMachine = GetComponent<PlayerStateMachine>();
             movement = GetComponent<PlayerMovement>();
             combat = GetComponent<PlayerCombat>();
+            dashAbility = GetComponent<PlayerDash>();
             timeAbilities = GetComponent<PlayerTimeAbilities>();
             health = GetComponent<HealthSystem>();
             body = GetComponent<Rigidbody2D>();
@@ -80,7 +86,8 @@ namespace TimeMetroidvania.Presentation
             }
 
             (Sprite[] frames, bool loop) = ResolveAnimation();
-            targetRenderer.flipX = movement.FacingDirection < 0;
+            targetRenderer.flipX = stateMachine.CurrentState == PlayerState.Attack && combat != null
+                ? combat.CurrentAttackFacing < 0 : movement.FacingDirection < 0;
             targetRenderer.color = Color.white;
             damageFeedbackRemaining = Mathf.Max(
                 0f,
@@ -90,13 +97,19 @@ namespace TimeMetroidvania.Presentation
                 framePlayer.PlayNormalized(
                     targetRenderer,
                     frames,
-                    combat.AttackProgress);
+                    combat.AttackAnimationProgress);
+            }
+            else if (stateMachine.CurrentState == PlayerState.Dash && dashAbility != null)
+            {
+                framePlayer.PlayNormalized(targetRenderer, frames, dashAbility.DashProgress);
             }
             else
             {
                 framePlayer.Play(targetRenderer, frames, framesPerSecond, loop, Time.deltaTime);
             }
             ApplyDamageFeedback();
+            if (stateMachine.CurrentState == PlayerState.Attack)
+                targetRenderer.transform.localScale *= attackVisualScale;
         }
 
         private void HandleDamaged(DamageInfo damageInfo)
@@ -153,6 +166,10 @@ namespace TimeMetroidvania.Presentation
                 case PlayerState.Dash:
                     return (dash, true);
                 case PlayerState.Attack:
+                    if (combat != null && combat.CurrentAttackDirection == AttackDirection.Up
+                        && attackUp != null && attackUp.Length > 0) return (attackUp, false);
+                    if (combat != null && combat.CurrentAttackDirection == AttackDirection.Down
+                        && attackDown != null && attackDown.Length > 0) return (attackDown, false);
                     return (movement.IsGrounded ? attackGround : attackAir, false);
             }
 
@@ -163,6 +180,9 @@ namespace TimeMetroidvania.Presentation
 
             if (!movement.IsGrounded)
             {
+                if (body != null && Mathf.Abs(body.linearVelocity.y) < 1f
+                    && jumpApex != null && jumpApex.Length > 0)
+                    return (jumpApex, true);
                 return (body != null && body.linearVelocity.y > 0.05f ? jumpRise : fall, true);
             }
 

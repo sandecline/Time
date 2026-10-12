@@ -89,7 +89,9 @@ namespace TimeMetroidvania.Level
             }
             else
             {
-                GetComponent<SpriteRenderer>().color = new Color(0.25f, 0.9f, 0.65f);
+                SpriteRenderer fallback = GetComponentInChildren<SpriteRenderer>();
+                if (fallback != null)
+                    fallback.color = new Color(0.25f, 0.9f, 0.65f);
             }
             return true;
         }

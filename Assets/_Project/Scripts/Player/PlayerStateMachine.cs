@@ -22,7 +22,7 @@ namespace TimeMetroidvania.Player
         public event Action<PlayerState, PlayerState> StateChanged;
 
         public PlayerState CurrentState { get; private set; } = PlayerState.Normal;
-        public bool CanMove => CurrentState == PlayerState.Normal;
+        public bool CanMove => CurrentState is PlayerState.Normal or PlayerState.Attack or PlayerState.Healing;
         public bool CanAttack => CurrentState == PlayerState.Normal;
         public bool CanDash => CurrentState is PlayerState.Normal or PlayerState.Attack;
 

@@ -1,0 +1,477 @@
+fileFormatVersion: 2
+guid: 513e5137716e910409dd29b2d06db2aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3296208509333559516
+    second: Enemy_Ranged_Animation_v02_0
+  - first:
+      213: -3088809560681078961
+    second: Enemy_Ranged_Animation_v02_1
+  - first:
+      213: 2205023376158186740
+    second: Enemy_Ranged_Animation_v02_2
+  - first:
+      213: -6547048207933169014
+    second: Enemy_Ranged_Animation_v02_3
+  - first:
+      213: -7374575490613100586
+    second: Enemy_Ranged_Animation_v02_4
+  - first:
+      213: 1684078422004717383
+    second: Enemy_Ranged_Animation_v02_5
+  - first:
+      213: -249092083550489242
+    second: Enemy_Ranged_Animation_v02_6
+  - first:
+      213: 8511403229407261552
+    second: Enemy_Ranged_Animation_v02_7
+  - first:
+      213: -293309285945585465
+    second: Enemy_Ranged_Animation_v02_8
+  - first:
+      213: -8794420139475380243
+    second: Enemy_Ranged_Animation_v02_9
+  - first:
+      213: 9063385783861687536
+    second: Enemy_Ranged_Animation_v02_10
+  - first:
+      213: 9160507301328000901
+    second: Enemy_Ranged_Animation_v02_11
+  - first:
+      213: -2047162706121558317
+    second: Ranged0
+  - first:
+      213: 692092468216537736
+    second: Ranged1
+  - first:
+      213: 8409221539114641216
+    second: Ranged2
+  - first:
+      213: 2638082593825316047
+    second: Ranged3
+  - first:
+      213: 2079040375878581812
+    second: Ranged4
+  - first:
+      213: -6218648443983424688
+    second: Ranged5
+  - first:
+      213: -7341058223978569242
+    second: Ranged6
+  - first:
+      213: -3906548271071837588
+    second: Ranged7
+  - first:
+      213: 2418298757248980373
+    second: Ranged8
+  - first:
+      213: 4431606435004227726
+    second: Ranged9
+  - first:
+      213: -6967902544945769226
+    second: Ranged10
+  - first:
+      213: 8258935467583235933
+    second: Ranged11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ranged0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 744
+        width: 320
+        height: 297
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d672387d540793e0800000000000000
+      internalID: -2047162706121558317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranged1
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 744
+        width: 320
+        height: 297
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88225c7de6eca9900800000000000000
+      internalID: 692092468216537736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranged2
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 744
+        width: 324
+        height: 295
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047ed749f6e83b470800000000000000
+      internalID: 8409221539114641216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranged3
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 744
+        width: 320
+        height: 297
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcc5915542a5c9420800000000000000
+      internalID: 2638082593825316047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranged4
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 404
+        width: 325
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43effe5e43c3adc10800000000000000
+      internalID: 2079040375878581812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranged5
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 404
+        width: 323
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0531551203ce2b9a0800000000000000
+      internalID: -6218648443983424688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranged6
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 404
+        width: 320
+        height: 301
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e12c4c90725f1a90800000000000000
+      internalID: -7341058223978569242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranged7
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 404
+        width: 319
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c62c8d49b0729c9c0800000000000000
+      internalID: -3906548271071837588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranged8
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 49
+        width: 325
+        height: 306
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595189238e58f8120800000000000000
+      internalID: 2418298757248980373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranged9
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 49
+        width: 326
+        height: 299
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8023cea29a308d30800000000000000
+      internalID: 4431606435004227726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranged10
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 47
+        width: 353
+        height: 245
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f497fa8d890d4f90800000000000000
+      internalID: -6967902544945769226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranged11
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 49
+        width: 341
+        height: 170
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d576c20dc02ad9270800000000000000
+      internalID: 8258935467583235933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Enemy_Ranged_Animation_v02_0: 3296208509333559516
+      Enemy_Ranged_Animation_v02_1: -3088809560681078961
+      Enemy_Ranged_Animation_v02_10: 9063385783861687536
+      Enemy_Ranged_Animation_v02_11: 9160507301328000901
+      Enemy_Ranged_Animation_v02_2: 2205023376158186740
+      Enemy_Ranged_Animation_v02_3: -6547048207933169014
+      Enemy_Ranged_Animation_v02_4: -7374575490613100586
+      Enemy_Ranged_Animation_v02_5: 1684078422004717383
+      Enemy_Ranged_Animation_v02_6: -249092083550489242
+      Enemy_Ranged_Animation_v02_7: 8511403229407261552
+      Enemy_Ranged_Animation_v02_8: -293309285945585465
+      Enemy_Ranged_Animation_v02_9: -8794420139475380243
+      Ranged0: -2047162706121558317
+      Ranged1: 692092468216537736
+      Ranged10: -6967902544945769226
+      Ranged11: 8258935467583235933
+      Ranged2: 8409221539114641216
+      Ranged3: 2638082593825316047
+      Ranged4: 2079040375878581812
+      Ranged5: -6218648443983424688
+      Ranged6: -7341058223978569242
+      Ranged7: -3906548271071837588
+      Ranged8: 2418298757248980373
+      Ranged9: 4431606435004227726
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

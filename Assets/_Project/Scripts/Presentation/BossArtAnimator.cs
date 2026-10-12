@@ -12,6 +12,7 @@ namespace TimeMetroidvania.Presentation
     public sealed class BossArtAnimator : MonoBehaviour
     {
         [SerializeField] private SpriteRenderer targetRenderer;
+        [SerializeField] private bool spriteFacesRight;
         [SerializeField, Min(1f)] private float framesPerSecond = 10f;
         [SerializeField] private Sprite[] idle;
         [SerializeField] private Sprite[] sweepTelegraph;
@@ -76,8 +77,9 @@ namespace TimeMetroidvania.Presentation
             float delta = localTime != null ? localTime.LocalDeltaTime : Time.deltaTime;
             hurtRemaining = Mathf.Max(0f, hurtRemaining - delta);
             (Sprite[] frames, bool loop) = ResolveAnimation();
-            // Boss 原设定稿默认朝左，因此向右时翻转。
-            targetRenderer.flipX = brain.FacingDirection > 0;
+            // 素材的默认朝向由接入场景指定，旧场景保留原有朝左设置。
+            targetRenderer.flipX = spriteFacesRight
+                ? brain.FacingDirection < 0 : brain.FacingDirection > 0;
             targetRenderer.color = ResolveColor();
             framePlayer.Play(targetRenderer, frames, framesPerSecond, loop, delta);
             ApplyTransformFeedback();
@@ -167,6 +169,9 @@ namespace TimeMetroidvania.Presentation
                     : sweepAttack, false),
                 BossAttackType.LeapSlam => (brain.HasResolvedCurrentAttack ? slam : jump, false),
                 BossAttackType.ProjectileVolley => (shoot, false),
+                BossAttackType.ClockFan => (shoot, false),
+                BossAttackType.Rain => (shoot, false),
+                BossAttackType.Crossfire => (shoot, false),
                 BossAttackType.TimeAnchor => (timeAnchor, false),
                 _ => (idle, true)
             };

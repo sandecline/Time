@@ -10,6 +10,8 @@ namespace TimeMetroidvania.Enemy
     [RequireComponent(typeof(HealthSystem), typeof(LocalTimeController), typeof(TimeAwareDamageReceiver))]
     public sealed class EnemyBrain : MonoBehaviour
     {
+        private const float BugChargeSpeed = 7.5f;
+        private const float BugChargeDuration = 0.32f;
         [SerializeField] private EnemyKind kind;
         [SerializeField] private Transform target;
         [SerializeField] private ProjectilePool projectilePool;
@@ -35,6 +37,11 @@ namespace TimeMetroidvania.Enemy
         private int shotsFired;
         private bool attackResolved;
         private bool initialized;
+        private EnemyMotor2D motor;
+        private EnemyMeleeHitbox2D slash;
+        private Vector2 lockedAim;
+        private float reloadRemaining;
+        private float RecoveryDuration => kind == EnemyKind.ClockworkBug ? 0.65f : 0.38f;
 
         public EnemyKind Kind => kind;
         public EnemyState CurrentState { get; private set; } = EnemyState.Patrol;
@@ -42,6 +49,10 @@ namespace TimeMetroidvania.Enemy
         public int FacingDirection => facing;
         public float AttackRange => attackRange;
         public Vector2 MeleeHitRange => meleeHitRange;
+        public float ChargeDistance => BugChargeSpeed * BugChargeDuration;
+        public Vector2 LockedAim => lockedAim;
+        public Vector2 RangedShotOrigin => (Vector2)transform.position
+            + new Vector2(facing * 0.7f, 0.15f);
         public Vector2 TargetPosition => target != null
             ? target.position
             : transform.position;
@@ -52,7 +63,7 @@ namespace TimeMetroidvania.Enemy
             : 0f;
         public float AttackRecoveryProgress =>
             CurrentState == EnemyState.Attack && attackResolved
-                ? Mathf.Clamp01((stateElapsed - attackWindup) / 0.16f)
+                ? Mathf.Clamp01((stateElapsed - attackWindup) / RecoveryDuration)
                 : 0f;
 
         private void Awake()
@@ -72,6 +83,8 @@ namespace TimeMetroidvania.Enemy
                 ?? GetComponent<SpriteRenderer>();
             patrolCenter = transform.position;
             target ??= GameObject.FindGameObjectWithTag("Player")?.transform;
+            motor = GetComponent<EnemyMotor2D>() ?? gameObject.AddComponent<EnemyMotor2D>();
+            if (kind == EnemyKind.Guard) slash = EnemyMeleeHitbox2D.Create(gameObject);
             initialized = true;
         }
 
@@ -87,9 +100,9 @@ namespace TimeMetroidvania.Enemy
             health.Died -= HandleDied;
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
-            Advance(localTime.LocalDeltaTime);
+            Advance(localTime.LocalFixedDeltaTime);
         }
 
         internal void Advance(float delta)
@@ -103,29 +116,43 @@ namespace TimeMetroidvania.Enemy
                 return;
             }
 
+            motor.DesiredVelocity = Vector2.zero;
             stateElapsed += delta;
             cooldownRemaining = Mathf.Max(0f, cooldownRemaining - delta);
-            float distance = Mathf.Abs(target.position.x - transform.position.x);
+            float distance = Vector2.Distance(target.position, transform.position);
+            float height = Mathf.Abs(target.position.y - transform.position.y);
+            bool visible = height <= (kind == EnemyKind.ClockArcher ? 2.8f : 2.2f)
+                && !WorldCollision2D.Blocks(transform.position, target.position);
+            if (kind == EnemyKind.ClockArcher && shotsFired >= maxShots)
+            {
+                reloadRemaining += delta;
+                if (reloadRemaining >= 2.4f) { shotsFired = 0; reloadRemaining = 0f; }
+            }
 
             switch (CurrentState)
             {
                 case EnemyState.Patrol:
                     Patrol(delta);
-                    if (distance <= detectionRange)
+                    if (distance <= detectionRange && visible)
                     {
                         SetState(EnemyState.Alert);
                     }
                     break;
                 case EnemyState.Alert:
-                    if (distance > loseRange)
+                    if (distance > loseRange || !visible)
                     {
                         SetState(EnemyState.Patrol);
                         break;
                     }
                     FaceTarget();
-                    if (CanAttack(distance))
+                    if (CanAttack(distance) && motor.Grounded)
                     {
+                        lockedAim = target.position;
                         SetState(EnemyState.Attack);
+                    }
+                    else if (kind == EnemyKind.ClockArcher && distance < 2.2f)
+                    {
+                        MoveHorizontal(-facing * 1.2f * delta);
                     }
                     else if (kind != EnemyKind.ClockArcher)
                     {
@@ -138,7 +165,15 @@ namespace TimeMetroidvania.Enemy
                         attackResolved = true;
                         PerformAttack();
                     }
-                    if (stateElapsed >= attackWindup + 0.16f)
+                    if (attackResolved && kind == EnemyKind.Guard)
+                    {
+                        if (stateElapsed < attackWindup + 0.14f) slash.Tick();
+                        else slash.End();
+                    }
+                    if (attackResolved && kind == EnemyKind.ClockworkBug
+                        && stateElapsed < attackWindup + BugChargeDuration)
+                        MoveHorizontal(facing * BugChargeSpeed * delta);
+                    if (stateElapsed >= attackWindup + RecoveryDuration)
                     {
                         cooldownRemaining = attackCooldown;
                         SetState(EnemyState.Alert);
@@ -189,17 +224,25 @@ namespace TimeMetroidvania.Enemy
 
         private void MoveHorizontal(float distance)
         {
-            Vector3 position = transform.position;
-            position.x += distance;
-            transform.position = position;
+            int direction = distance >= 0f ? 1 : -1;
+            if (motor.Grounded && !motor.HasFloorAhead(direction))
+            {
+                if (CurrentState == EnemyState.Patrol) facing = -direction;
+                return;
+            }
+            if (motor.BlockedHorizontally && CurrentState == EnemyState.Patrol) facing = -direction;
+            float delta = localTime.LocalFixedDeltaTime;
+            motor.DesiredVelocity = new Vector2(delta > 0f ? distance / delta : 0f, 0f);
         }
 
         private void PerformAttack()
         {
             if (kind == EnemyKind.ClockArcher)
             {
-                Vector2 origin = (Vector2)transform.position + new Vector2(facing * 0.7f, 0.15f);
-                Vector2 direction = ((Vector2)target.position - origin).normalized;
+                Vector2 origin = RangedShotOrigin;
+                if (WorldCollision2D.Blocks(transform.position, origin)
+                    || WorldCollision2D.Blocks(origin, lockedAim)) return;
+                Vector2 direction = (lockedAim - origin).normalized;
                 if (projectilePool.TryFire(origin, direction))
                 {
                     shotsFired++;
@@ -207,23 +250,8 @@ namespace TimeMetroidvania.Enemy
                 return;
             }
 
-            Vector2 targetDelta = target.position - transform.position;
-            bool targetInFront = Mathf.Sign(targetDelta.x) == facing
-                || Mathf.Abs(targetDelta.x) < 0.05f;
-            if (!targetInFront
-                || Mathf.Abs(targetDelta.x) > meleeHitRange.x
-                || Mathf.Abs(targetDelta.y) > meleeHitRange.y)
-            {
-                return;
-            }
-
-            HealthSystem playerHealth = target.GetComponent<HealthSystem>();
-            if (playerHealth == null)
-            {
-                return;
-            }
-            playerHealth.TryTakeDamage(new DamageInfo(
-                gameObject, 1, target.position, new Vector2(facing * 6f, 3f)));
+            if (kind == EnemyKind.Guard)
+                slash.Begin(facing, new Vector2(meleeHitRange.x, meleeHitRange.y * 2f));
         }
 
         private void HandleDamaged(DamageInfo damageInfo)
@@ -236,12 +264,20 @@ namespace TimeMetroidvania.Enemy
 
         private void HandleDied()
         {
+            motor.ResetMotion();
             SetState(EnemyState.Dead);
             Collider2D hitbox = GetComponent<Collider2D>();
             if (hitbox != null)
             {
                 hitbox.enabled = false;
             }
+        }
+
+        public void SetEncounterSpawn(Vector3 worldPosition)
+        {
+            EnsureInitialized();
+            transform.position = worldPosition;
+            patrolCenter = worldPosition;
         }
 
         public void ResetEncounter()
@@ -251,6 +287,8 @@ namespace TimeMetroidvania.Enemy
             localTime?.ClearStoredMotion();
             transform.position = patrolCenter;
             health.ResetForEncounter();
+            motor.ResetMotion();
+            reloadRemaining = 0f;
             Collider2D hitbox = GetComponent<Collider2D>();
             if (hitbox != null)
             {
@@ -271,6 +309,7 @@ namespace TimeMetroidvania.Enemy
                 return;
             }
             CurrentState = next;
+            slash?.End();
             stateElapsed = 0f;
             attackResolved = false;
             if (sprite != null)

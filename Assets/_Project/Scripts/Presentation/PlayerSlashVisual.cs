@@ -4,16 +4,17 @@ using UnityEngine;
 namespace TimeMetroidvania.Presentation
 {
     /// <summary>
-    /// 绘制与玩家平砍判定范围一致的短暂刀光，仅负责视觉反馈。
+    /// 绘制与当前横砍、上砍或下劈判定一致的临时刀光。
     /// </summary>
     [DisallowMultipleComponent]
-    [RequireComponent(typeof(PlayerCombat), typeof(PlayerMovement))]
+    [RequireComponent(typeof(PlayerCombat))]
     public sealed class PlayerSlashVisual : MonoBehaviour
     {
-        private const int PointCount = 9;
+        private const int PointCount = 17;
+        private const float ActiveSlashWidth = 0.19f;
+        private const float LingeringSlashWidth = 0.07f;
 
         private PlayerCombat combat;
-        private PlayerMovement movement;
         private LineRenderer slash;
         private Material slashMaterial;
         private float lingerRemaining;
@@ -21,13 +22,12 @@ namespace TimeMetroidvania.Presentation
         private void Awake()
         {
             combat = GetComponent<PlayerCombat>();
-            movement = GetComponent<PlayerMovement>();
             CreateSlashRenderer();
         }
 
         private void LateUpdate()
         {
-            if (slash == null || combat == null || movement == null)
+            if (slash == null || combat == null)
             {
                 return;
             }
@@ -40,22 +40,21 @@ namespace TimeMetroidvania.Presentation
             {
                 lingerRemaining = Mathf.Max(
                     0f,
-                    lingerRemaining - Time.unscaledDeltaTime);
+                    lingerRemaining - Time.deltaTime);
             }
 
             slash.enabled = combat.IsSlashVisualVisible || lingerRemaining > 0f;
+            float strength = combat.IsAttackActive ? 1f : 0.35f;
+            slash.startColor = slash.endColor = new Color(0.65f, 0.95f, 1f, strength);
+            slash.widthMultiplier = combat.IsAttackActive
+                ? ActiveSlashWidth
+                : LingeringSlashWidth;
             if (!slash.enabled)
             {
                 return;
             }
 
-            Vector2 center = combat.CurrentAttackCenter;
-            Vector2 halfSize = combat.AttackSize * 0.5f;
-            float facing = movement.FacingDirection;
-            Vector3 start = center + new Vector2(-facing * halfSize.x, -halfSize.y);
-            Vector3 control = center + new Vector2(facing * halfSize.x * 3f, 0f);
-            Vector3 end = center + new Vector2(-facing * halfSize.x, halfSize.y);
-
+            ResolveArc(out Vector3 start, out Vector3 control, out Vector3 end);
             for (int index = 0; index < PointCount; index++)
             {
                 float time = index / (PointCount - 1f);
@@ -64,6 +63,44 @@ namespace TimeMetroidvania.Presentation
                     + 2f * inverse * time * control
                     + time * time * end;
                 slash.SetPosition(index, point);
+            }
+        }
+
+        private void ResolveArc(
+            out Vector3 start,
+            out Vector3 control,
+            out Vector3 end)
+        {
+            Vector2 center = combat.CurrentAttackCenter;
+            Vector2 halfSize = combat.AttackSize * 0.5f;
+            // 刀光线条本身有宽度，中心线向判定框内收，避免视觉效果越界。
+            float inset = ActiveSlashWidth * 0.5f;
+            halfSize.x = Mathf.Max(0f, halfSize.x - inset);
+            halfSize.y = Mathf.Max(0f, halfSize.y - inset);
+            float facing = combat.CurrentAttackFacing;
+
+            switch (combat.CurrentAttackDirection)
+            {
+                case AttackDirection.Up:
+                    start = center + new Vector2(-halfSize.x, -halfSize.y * 0.3f);
+                    control = center + new Vector2(0f, halfSize.y * 2f);
+                    end = center + new Vector2(halfSize.x, -halfSize.y * 0.3f);
+                    break;
+                case AttackDirection.Down:
+                    start = center + new Vector2(-halfSize.x, halfSize.y * 0.3f);
+                    control = center + new Vector2(0f, -halfSize.y * 2f);
+                    end = center + new Vector2(halfSize.x, halfSize.y * 0.3f);
+                    break;
+                default:
+                    start = center + new Vector2(-facing * halfSize.x, -halfSize.y);
+                    control = center + new Vector2(facing * halfSize.x * 3f, 0f);
+                    end = center + new Vector2(-facing * halfSize.x, halfSize.y);
+                    return;
+            }
+
+            if (facing < 0f)
+            {
+                (start, end) = (end, start);
             }
         }
 
@@ -104,6 +141,11 @@ namespace TimeMetroidvania.Presentation
             slash.widthMultiplier = 0.16f;
             slash.numCapVertices = 0;
             slash.numCornerVertices = 0;
+            // 两端收尖，保留判定内的最大宽度，避免刀光看起来像粗折线。
+            slash.widthCurve = new AnimationCurve(
+                new Keyframe(0f, 0f), new Keyframe(0.2f, 0.75f),
+                new Keyframe(0.5f, 1f), new Keyframe(0.8f, 0.75f),
+                new Keyframe(1f, 0f));
             slash.textureMode = LineTextureMode.Stretch;
             slash.sortingOrder = 30;
             slash.colorGradient = new Gradient

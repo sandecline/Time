@@ -48,35 +48,67 @@ namespace TimeMetroidvania.Tests
         }
 
         [Test]
-        public void 时停扣除资源且攻击与提前结束按比例退款()
+        public void 时停即时开启并按每秒十点持续消耗()
         {
             worldTime.UnlockTimeStop();
-            gauge.Gain(60f);
+            gauge.Fill();
 
             Assert.That(worldTime.TryStartTimeStop(gauge), Is.True);
             Assert.That(worldTime.CurrentMode, Is.EqualTo(WorldTimeMode.Stopped));
-            Assert.That(worldTime.TimeStopMaximum, Is.EqualTo(5f));
-            Assert.That(gauge.CurrentValue, Is.Zero);
+            Assert.That(worldTime.TimeStopMaximum, Is.EqualTo(10f));
+            Assert.That(gauge.CurrentValue, Is.EqualTo(100f));
 
-            worldTime.ConsumeTimeStopAttack(0.6f);
             worldTime.AdvanceUnscaledTime(2f);
-            Assert.That(worldTime.TimeStopRemaining, Is.EqualTo(2.4f).Within(0.001f));
+            Assert.That(gauge.CurrentValue, Is.EqualTo(80f).Within(0.001f));
+            Assert.That(worldTime.TimeStopRemaining, Is.EqualTo(8f).Within(0.001f));
             Assert.That(worldTime.EndTimeStopEarly(), Is.True);
-
             Assert.That(worldTime.CurrentMode, Is.EqualTo(WorldTimeMode.Normal));
-            Assert.That(gauge.CurrentValue, Is.EqualTo(28f));
+            Assert.That(gauge.CurrentValue, Is.EqualTo(80f).Within(0.001f));
         }
 
         [Test]
-        public void 时停升级将上限延长到七秒()
+        public void 时间槽耗尽会自动结束时停()
+        {
+            worldTime.UnlockTimeStop();
+            gauge.Gain(20f);
+
+            Assert.That(worldTime.TryStartTimeStop(gauge), Is.True);
+            worldTime.AdvanceUnscaledTime(2f);
+
+            Assert.That(worldTime.CurrentMode, Is.EqualTo(WorldTimeMode.Normal));
+            Assert.That(gauge.CurrentValue, Is.Zero);
+        }
+
+        [Test]
+        public void 时间回声按四分之一累计且最多返还消耗的一半()
+        {
+            worldTime.UnlockTimeStop();
+            gauge.Fill();
+            Assert.That(worldTime.TryStartTimeStop(gauge), Is.True);
+
+            worldTime.AdvanceUnscaledTime(1f);
+            for (int index = 0; index < 10; index++)
+            {
+                Assert.That(worldTime.RegisterTimeEcho(10f), Is.True);
+            }
+
+            Assert.That(worldTime.PendingTimeEcho, Is.EqualTo(25f));
+            Assert.That(worldTime.SettleableTimeEcho, Is.EqualTo(5f));
+            worldTime.EndTimeStopEarly();
+
+            Assert.That(gauge.CurrentValue, Is.EqualTo(95f).Within(0.001f));
+        }
+
+        [Test]
+        public void 旧时长升级接口不会改变十秒上限()
         {
             worldTime.UnlockTimeStop();
             worldTime.UnlockDurationUpgrade();
-            gauge.Gain(60f);
+            gauge.Fill();
 
             Assert.That(worldTime.TryStartTimeStop(gauge), Is.True);
-            Assert.That(worldTime.TimeStopMaximum, Is.EqualTo(7f));
-            Assert.That(worldTime.TimeStopRemaining, Is.EqualTo(7f));
+            Assert.That(worldTime.HasDurationUpgrade, Is.False);
+            Assert.That(worldTime.TimeStopMaximum, Is.EqualTo(10f));
         }
 
         [Test]
@@ -107,18 +139,6 @@ namespace TimeMetroidvania.Tests
                 Is.EqualTo(expected));
         }
 
-        [TestCase(WorldTimeMode.Normal, 1f)]
-        [TestCase(WorldTimeMode.Slowed, 1f)]
-        [TestCase(WorldTimeMode.Stopped, 0.25f)]
-        public void 时停期间攻击补槽仅为正常值四分之一(
-            WorldTimeMode mode,
-            float expectedMultiplier)
-        {
-            Assert.That(
-                PlayerCombat.GetGaugeGainMultiplier(mode),
-                Is.EqualTo(expectedMultiplier));
-        }
-
         [Test]
         public void 时停期间伤害缓存并在恢复后合并结算()
         {
@@ -141,7 +161,7 @@ namespace TimeMetroidvania.Tests
                 InvokeLifecycle(receiver, "OnEnable");
 
                 worldTime.UnlockTimeStop();
-                gauge.Gain(60f);
+                gauge.Fill();
                 Assert.That(worldTime.TryStartTimeStop(gauge), Is.True);
 
                 Assert.That(receiver.TryTakeDamage(

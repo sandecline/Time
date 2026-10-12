@@ -15,7 +15,7 @@ namespace TimeMetroidvania.Tests
         private InputActionAsset inputAsset;
         private InputActionReference moveReference;
         private InputActionReference jumpReference;
-        private InputActionReference timeReference;
+        private InputActionReference healReference;
 
         [TearDown]
         public void TearDown()
@@ -24,7 +24,7 @@ namespace TimeMetroidvania.Tests
             Object.DestroyImmediate(damageSource);
             Object.DestroyImmediate(moveReference);
             Object.DestroyImmediate(jumpReference);
-            Object.DestroyImmediate(timeReference);
+            Object.DestroyImmediate(healReference);
             Object.DestroyImmediate(inputAsset);
         }
 
@@ -45,7 +45,7 @@ namespace TimeMetroidvania.Tests
             groundCheck.SetParent(player.transform);
             CreateInputReferences();
             ConfigureMovement(movement, groundCheck);
-            ConfigureObjectReference(healing, "timeAbilityAction", timeReference);
+            ConfigureObjectReference(healing, "healAction", healReference);
             ConfigureFloat(health, "damageProtectionDuration", 0f);
 
             player.SetActive(true);
@@ -64,11 +64,11 @@ namespace TimeMetroidvania.Tests
                 Vector2.zero,
                 Vector2.zero));
             stateMachine.ResetToNormal();
-            gauge.Gain(60f);
+            gauge.Gain(50f);
 
             Assert.That(healing.TryBeginHealing(), Is.True);
             healing.AdvanceHealing(0.75f);
-            Assert.That(gauge.CurrentValue, Is.EqualTo(30f).Within(0.001f));
+            Assert.That(gauge.CurrentValue, Is.EqualTo(25f).Within(0.001f));
             Assert.That(healing.HealingProgress, Is.EqualTo(0.5f).Within(0.001f));
 
             health.TryTakeDamage(new DamageInfo(
@@ -79,7 +79,7 @@ namespace TimeMetroidvania.Tests
 
             Assert.That(healing.IsHealing, Is.False);
             Assert.That(stateMachine.CurrentState, Is.EqualTo(PlayerState.Hurt));
-            Assert.That(gauge.CurrentValue, Is.EqualTo(30f).Within(0.001f));
+            Assert.That(gauge.CurrentValue, Is.EqualTo(25f).Within(0.001f));
         }
 
         private void CreateInputReferences()
@@ -89,10 +89,10 @@ namespace TimeMetroidvania.Tests
             InputAction move = map.AddAction("Move", InputActionType.Value);
             move.expectedControlType = "Vector2";
             InputAction jump = map.AddAction("Jump", InputActionType.Button);
-            InputAction time = map.AddAction("TimeAbility", InputActionType.Button);
+            InputAction heal = map.AddAction("Heal", InputActionType.Button);
             moveReference = InputActionReference.Create(move);
             jumpReference = InputActionReference.Create(jump);
-            timeReference = InputActionReference.Create(time);
+            healReference = InputActionReference.Create(heal);
         }
 
         private void ConfigureMovement(PlayerMovement movement, Transform groundCheck)

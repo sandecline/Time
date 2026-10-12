@@ -57,7 +57,7 @@ namespace TimeMetroidvania.Flow
             DrawPlayerPanel();
             DrawObjectivePanel();
             GUI.Label(new Rect(22f, Screen.height - 35f, 560f, 25f),
-                "A/D 移动 · K 跳跃 · J 攻击/长按时缓 · L Dash · I 时停/治疗 · M 地图 · Esc 暂停",
+                "A/D 移动 · K 跳跃 · J 攻击/长按时缓 · L Dash · I 时停 · U 治疗 · M 地图 · Esc 暂停",
                 smallStyle);
         }
 
@@ -81,7 +81,7 @@ namespace TimeMetroidvania.Flow
                         : $"状态  {(playerState == null ? "--" : playerState.CurrentState)}",
                 labelStyle);
             GUI.Label(new Rect(34f, 146f, 390f, 24f),
-                "测试模式：不读取或写入存档", smallStyle);
+                "试玩版：不读取或写入存档", smallStyle);
         }
 
         private void DrawObjectivePanel()
@@ -109,7 +109,7 @@ namespace TimeMetroidvania.Flow
             {
                 WorldTimeMode.Slowed => $"时缓  {worldTime.SlowRemaining:0.0}s",
                 WorldTimeMode.Stopped =>
-                    $"时停  {worldTime.TimeStopRemaining:0.0}/{worldTime.TimeStopMaximum:0.0}s",
+                    $"时停  {worldTime.TimeStopRemaining:0.0}/{worldTime.TimeStopMaximum:0.0}s · 回声 {worldTime.SettleableTimeEcho:0.#}",
                 _ => "世界时间  正常"
             };
         }

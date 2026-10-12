@@ -5,7 +5,7 @@ using UnityEngine;
 namespace TimeMetroidvania.GameTime
 {
     /// <summary>
-    /// 管理正常、时缓和时停状态，并向已注册世界对象分发独立时间倍率。
+    /// 管理正常、时缓和可即时开关的时停，并向世界对象分发独立时间倍率。
     /// </summary>
     [DisallowMultipleComponent]
     public sealed class WorldTimeService : MonoBehaviour
@@ -15,11 +15,11 @@ namespace TimeMetroidvania.GameTime
         [SerializeField, Min(0.01f)] private float slowDuration = 3f;
 
         [Header("时停")]
-        [SerializeField, Min(0f)] private float timeStopCost = 60f;
-        [SerializeField, Min(0.01f)] private float baseTimeStopDuration = 5f;
-        [SerializeField, Min(0.01f)] private float upgradedTimeStopDuration = 7f;
+        [SerializeField, Min(0.01f)] private float timeStopDrainPerSecond = 10f;
+        [SerializeField, Min(0.01f)] private float maximumTimeStopDuration = 10f;
+        [SerializeField, Range(0f, 1f)] private float timeEchoRatio = 0.25f;
+        [SerializeField, Range(0f, 1f)] private float maximumEchoSpentRatio = 0.5f;
         [SerializeField] private bool timeStopUnlocked;
-        [SerializeField] private bool durationUpgradeUnlocked;
 
         private readonly HashSet<ITimeControllable> controllables = new();
         private TimeGauge activeGauge;
@@ -28,6 +28,7 @@ namespace TimeMetroidvania.GameTime
 
         public event Action<WorldTimeMode, WorldTimeMode> ModeChanged;
         public event Action<float, float> TimeStopRemainingChanged;
+        public event Action<float, float> TimeEchoChanged;
         public event Action<float> SlowRemainingChanged;
 
         public WorldTimeMode CurrentMode { get; private set; } = WorldTimeMode.Normal;
@@ -38,15 +39,24 @@ namespace TimeMetroidvania.GameTime
             _ => 1f
         };
         public float SlowRemaining => slowRemaining;
-        public float TimeStopRemaining => activeSession?.RemainingDuration ?? 0f;
-        public float TimeStopMaximum => activeSession?.MaxDuration
-            ?? (durationUpgradeUnlocked ? upgradedTimeStopDuration : baseTimeStopDuration);
+        public float TimeStopRemaining => CurrentMode == WorldTimeMode.Stopped
+            && activeGauge != null
+            ? activeGauge.CurrentValue / timeStopDrainPerSecond
+            : 0f;
+        public float TimeStopMaximum => maximumTimeStopDuration;
+        public float TimeStopDrainPerSecond => timeStopDrainPerSecond;
+        public float PendingTimeEcho => activeSession?.PendingEcho ?? 0f;
+        public float SettleableTimeEcho => activeSession?.CalculateEcho(maximumEchoSpentRatio) ?? 0f;
+        public float TimeStopEnergySpent => activeSession?.EnergySpent ?? 0f;
         public bool IsTimeStopUnlocked => timeStopUnlocked;
-        public bool HasDurationUpgrade => durationUpgradeUnlocked;
+        public bool HasDurationUpgrade => false;
 
         private void Update()
         {
-            AdvanceUnscaledTime(Time.unscaledDeltaTime);
+            if (Time.timeScale > 0f)
+            {
+                AdvanceUnscaledTime(Time.unscaledDeltaTime);
+            }
         }
 
         public void Register(ITimeControllable controllable)
@@ -81,26 +91,28 @@ namespace TimeMetroidvania.GameTime
             return true;
         }
 
+        public bool ToggleTimeStop(TimeGauge gauge)
+        {
+            return CurrentMode == WorldTimeMode.Stopped
+                ? EndTimeStopEarly()
+                : TryStartTimeStop(gauge);
+        }
+
         public bool TryStartTimeStop(TimeGauge gauge)
         {
-            if (!timeStopUnlocked || gauge == null || CurrentMode == WorldTimeMode.Stopped)
+            if (!timeStopUnlocked || gauge == null
+                || gauge.CurrentValue <= Mathf.Epsilon
+                || CurrentMode == WorldTimeMode.Stopped)
             {
                 return false;
             }
 
-            if (!gauge.TrySpend(timeStopCost))
-            {
-                return false;
-            }
-
-            float maximum = durationUpgradeUnlocked
-                ? upgradedTimeStopDuration
-                : baseTimeStopDuration;
             activeGauge = gauge;
-            activeSession = new TimeStopSession(timeStopCost, maximum);
+            activeSession = new TimeStopSession();
             slowRemaining = 0f;
             SetMode(WorldTimeMode.Stopped);
-            TimeStopRemainingChanged?.Invoke(activeSession.RemainingDuration, activeSession.MaxDuration);
+            TimeStopRemainingChanged?.Invoke(TimeStopRemaining, TimeStopMaximum);
+            TimeEchoChanged?.Invoke(0f, 0f);
             return true;
         }
 
@@ -111,10 +123,16 @@ namespace TimeMetroidvania.GameTime
                 return false;
             }
 
-            int refund = activeSession.CalculateEarlyEndRefund();
-            activeGauge?.Gain(refund);
-            FinishTimeStop();
+            FinishTimeStop(true);
             return true;
+        }
+
+        public void EndTimeStopForTransition()
+        {
+            if (CurrentMode == WorldTimeMode.Stopped)
+            {
+                FinishTimeStop(true);
+            }
         }
 
         public void ResetToNormal()
@@ -124,22 +142,23 @@ namespace TimeMetroidvania.GameTime
             slowRemaining = 0f;
             SetMode(WorldTimeMode.Normal);
             TimeStopRemainingChanged?.Invoke(0f, TimeStopMaximum);
+            TimeEchoChanged?.Invoke(0f, 0f);
             SlowRemainingChanged?.Invoke(0f);
         }
 
-        public void ConsumeTimeStopAttack(float duration)
+        public bool RegisterTimeEcho(float normalGaugeGain)
         {
-            if (CurrentMode != WorldTimeMode.Stopped || activeSession == null)
+            if (CurrentMode != WorldTimeMode.Stopped || activeSession == null
+                || normalGaugeGain <= 0f)
             {
-                return;
+                return false;
             }
 
-            activeSession.ConsumeAttackTime(duration);
-            TimeStopRemainingChanged?.Invoke(activeSession.RemainingDuration, activeSession.MaxDuration);
-            if (activeSession.IsExpired)
-            {
-                FinishTimeStop();
-            }
+            activeSession.AddEcho(normalGaugeGain, timeEchoRatio);
+            TimeEchoChanged?.Invoke(
+                activeSession.PendingEcho,
+                activeSession.EnergySpent * maximumEchoSpentRatio);
+            return true;
         }
 
         public void UnlockTimeStop()
@@ -147,9 +166,9 @@ namespace TimeMetroidvania.GameTime
             timeStopUnlocked = true;
         }
 
+        // 保留旧接口以兼容历史场景和测试工具；V2 不再提供时停时长升级。
         public void UnlockDurationUpgrade()
         {
-            durationUpgradeUnlocked = true;
         }
 
         internal void AdvanceUnscaledTime(float unscaledDeltaTime)
@@ -171,25 +190,43 @@ namespace TimeMetroidvania.GameTime
                 return;
             }
 
-            if (CurrentMode != WorldTimeMode.Stopped || activeSession == null)
+            if (CurrentMode != WorldTimeMode.Stopped
+                || activeSession == null
+                || activeGauge == null)
             {
                 return;
             }
 
-            activeSession.Advance(unscaledDeltaTime);
-            TimeStopRemainingChanged?.Invoke(activeSession.RemainingDuration, activeSession.MaxDuration);
-            if (activeSession.IsExpired)
+            float spent = activeGauge.SpendUpTo(
+                timeStopDrainPerSecond * unscaledDeltaTime);
+            activeSession.RecordEnergySpent(spent);
+            TimeStopRemainingChanged?.Invoke(TimeStopRemaining, TimeStopMaximum);
+            TimeEchoChanged?.Invoke(
+                activeSession.PendingEcho,
+                activeSession.EnergySpent * maximumEchoSpentRatio);
+
+            if (activeGauge.CurrentValue <= Mathf.Epsilon)
             {
-                FinishTimeStop();
+                FinishTimeStop(true);
             }
         }
 
-        private void FinishTimeStop()
+        private void FinishTimeStop(bool settleEcho)
         {
+            TimeStopSession finishedSession = activeSession;
+            TimeGauge finishedGauge = activeGauge;
             activeSession = null;
             activeGauge = null;
             SetMode(WorldTimeMode.Normal);
+
+            if (settleEcho && finishedSession != null && finishedGauge != null)
+            {
+                finishedGauge.Gain(
+                    finishedSession.CalculateEcho(maximumEchoSpentRatio));
+            }
+
             TimeStopRemainingChanged?.Invoke(0f, TimeStopMaximum);
+            TimeEchoChanged?.Invoke(0f, 0f);
         }
 
         private void SetMode(WorldTimeMode nextMode)
@@ -218,6 +255,14 @@ namespace TimeMetroidvania.GameTime
                 float scale = controllable.IsTimeResistant ? 1f : CurrentWorldScale;
                 controllable.ApplyWorldTime(CurrentMode, scale);
             }
+        }
+
+        private void OnValidate()
+        {
+            timeStopDrainPerSecond = Mathf.Max(0.01f, timeStopDrainPerSecond);
+            maximumTimeStopDuration = Mathf.Max(0.01f, maximumTimeStopDuration);
+            timeEchoRatio = Mathf.Clamp01(timeEchoRatio);
+            maximumEchoSpentRatio = Mathf.Clamp01(maximumEchoSpentRatio);
         }
     }
 }

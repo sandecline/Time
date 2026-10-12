@@ -5,13 +5,15 @@ using UnityEngine.InputSystem;
 namespace TimeMetroidvania.Player
 {
     /// <summary>
-    /// 处理 J 长按时缓、I 短按时停以及时停攻击扣除剩余时间。
+    /// 处理 J 长按时缓，以及 I 按下瞬间开启或关闭时停。
     /// </summary>
     [RequireComponent(typeof(PlayerCombat), typeof(PlayerHealing), typeof(TimeGauge))]
+    [RequireComponent(typeof(PlayerStateMachine), typeof(HealthSystem))]
     public sealed class PlayerTimeAbilities : MonoBehaviour
     {
         [Header("输入")]
         [SerializeField] private InputActionReference attackAction;
+        [SerializeField] private InputActionReference timeAbilityAction;
 
         [Header("服务")]
         [SerializeField] private WorldTimeService worldTime;
@@ -19,11 +21,8 @@ namespace TimeMetroidvania.Player
         [Header("时缓")]
         [SerializeField, Min(0.01f)] private float slowChargeDuration = 1f;
 
-        [Header("时停")]
-        [SerializeField, Min(0f)] private float attackTimeStopCost = 0.6f;
-
-        private PlayerCombat combat;
-        private PlayerHealing healing;
+        private PlayerStateMachine stateMachine;
+        private HealthSystem health;
         private TimeGauge timeGauge;
         private bool slowCharging;
         private float slowChargeElapsed;
@@ -35,37 +34,33 @@ namespace TimeMetroidvania.Player
 
         private void Awake()
         {
-            combat = GetComponent<PlayerCombat>();
-            healing = GetComponent<PlayerHealing>();
+            stateMachine = GetComponent<PlayerStateMachine>();
+            health = GetComponent<HealthSystem>();
             timeGauge = GetComponent<TimeGauge>();
         }
 
         private void OnEnable()
         {
-            if (attackAction == null || worldTime == null)
+            if (attackAction == null || timeAbilityAction == null || worldTime == null)
             {
-                Debug.LogError("PlayerTimeAbilities 未完整配置 Attack 输入或 WorldTimeService。", this);
+                Debug.LogError("PlayerTimeAbilities 未完整配置 Attack、TimeAbility 或 WorldTimeService。", this);
                 enabled = false;
                 return;
             }
 
             attackAction.action.Enable();
-            healing.ShortPressRequested += HandleShortTimePress;
-            combat.AttackCompleted += HandleAttackCompleted;
+            timeAbilityAction.action.Enable();
+            health.Damaged += HandleDamaged;
             worldTime.ModeChanged += HandleWorldTimeChanged;
         }
 
         private void OnDisable()
         {
             attackAction?.action.Disable();
-            if (healing != null)
+            timeAbilityAction?.action.Disable();
+            if (health != null)
             {
-                healing.ShortPressRequested -= HandleShortTimePress;
-            }
-
-            if (combat != null)
-            {
-                combat.AttackCompleted -= HandleAttackCompleted;
+                health.Damaged -= HandleDamaged;
             }
 
             if (worldTime != null)
@@ -78,6 +73,16 @@ namespace TimeMetroidvania.Player
 
         private void Update()
         {
+            if (Time.timeScale <= 0f)
+            {
+                return;
+            }
+
+            if (timeAbilityAction.action.WasPressedThisFrame())
+            {
+                ToggleTimeStop();
+            }
+
             if (attackAction.action.WasPressedThisFrame())
             {
                 BeginSlowCharge();
@@ -116,9 +121,25 @@ namespace TimeMetroidvania.Player
                 && mode == WorldTimeMode.Normal;
         }
 
+        private void ToggleTimeStop()
+        {
+            if (stateMachine.CurrentState is PlayerState.Healing
+                or PlayerState.Hurt
+                or PlayerState.Dead)
+            {
+                return;
+            }
+
+            if (!worldTime.ToggleTimeStop(timeGauge))
+            {
+                Debug.Log("无法切换时停：能力未解锁或时间槽为空。", this);
+            }
+        }
+
         private void BeginSlowCharge()
         {
-            if (worldTime.CurrentMode != WorldTimeMode.Normal)
+            if (worldTime.CurrentMode != WorldTimeMode.Normal
+                || stateMachine.CurrentState is not (PlayerState.Normal or PlayerState.Attack))
             {
                 CancelSlowCharge();
                 return;
@@ -128,19 +149,11 @@ namespace TimeMetroidvania.Player
             slowChargeElapsed = 0f;
         }
 
-        private void HandleShortTimePress()
-        {
-            if (!worldTime.TryStartTimeStop(timeGauge))
-            {
-                Debug.Log("无法开启时停：能力未解锁、资源不足或已在时停中。", this);
-            }
-        }
-
-        private void HandleAttackCompleted()
+        private void HandleDamaged(DamageInfo damageInfo)
         {
             if (worldTime.CurrentMode == WorldTimeMode.Stopped)
             {
-                worldTime.ConsumeTimeStopAttack(attackTimeStopCost);
+                worldTime.EndTimeStopEarly();
             }
         }
 

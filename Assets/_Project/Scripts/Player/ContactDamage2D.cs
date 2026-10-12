@@ -34,8 +34,7 @@ namespace TimeMetroidvania.Player
 
         private void TryDamage(Collider2D other, Vector2 hitPoint)
         {
-            if ((ownHealth != null && ownHealth.IsDead)
-                || (localTime != null && localTime.CurrentTimeScale <= 0f))
+            if ((ownHealth != null && ownHealth.IsDead) || !other.CompareTag("Player"))
             {
                 return;
             }

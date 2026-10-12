@@ -231,6 +231,7 @@ MonoBehaviour:
   airAcceleration: 55
   airDeceleration: 45
   attackMoveMultiplier: 0.88
+  healingMoveMultiplier: 0.65
   jumpSpeed: 13
   coyoteTime: 0.1
   jumpBufferTime: 0.12
@@ -285,6 +286,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: TimeMetroidvania.Runtime::TimeMetroidvania.GameTime.TimeGauge
   maxValue: 100
   initialValue: 0
+  automaticRecoveryCap: 20
+  automaticRecoveryDelay: 1
+  automaticRecoveryRate: 5
 --- !u!114 &8456650768519901509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,22 +303,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: TimeMetroidvania.Runtime::TimeMetroidvania.Player.PlayerCombat
   attackAction: {fileID: 11400000, guid: 86c7f08038af4b045a482dc851ec552c, type: 2}
   attackOrigin: {fileID: 0}
-  attackOffset: {x: 0.85, y: 0.05}
-  airAttackOffset: {x: 0.8, y: -0.05}
-  attackSize: {x: 1.15, y: 0.9}
+  attackOffset: {x: 0.9, y: 0}
+  airAttackOffset: {x: 0.9, y: 0}
+  attackSize: {x: 1.65, y: 1.15}
+  upAttackOffset: {x: 0, y: 0.85}
+  upAttackSize: {x: 1.15, y: 1.35}
+  downAttackOffset: {x: 0, y: -0.85}
+  downAttackSize: {x: 1.15, y: 1.35}
   damage: 1
-  attackDuration: 0.32
-  attackInterval: 0.72
-  attackBufferDuration: 0.1
-  activeStartNormalized: 0.2
-  activeEndNormalized: 0.65
+  attackDuration: 0.28
+  attackInterval: 0.41
+  attackBufferDuration: 0.12
+  activeStartNormalized: 0.12
+  activeEndNormalized: 0.62
   horizontalKnockback: 4
   verticalKnockback: 2
   damageMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  enemyHitGaugeGain: 8
-  projectileHitGaugeGain: 4
+  enemyHitGaugeGain: 10
+  projectileHitGaugeGain: 8
   worldTime: {fileID: 0}
 --- !u!114 &7161045001812602509
 MonoBehaviour:
@@ -344,10 +352,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f798adfe21d26124886af8327700019e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: TimeMetroidvania.Runtime::TimeMetroidvania.Player.PlayerHealing
-  timeAbilityAction: {fileID: 11400000, guid: 308518e7faef59b4a9a4779fe67abe99, type: 2}
-  holdThreshold: 0.3
+  healAction: {fileID: 11400000, guid: c9a760812cea474aa0abb193b0032893, type: 2}
   healingDuration: 1.5
-  healingCost: 60
+  healingCost: 50
+  healingAmount: 1
   worldTime: {fileID: 0}
 --- !u!114 &1852312025697784682
 MonoBehaviour:
@@ -362,9 +370,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: TimeMetroidvania.Runtime::TimeMetroidvania.Player.PlayerTimeAbilities
   attackAction: {fileID: 11400000, guid: 86c7f08038af4b045a482dc851ec552c, type: 2}
+  timeAbilityAction: {fileID: 11400000, guid: 308518e7faef59b4a9a4779fe67abe99, type: 2}
   worldTime: {fileID: 0}
   slowChargeDuration: 1
-  attackTimeStopCost: 0.6
 --- !u!114 &1128528153573529990
 MonoBehaviour:
   m_ObjectHideFlags: 0

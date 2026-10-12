@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: d2e42ae1ac04dac4c996facf89b5d677
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8990495448977497134
+    second: Player_Idle_Layered_v03_0
+  - first:
+      213: -1668180026041882987
+    second: Player_Idle_Layered_v03_1
+  - first:
+      213: -8442162006299306828
+    second: Player_Idle_Layered_v03_2
+  - first:
+      213: -6271877079854329346
+    second: Player_Idle_Layered_v03_3
+  - first:
+      213: -6228487090374864059
+    second: Player_Idle_Layered_v03_4
+  - first:
+      213: 3302060377883138325
+    second: Player_Idle_Layered_v03_5
+  - first:
+      213: 932061620196206834
+    second: Player_Idle_Layered_v03_6
+  - first:
+      213: -8546878546742386560
+    second: Player_Idle_Layered_v03_7
+  - first:
+      213: 754840772787627493
+    second: Player_Idle_Layered_v03_8
+  - first:
+      213: -2030755346872785873
+    second: Player_Idle_Layered_v03_9
+  - first:
+      213: -6748312934111434359
+    second: Player_Idle_Layered_v03_10
+  - first:
+      213: -7253213752209802556
+    second: Player_Idle_Layered_v03_11
+  - first:
+      213: 1299547460679665580
+    second: Player_Idle_Layered_v03_12
+  - first:
+      213: 4996929563716664958
+    second: Player_Idle_Layered_v03_13
+  - first:
+      213: -505682361652201070
+    second: Player_Idle_Layered_v03_14
+  - first:
+      213: -396730970032648333
+    second: Player_Idle_Layered_v03_15
+  - first:
+      213: -7955112680366644832
+    second: Player_Idle_Layered_v03_16
+  - first:
+      213: -5805010474096346457
+    second: Player_Idle_Layered_v03_17
+  - first:
+      213: 4531959547974432523
+    second: Player_Idle_Layered_v03_18
+  - first:
+      213: 7395401258777708052
+    second: Player_Idle_Layered_v03_19
+  - first:
+      213: 5756874915653194079
+    second: IdleBody0
+  - first:
+      213: 4860279482132559697
+    second: IdleBody1
+  - first:
+      213: 7141361042781460443
+    second: IdleBody2
+  - first:
+      213: 2749630741240787598
+    second: IdleBody3
+  - first:
+      213: -1584854634705645274
+    second: StraightPointer
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IdleBody0
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 384
+        width: 220
+        height: 377
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f519ddb0c3784ef40800000000000000
+      internalID: 5756874915653194079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleBody1
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 384
+        width: 220
+        height: 376
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15771a9207e237340800000000000000
+      internalID: 4860279482132559697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleBody2
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 384
+        width: 222
+        height: 377
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd75dc728063b1360800000000000000
+      internalID: 7141361042781460443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleBody3
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 384
+        width: 221
+        height: 377
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e82b62b4796a82620800000000000000
+      internalID: 2749630741240787598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StraightPointer
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 445
+        width: 51
+        height: 274
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6211dbd4b17710ae0800000000000000
+      internalID: -1584854634705645274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      IdleBody0: 5756874915653194079
+      IdleBody1: 4860279482132559697
+      IdleBody2: 7141361042781460443
+      IdleBody3: 2749630741240787598
+      Player_Idle_Layered_v03_0: 8990495448977497134
+      Player_Idle_Layered_v03_1: -1668180026041882987
+      Player_Idle_Layered_v03_10: -6748312934111434359
+      Player_Idle_Layered_v03_11: -7253213752209802556
+      Player_Idle_Layered_v03_12: 1299547460679665580
+      Player_Idle_Layered_v03_13: 4996929563716664958
+      Player_Idle_Layered_v03_14: -505682361652201070
+      Player_Idle_Layered_v03_15: -396730970032648333
+      Player_Idle_Layered_v03_16: -7955112680366644832
+      Player_Idle_Layered_v03_17: -5805010474096346457
+      Player_Idle_Layered_v03_18: 4531959547974432523
+      Player_Idle_Layered_v03_19: 7395401258777708052
+      Player_Idle_Layered_v03_2: -8442162006299306828
+      Player_Idle_Layered_v03_3: -6271877079854329346
+      Player_Idle_Layered_v03_4: -6228487090374864059
+      Player_Idle_Layered_v03_5: 3302060377883138325
+      Player_Idle_Layered_v03_6: 932061620196206834
+      Player_Idle_Layered_v03_7: -8546878546742386560
+      Player_Idle_Layered_v03_8: 754840772787627493
+      Player_Idle_Layered_v03_9: -2030755346872785873
+      StraightPointer: -1584854634705645274
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

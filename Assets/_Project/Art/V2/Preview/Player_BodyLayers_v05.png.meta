@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: c1e079dae8cfbfe4c8fdfe7f4520e43c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1185971281738985804
+    second: Player_BodyLayers_v05_0
+  - first:
+      213: -845205520502550329
+    second: Player_BodyLayers_v05_1
+  - first:
+      213: -3960371010360630137
+    second: Player_BodyLayers_v05_2
+  - first:
+      213: -259155076820359387
+    second: Player_BodyLayers_v05_3
+  - first:
+      213: 8907930043956673985
+    second: Player_BodyLayers_v05_4
+  - first:
+      213: 6505322629362477281
+    second: Player_BodyLayers_v05_5
+  - first:
+      213: 5796482687310477477
+    second: Player_BodyLayers_v05_6
+  - first:
+      213: 1743041751179653983
+    second: Player_BodyLayers_v05_7
+  - first:
+      213: 6004174594281933848
+    second: Player_BodyLayers_v05_8
+  - first:
+      213: 3752779601392361625
+    second: Player_BodyLayers_v05_9
+  - first:
+      213: -6600101541047160776
+    second: Player_BodyLayers_v05_10
+  - first:
+      213: -7626086134011723659
+    second: Player_BodyLayers_v05_11
+  - first:
+      213: -3758182697114959197
+    second: Player_BodyLayers_v05_12
+  - first:
+      213: 678622098417235268
+    second: Player_BodyLayers_v05_13
+  - first:
+      213: -6540131660123216748
+    second: Player_BodyLayers_v05_14
+  - first:
+      213: 1838900838687818413
+    second: Player_BodyLayers_v05_15
+  - first:
+      213: -8720698409703647949
+    second: Player_BodyLayers_v05_16
+  - first:
+      213: -8609798146681194710
+    second: RunBody0
+  - first:
+      213: 9178859126439760265
+    second: RunBody1
+  - first:
+      213: 4177461223518048503
+    second: RunBody2
+  - first:
+      213: -7177325310921775565
+    second: RunBody3
+  - first:
+      213: 3391405754131641475
+    second: RunBody4
+  - first:
+      213: -4657915143278486373
+    second: RunBody5
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RunBody0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 248
+        height: 334
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a273047c33ad38880800000000000000
+      internalID: -8609798146681194710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunBody1
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 19
+        width: 285
+        height: 332
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9815bca6ebbd16f70800000000000000
+      internalID: 9178859126439760265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunBody2
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 19
+        width: 227
+        height: 344
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f013c289d259f930800000000000000
+      internalID: 4177461223518048503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunBody3
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 19
+        width: 237
+        height: 336
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336661528a4056c90800000000000000
+      internalID: -7177325310921775565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunBody4
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 19
+        width: 297
+        height: 324
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3847b30a091b01f20800000000000000
+      internalID: 3391405754131641475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunBody5
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 43
+        width: 243
+        height: 312
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c19fa1bd2cb5fb0800000000000000
+      internalID: -4657915143278486373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Player_BodyLayers_v05_0: -1185971281738985804
+      Player_BodyLayers_v05_1: -845205520502550329
+      Player_BodyLayers_v05_10: -6600101541047160776
+      Player_BodyLayers_v05_11: -7626086134011723659
+      Player_BodyLayers_v05_12: -3758182697114959197
+      Player_BodyLayers_v05_13: 678622098417235268
+      Player_BodyLayers_v05_14: -6540131660123216748
+      Player_BodyLayers_v05_15: 1838900838687818413
+      Player_BodyLayers_v05_16: -8720698409703647949
+      Player_BodyLayers_v05_2: -3960371010360630137
+      Player_BodyLayers_v05_3: -259155076820359387
+      Player_BodyLayers_v05_4: 8907930043956673985
+      Player_BodyLayers_v05_5: 6505322629362477281
+      Player_BodyLayers_v05_6: 5796482687310477477
+      Player_BodyLayers_v05_7: 1743041751179653983
+      Player_BodyLayers_v05_8: 6004174594281933848
+      Player_BodyLayers_v05_9: 3752779601392361625
+      RunBody0: -8609798146681194710
+      RunBody1: 9178859126439760265
+      RunBody2: 4177461223518048503
+      RunBody3: -7177325310921775565
+      RunBody4: 3391405754131641475
+      RunBody5: -4657915143278486373
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

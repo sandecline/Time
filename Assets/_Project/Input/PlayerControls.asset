@@ -62,6 +62,15 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
       m_Priority: 0
+    - m_Name: Heal
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 8133167b-a640-454b-991b-f76c1bb86885
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+      m_Priority: 0
     m_Bindings:
     - m_Name: WASD
       m_Id: 1acc1ded-8e16-4404-8814-d74b30babc8e
@@ -215,5 +224,21 @@ MonoBehaviour:
       m_Groups: 
       m_Action: TimeAbility
       m_Flags: 0
-  m_ControlSchemes: []
+    - m_Name:
+      m_Id: 2883d67a-5a98-41eb-9dba-1fae69c334b3
+      m_Path: <Keyboard>/u
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Heal
+      m_Flags: 0
+    - m_Name:
+      m_Id: 9f8f1960-1e2d-4d7d-82fb-10ddeb08e98c
+      m_Path: <Gamepad>/leftShoulder
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Heal
+      m_Flags: 0
+    m_ControlSchemes: []
   m_IsProjectWide: 0

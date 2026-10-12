@@ -20,8 +20,50 @@ namespace TimeMetroidvania.Level
         [SerializeField] private SpriteRenderer lockedBlockerRenderer;
         [SerializeField] private Collider2D bossBattleBlocker;
         [SerializeField] private SpriteRenderer bossBattleBlockerRenderer;
+        [SerializeField] private Vector2 destinationVelocity;
+        [SerializeField] private bool preserveHorizontalDirection;
 
+        [SerializeField] private Vector2 outwardNormal = Vector2.right;
+        [SerializeField] private StageFiveDoor pairedDoor;
+        [SerializeField, Min(0f)] private float crossingMargin = 0.025f;
         private GameObject nearbyPlayer;
+        private Collider2D playerCollider;
+        private float previousTrailing;
+        private bool sampled;
+        public Vector2 OutwardNormal => outwardNormal;
+        public StageFiveDoor PairedDoor => pairedDoor;
+        public Transform Destination => destination;
+        public void ConfigureBoundary(Vector2 normal, StageFiveDoor pair)
+        {
+            outwardNormal = normal.normalized;
+            pairedDoor = pair;
+        }
+
+        private void FixedUpdate()
+        {
+            if (level == null || level.CurrentRoomId != sourceRoomId) { sampled = false; return; }
+            if (playerCollider == null)
+                playerCollider = GameObject.FindGameObjectWithTag("Player")?.GetComponent<Collider2D>();
+            if (playerCollider == null) return;
+            Bounds bounds = playerCollider.bounds;
+            float trailing = TrailingDistance(bounds, transform.position, outwardNormal);
+            if (sampled && previousTrailing <= crossingMargin && trailing > crossingMargin)
+                TryTravel(playerCollider.gameObject);
+            previousTrailing = trailing;
+            sampled = true;
+        }
+
+        internal static float TrailingDistance(Bounds bounds, Vector2 center, Vector2 normal)
+            => Vector2.Dot((Vector2)bounds.center - center, normal)
+                - Mathf.Abs(normal.x) * bounds.extents.x - Mathf.Abs(normal.y) * bounds.extents.y;
+
+        internal static bool FitsOpening(Bounds actor, Bounds opening, Vector2 normal)
+        {
+            bool horizontal = Mathf.Abs(normal.x) > 0.5f;
+            return horizontal
+                ? actor.min.y >= opening.min.y - 0.03f && actor.max.y <= opening.max.y + 0.03f
+                : actor.min.x >= opening.min.x - 0.03f && actor.max.x <= opening.max.x + 0.03f;
+        }
 
         public string DestinationRoomId => destinationRoomId;
         public string SourceRoomId => sourceRoomId;
@@ -29,7 +71,8 @@ namespace TimeMetroidvania.Level
         public bool IsBossBattleBlocked => IsBossDoor
             && level != null
             && level.BossBattleActive;
-        private bool IsBossDoor => sourceRoomId == "R7" || destinationRoomId == "R7";
+        private bool IsBossDoor => level != null
+            && (level.IsBossRoom(sourceRoomId) || level.IsBossRoom(destinationRoomId));
 
         private void Awake()
         {
@@ -53,6 +96,12 @@ namespace TimeMetroidvania.Level
             lockedBlockerRenderer = blocker?.GetComponent<SpriteRenderer>();
             CacheBlockerReferences();
             UpdateBlocker();
+        }
+
+        public void ConfigureExitMotion(Vector2 velocity, bool preserveDirection)
+        {
+            destinationVelocity = velocity;
+            preserveHorizontalDirection = preserveDirection;
         }
 
         public void ConfigureBossBattleBlocker(
@@ -113,7 +162,7 @@ namespace TimeMetroidvania.Level
             if (other.CompareTag("Player"))
             {
                 nearbyPlayer = other.gameObject;
-                TryTravel(nearbyPlayer);
+                // 仅记录接近状态，身体越过边界由 FixedUpdate 判断。
             }
         }
 
@@ -121,7 +170,7 @@ namespace TimeMetroidvania.Level
         {
             if (other.CompareTag("Player"))
             {
-                TryTravel(other.gameObject);
+                nearbyPlayer = other.gameObject;
             }
         }
 
@@ -136,11 +185,18 @@ namespace TimeMetroidvania.Level
         public bool TryTravel(GameObject actor)
         {
             if (actor == null || !actor.CompareTag("Player") || destination == null
-                || Vector2.Distance(actor.transform.position, transform.position) > 2f
+                || level == null || level.CurrentRoomId != sourceRoomId
                 || actor.TryGetComponent(out HealthSystem health) && health.IsDead)
             {
                 return false;
             }
+
+            Collider2D actorShape = actor.GetComponent<Collider2D>();
+            if (actorShape == null) return false;
+            float trailing = TrailingDistance(actorShape.bounds, transform.position, outwardNormal);
+            if (trailing <= crossingMargin || trailing > 2f
+                || !FitsOpening(actorShape.bounds, GetComponent<BoxCollider2D>().bounds, outwardNormal))
+                return false;
 
             if (requiresTimeStopUnlock && !level.WorldTime.IsTimeStopUnlocked)
             {
@@ -160,9 +216,31 @@ namespace TimeMetroidvania.Level
             }
 
             Rigidbody2D body = actor.GetComponent<Rigidbody2D>();
+            float horizontalSign = actor.GetComponent<PlayerMovement>()?.FacingDirection ?? 1;
+            Vector2 arrival = destination.position;
+            if (pairedDoor != null)
+            {
+                // 保存穿口时的相对高度或横向位置，避免每次被吸到入口正中心。
+                Vector2 tangent = Mathf.Abs(outwardNormal.x) > 0.5f ? Vector2.up : Vector2.right;
+                Bounds opening = pairedDoor.GetComponent<BoxCollider2D>().bounds;
+                float actorHalf = Mathf.Abs(outwardNormal.x) > 0.5f ? actorShape.bounds.extents.y : actorShape.bounds.extents.x;
+                float openingHalf = Mathf.Abs(outwardNormal.x) > 0.5f ? opening.extents.y : opening.extents.x;
+                float offset = Vector2.Dot((Vector2)actorShape.bounds.center - (Vector2)transform.position, tangent);
+                arrival += tangent * Mathf.Clamp(offset, -Mathf.Max(0f, openingHalf - actorHalf - 0.04f),
+                    Mathf.Max(0f, openingHalf - actorHalf - 0.04f));
+            }
+            Vector2 exitVelocity = Mathf.Abs(outwardNormal.x) > 0.5f
+                ? body.linearVelocity : destinationVelocity;
+            if (preserveHorizontalDirection && Mathf.Abs(exitVelocity.x) > 0f)
+            {
+                exitVelocity.x = Mathf.Abs(exitVelocity.x)
+                    * (Mathf.Abs(horizontalSign) > 0f ? horizontalSign : 1f);
+            }
             body.linearVelocity = Vector2.zero;
-            body.position = destination.position;
-            actor.transform.position = destination.position;
+            V2TimeStopWater.ReleasePlayer(actor);
+            body.position = arrival;
+            actor.transform.position = arrival;
+            body.linearVelocity = exitVelocity;
             nearbyPlayer = null;
             level.TransitionRoom(sourceRoomId, destinationRoomId);
             level.SnapCamera();

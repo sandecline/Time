@@ -166,10 +166,7 @@ namespace TimeMetroidvania.Presentation
                 return;
             }
 
-            Sprite[] impact = prepareAttack != null && prepareAttack.Length > 0
-                ? prepareAttack
-                : attack;
-            framePlayer.PlayNormalized(targetRenderer, impact, 1f);
+            framePlayer.PlayNormalized(targetRenderer, attack, brain.AttackRecoveryProgress);
         }
     }
 }

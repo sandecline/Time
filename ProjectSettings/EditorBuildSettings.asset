@@ -6,17 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Project/Scenes/Prototype/MovementPrototype.unity
-    guid: 0b588d2b07ca08346889ead1239b6b8e
-  - enabled: 1
-    path: Assets/_Project/Scenes/Prototype/CombatPrototype.unity
-    guid: 920d0092f8fbe174989a3f46eba736c6
-  - enabled: 1
-    path: Assets/_Project/Scenes/Prototype/EnemyEncounter.unity
-    guid: 17704403f502e024ca7b41af2177cfa8
-  - enabled: 1
-    path: Assets/_Project/Scenes/Prototype/SevenRoomSlice.unity
-    guid: e5331bfa1c614d34294e17b7f3478627
+    path: Assets/_Project/Scenes/V2/EightRoomArtPreview.unity
+    guid: a0777ee80eaa0d34ea6581a05b248128
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -10,11 +10,13 @@ namespace TimeMetroidvania.Tests
         [TestCase(PlayerState.Attack, false, 0f, true)]
         [TestCase(PlayerState.Attack, true, 2f, true)]
         [TestCase(PlayerState.Attack, true, 0f, true)]
+        [TestCase(PlayerState.Healing, true, 0f, true)]
+        [TestCase(PlayerState.Healing, true, 1f, false)]
         [TestCase(PlayerState.Healing, false, 0f, false)]
         [TestCase(PlayerState.Dash, false, 0f, false)]
         [TestCase(PlayerState.Hurt, false, 0f, false)]
         [TestCase(PlayerState.Dead, false, 0f, false)]
-        public void 正常状态与地面空中平砍均允许移动(
+        public void 状态与着地条件决定是否允许移动(
             PlayerState state, bool grounded, float verticalVelocity, bool expected)
         {
             Assert.That(

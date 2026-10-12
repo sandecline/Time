@@ -17,6 +17,7 @@ namespace TimeMetroidvania.Player
         [SerializeField, Min(0f)] private float airAcceleration = 55f;
         [SerializeField, Min(0f)] private float airDeceleration = 45f;
         [SerializeField, Range(0.1f, 1f)] private float attackMoveMultiplier = 0.88f;
+        [SerializeField, Range(0.1f, 1f)] private float healingMoveMultiplier = 0.65f;
 
         [Header("跳跃")]
         [SerializeField, Min(0f)] private float jumpSpeed = 12f;
@@ -36,8 +37,10 @@ namespace TimeMetroidvania.Player
         private float jumpBufferCounter;
         private bool jumpReleased;
         private bool isGrounded;
+        private bool pogoAscending;
 
         public bool IsGrounded => isGrounded;
+        public float VerticalInput { get; private set; }
         public int FacingDirection { get; private set; } = 1;
 
         private void Awake()
@@ -87,19 +90,23 @@ namespace TimeMetroidvania.Player
             if (!CanControlMovement(stateMachine.CurrentState, isGrounded, body.linearVelocity.y))
             {
                 horizontalInput = 0f;
+                VerticalInput = 0f;
                 jumpBufferCounter = 0f;
                 jumpReleased = false;
                 return;
             }
 
-            horizontalInput = moveAction.action.ReadValue<Vector2>().x;
+            Vector2 moveInput = moveAction.action.ReadValue<Vector2>();
+            horizontalInput = moveInput.x;
+            VerticalInput = moveInput.y;
 
             if (Mathf.Abs(horizontalInput) > 0.01f)
             {
                 FacingDirection = horizontalInput > 0f ? 1 : -1;
             }
 
-            if (jumpAction.action.WasPressedThisFrame())
+            if (stateMachine.CurrentState != PlayerState.Healing
+                && jumpAction.action.WasPressedThisFrame())
             {
                 jumpBufferCounter = jumpBufferTime;
             }
@@ -116,11 +123,22 @@ namespace TimeMetroidvania.Player
 
         private void FixedUpdate()
         {
+            if (TimeMetroidvania.Level.V2TimeStopWater.IsPlayerFrozen(gameObject))
+            {
+                pogoAscending = false;
+                jumpBufferCounter = 0f;
+                body.linearVelocity = Vector2.zero;
+                return;
+            }
             isGrounded = Physics2D.OverlapBox(
                 groundCheck.position,
                 groundCheckSize,
                 0f,
                 groundLayer);
+            if (isGrounded || body.linearVelocity.y <= 0f
+                || stateMachine.CurrentState is PlayerState.Dash or PlayerState.Hurt
+                    or PlayerState.Dead or PlayerState.Healing)
+                pogoAscending = false;
 
             if (!CanControlMovement(stateMachine.CurrentState, isGrounded, body.linearVelocity.y))
             {
@@ -148,9 +166,12 @@ namespace TimeMetroidvania.Player
                 coyoteTimeCounter -= Time.fixedDeltaTime;
             }
 
-            float movementMultiplier = stateMachine.CurrentState == PlayerState.Attack
-                ? attackMoveMultiplier
-                : 1f;
+            float movementMultiplier = stateMachine.CurrentState switch
+            {
+                PlayerState.Attack => attackMoveMultiplier,
+                PlayerState.Healing => healingMoveMultiplier,
+                _ => 1f
+            };
             float targetSpeed = horizontalInput * moveSpeed * movementMultiplier;
             float acceleration = isGrounded
                 ? Mathf.Abs(targetSpeed) > 0.01f
@@ -166,12 +187,13 @@ namespace TimeMetroidvania.Player
 
             if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
             {
+                pogoAscending = false;
                 velocity.y = jumpSpeed;
                 jumpBufferCounter = 0f;
                 coyoteTimeCounter = 0f;
             }
 
-            if (jumpReleased && velocity.y > 0f)
+            if (jumpReleased && velocity.y > 0f && !pogoAscending)
             {
                 velocity.y *= jumpCutMultiplier;
             }
@@ -190,11 +212,37 @@ namespace TimeMetroidvania.Player
             body.linearVelocity = velocity;
         }
 
+        /// <summary>
+        /// 下劈命中有效目标后施加稳定的向上反弹，不改变水平速度。
+        /// </summary>
+        public void ApplyPogoBounce(float upwardSpeed)
+        {
+            if (body == null || upwardSpeed <= 0f)
+            {
+                return;
+            }
+
+            Vector2 velocity = body.linearVelocity;
+            velocity.y = Mathf.Max(velocity.y, upwardSpeed);
+            body.linearVelocity = velocity;
+            isGrounded = false;
+            pogoAscending = true;
+            GetComponent<PlayerDash>()?.ResetAirDash();
+            coyoteTimeCounter = 0f;
+            jumpBufferCounter = 0f;
+            jumpReleased = false;
+        }
+
         internal static bool CanControlMovement(
             PlayerState state, bool grounded, float verticalVelocity)
         {
-            // 地面与空中平砍均保留方向控制，攻击只轻微降低移动速度。
-            return state is PlayerState.Normal or PlayerState.Attack;
+            // 攻击保留完整方向控制；治疗只能在地面以较低速度水平移动。
+            return state switch
+            {
+                PlayerState.Normal or PlayerState.Attack => true,
+                PlayerState.Healing => grounded && verticalVelocity <= 0.1f,
+                _ => false
+            };
         }
 
         private void OnDrawGizmosSelected()

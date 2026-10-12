@@ -1,3 +1,4 @@
+using TimeMetroidvania.Player;
 using UnityEngine;
 
 namespace TimeMetroidvania.GameTime
@@ -19,11 +20,17 @@ namespace TimeMetroidvania.GameTime
         private Vector2 savedVelocity;
         private float savedAngularVelocity;
         private bool rigidbodyFrozen;
+        private HitStopController hitStop;
 
         public bool IsTimeResistant => timeResistant;
         public float CurrentTimeScale { get; private set; } = 1f;
-        public float LocalDeltaTime => UnityEngine.Time.deltaTime * CurrentTimeScale;
-        public float LocalFixedDeltaTime => UnityEngine.Time.fixedDeltaTime * CurrentTimeScale;
+        public bool IsHitStopped => ResolveHitStop() != null && hitStop.IsPaused;
+        public float LocalDeltaTime => IsHitStopped
+            ? 0f
+            : UnityEngine.Time.deltaTime * CurrentTimeScale;
+        public float LocalFixedDeltaTime => IsHitStopped
+            ? 0f
+            : UnityEngine.Time.fixedDeltaTime * CurrentTimeScale;
 
         public void SetTimeResistance(bool resistant)
         {
@@ -72,12 +79,18 @@ namespace TimeMetroidvania.GameTime
         {
             animator = GetComponent<Animator>();
             body = GetComponent<Rigidbody2D>();
+            hitStop = GetComponent<HitStopController>();
         }
 
         private void OnEnable()
         {
             worldTime ??= FindFirstObjectByType<WorldTimeService>();
             worldTime?.Register(this);
+        }
+
+        private void Update()
+        {
+            UpdateAnimatorSpeed();
         }
 
         private void OnDisable()
@@ -90,10 +103,7 @@ namespace TimeMetroidvania.GameTime
         {
             CurrentTimeScale = timeResistant ? 1f : Mathf.Clamp01(timeScale);
 
-            if (controlAnimator && animator != null)
-            {
-                animator.speed = CurrentTimeScale;
-            }
+            UpdateAnimatorSpeed();
 
             if (!freezeRigidbodyDuringStop || body == null)
             {
@@ -107,6 +117,20 @@ namespace TimeMetroidvania.GameTime
             else
             {
                 RestoreRigidbody();
+            }
+        }
+
+        private HitStopController ResolveHitStop()
+        {
+            hitStop ??= GetComponent<HitStopController>();
+            return hitStop;
+        }
+
+        private void UpdateAnimatorSpeed()
+        {
+            if (controlAnimator && animator != null)
+            {
+                animator.speed = IsHitStopped ? 0f : CurrentTimeScale;
             }
         }
 

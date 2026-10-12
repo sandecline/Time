@@ -1,6 +1,8 @@
 using TimeMetroidvania.GameTime;
 using TimeMetroidvania.Player;
+using TimeMetroidvania.Presentation;
 using UnityEngine;
+using TimeMetroidvania.Enemy;
 
 namespace TimeMetroidvania.Enemy
 {
@@ -16,6 +18,8 @@ namespace TimeMetroidvania.Enemy
         private ProjectilePool pool;
         private LocalTimeController localTime;
         private Rigidbody2D body;
+        private SpriteRenderer sprite;
+        private WorldTimeService worldTime;
         private Vector2 direction;
         private float remaining;
 
@@ -23,6 +27,8 @@ namespace TimeMetroidvania.Enemy
         {
             localTime = GetComponent<LocalTimeController>();
             body = GetComponent<Rigidbody2D>();
+            sprite = GetComponentInChildren<SpriteRenderer>();
+            worldTime = FindFirstObjectByType<WorldTimeService>();
         }
 
         internal void Launch(ProjectilePool owner, Vector2 origin, Vector2 travelDirection)
@@ -42,7 +48,13 @@ namespace TimeMetroidvania.Enemy
             {
                 return;
             }
-            body.MovePosition(body.position + direction * (speed * delta));
+            Vector2 next = body.position + direction * (speed * delta);
+            if (WorldCollision2D.Blocks(body.position, next, 0.2f))
+            {
+                pool.Recycle(this);
+                return;
+            }
+            body.MovePosition(next);
             remaining -= delta;
             if (remaining <= 0f)
             {
@@ -52,6 +64,11 @@ namespace TimeMetroidvania.Enemy
 
         private void OnTriggerEnter2D(Collider2D other)
         {
+            if (!other.isTrigger && other.gameObject.layer == LayerMask.NameToLayer("Ground"))
+            {
+                pool.Recycle(this);
+                return;
+            }
             if (!other.CompareTag("Player"))
             {
                 return;
@@ -68,6 +85,7 @@ namespace TimeMetroidvania.Enemy
             {
                 return false;
             }
+            TimeStopProjectileShatter.TryCreate(sprite, worldTime);
             pool.Recycle(this);
             return true;
         }

@@ -3,46 +3,33 @@ using UnityEngine;
 namespace TimeMetroidvania.GameTime
 {
     /// <summary>
-    /// 记录单次时停的成本、最大时长、剩余时长与提前结束返还。
+    /// 记录单次时停实际消耗的能量，以及恢复时间时待结算的时间回声。
     /// </summary>
     public sealed class TimeStopSession
     {
-        public TimeStopSession(float startCost, float maxDuration)
-        {
-            StartCost = Mathf.Max(0f, startCost);
-            MaxDuration = Mathf.Max(0.01f, maxDuration);
-            RemainingDuration = MaxDuration;
-        }
+        public float EnergySpent { get; private set; }
+        public float PendingEcho { get; private set; }
 
-        public float StartCost { get; }
-        public float MaxDuration { get; }
-        public float RemainingDuration { get; private set; }
-        public bool IsExpired => RemainingDuration <= 0f;
-
-        public void Advance(float unscaledDeltaTime)
+        public void RecordEnergySpent(float amount)
         {
-            if (unscaledDeltaTime <= 0f)
+            if (amount > 0f)
             {
-                return;
+                EnergySpent += amount;
             }
-
-            RemainingDuration = Mathf.Max(0f, RemainingDuration - unscaledDeltaTime);
         }
 
-        public void ConsumeAttackTime(float duration)
+        public void AddEcho(float normalGain, float echoRatio)
         {
-            if (duration <= 0f)
+            if (normalGain > 0f && echoRatio > 0f)
             {
-                return;
+                PendingEcho += normalGain * echoRatio;
             }
-
-            RemainingDuration = Mathf.Max(0f, RemainingDuration - duration);
         }
 
-        public int CalculateEarlyEndRefund()
+        public float CalculateEcho(float maximumSpentRatio)
         {
-            float ratio = RemainingDuration / MaxDuration;
-            return Mathf.FloorToInt(StartCost * Mathf.Clamp01(ratio));
+            float maximum = EnergySpent * Mathf.Clamp01(maximumSpentRatio);
+            return Mathf.Min(PendingEcho, maximum);
         }
     }
 }

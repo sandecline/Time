@@ -54,7 +54,7 @@ namespace TimeMetroidvania.Presentation
             }
             else if (brain.Kind == EnemyKind.ClockworkBug)
             {
-                DrawChargeWedge();
+                DrawChargeLane();
             }
             else
             {
@@ -66,39 +66,56 @@ namespace TimeMetroidvania.Presentation
         {
             Vector2 origin = transform.position;
             Vector2 range = brain.MeleeHitRange;
-            float endX = origin.x + brain.FacingDirection * range.x;
+            float inset = warningLine.widthMultiplier * 0.5f;
+            // 守卫的实际判定从身体前方 0.15 单位开始。
+            float startX = origin.x + brain.FacingDirection * (0.15f + inset);
+            float endX = origin.x + brain.FacingDirection * (0.15f + range.x - inset);
             warningLine.positionCount = PolygonPointCount;
             warningLine.loop = true;
-            warningLine.SetPosition(0, new Vector2(origin.x, origin.y - range.y));
-            warningLine.SetPosition(1, new Vector2(endX, origin.y - range.y));
-            warningLine.SetPosition(2, new Vector2(endX, origin.y + range.y));
-            warningLine.SetPosition(3, new Vector2(origin.x, origin.y + range.y));
+            warningLine.SetPosition(0, new Vector2(startX, origin.y - range.y + inset));
+            warningLine.SetPosition(1, new Vector2(endX, origin.y - range.y + inset));
+            warningLine.SetPosition(2, new Vector2(endX, origin.y + range.y - inset));
+            warningLine.SetPosition(3, new Vector2(startX, origin.y + range.y - inset));
         }
 
-        private void DrawChargeWedge()
+        private void DrawChargeLane()
         {
-            Vector2 origin = transform.position;
-            float endX = origin.x + brain.FacingDirection * brain.MeleeHitRange.x;
+            Collider2D body = GetComponent<Collider2D>();
+            if (body == null)
+            {
+                warningLine.enabled = false;
+                return;
+            }
+
+            Bounds bounds = body.bounds;
+            float inset = warningLine.widthMultiplier * 0.5f;
+            float startX = brain.FacingDirection > 0
+                ? bounds.min.x + inset
+                : bounds.max.x - inset;
+            float endX = brain.FacingDirection > 0
+                ? bounds.max.x + brain.ChargeDistance - inset
+                : bounds.min.x - brain.ChargeDistance + inset;
+            // 虫子的伤害来自身体接触，预警覆盖整个冲锋期间身体扫过的范围。
             warningLine.positionCount = PolygonPointCount;
             warningLine.loop = true;
-            warningLine.SetPosition(0, origin + Vector2.up * 0.38f);
-            warningLine.SetPosition(1, new Vector2(endX, origin.y));
-            warningLine.SetPosition(2, origin + Vector2.down * 0.38f);
-            warningLine.SetPosition(3, origin + new Vector2(brain.FacingDirection * 0.28f, 0f));
+            warningLine.SetPosition(0, new Vector2(startX, bounds.min.y + inset));
+            warningLine.SetPosition(1, new Vector2(endX, bounds.min.y + inset));
+            warningLine.SetPosition(2, new Vector2(endX, bounds.max.y - inset));
+            warningLine.SetPosition(3, new Vector2(startX, bounds.max.y - inset));
         }
 
         private void DrawAimLane()
         {
-            Vector2 origin = (Vector2)transform.position
-                + new Vector2(brain.FacingDirection * 0.45f, 0.15f);
-            Vector2 target = brain.TargetPosition;
+            Vector2 origin = brain.RangedShotOrigin;
+            Vector2 target = brain.LockedAim;
             Vector2 direction = (target - origin).normalized;
             if (direction.sqrMagnitude <= 0.001f)
             {
                 direction = Vector2.right * brain.FacingDirection;
             }
             Vector2 side = new(-direction.y, direction.x);
-            float halfWidth = 0.09f;
+            float halfWidth = Mathf.Max(0f,
+                ProjectilePool.HitRadius - warningLine.widthMultiplier * 0.5f);
             warningLine.positionCount = PolygonPointCount;
             warningLine.loop = true;
             warningLine.SetPosition(0, origin + side * halfWidth);

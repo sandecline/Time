@@ -1,0 +1,405 @@
+fileFormatVersion: 2
+guid: 698f77a110742784285674a0357dbd9f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5952205322022446952
+    second: Player_Air_Dash_Clean_v02_0
+  - first:
+      213: -4688281453081915872
+    second: Player_Air_Dash_Clean_v02_1
+  - first:
+      213: 4001147946286413784
+    second: Player_Air_Dash_Clean_v02_2
+  - first:
+      213: 6367481890419523907
+    second: Player_Air_Dash_Clean_v02_3
+  - first:
+      213: -1407102556736914487
+    second: Player_Air_Dash_Clean_v02_4
+  - first:
+      213: -6486293072035338039
+    second: Player_Air_Dash_Clean_v02_5
+  - first:
+      213: 1917845821190190601
+    second: Player_Air_Dash_Clean_v02_6
+  - first:
+      213: -8111732275573894657
+    second: Player_Air_Dash_Clean_v02_7
+  - first:
+      213: -7091550539934076943
+    second: Player_Air_Dash_Clean_v02_8
+  - first:
+      213: -4322883484049886590
+    second: Player_Air_Dash_Clean_v02_9
+  - first:
+      213: 402157162672683092
+    second: Player_Air_Dash_Clean_v02_10
+  - first:
+      213: -1358610674017354306
+    second: Player_Air_Dash_Clean_v02_11
+  - first:
+      213: -1869385688742453222
+    second: Player_Air_Dash_Clean_v02_12
+  - first:
+      213: 9039455523827143405
+    second: Player_Air_Dash_Clean_v02_13
+  - first:
+      213: 6757734199825346999
+    second: Player_Air_Dash_Clean_v02_14
+  - first:
+      213: -7168705921079569953
+    second: Player_Air_Dash_Clean_v02_15
+  - first:
+      213: -6772532953369083160
+    second: Player_Air_Dash_Clean_v02_16
+  - first:
+      213: 9198529019016497227
+    second: Player_Air_Dash_Clean_v02_17
+  - first:
+      213: -5613998656305658642
+    second: Player_Air_Dash_Clean_v02_18
+  - first:
+      213: -7164336028886695147
+    second: Player_Air_Dash_Clean_v02_19
+  - first:
+      213: -871155624908712771
+    second: JumpRise
+  - first:
+      213: -228368356650814422
+    second: Dash0
+  - first:
+      213: -3312562724916090795
+    second: JumpApex
+  - first:
+      213: -5956234547014544000
+    second: Dash1
+  - first:
+      213: -2356193523792301532
+    second: Fall
+  - first:
+      213: 1080965750916303531
+    second: Dash2
+  - first:
+      213: 3960573686070613832
+    second: LandingDraft
+  - first:
+      213: -5299324445090399012
+    second: Dash3
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JumpRise
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 431
+        width: 265
+        height: 403
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db49b31239809e3f0800000000000000
+      internalID: -871155624908712771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 37
+        width: 354
+        height: 329
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2473e7803ca4dcf0800000000000000
+      internalID: -228368356650814422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpApex
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 476
+        width: 266
+        height: 348
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5582d2d90c96702d0800000000000000
+      internalID: -3312562724916090795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash1
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 33
+        width: 346
+        height: 333
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085d94aac34375da0800000000000000
+      internalID: -5956234547014544000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fall
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 443
+        width: 279
+        height: 365
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422b848497e1d4fd0800000000000000
+      internalID: -2356193523792301532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash2
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 31
+        width: 360
+        height: 335
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baacabd8f9c500f00800000000000000
+      internalID: 1080965750916303531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDraft
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 392
+        width: 280
+        height: 268
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8479ff098c8c6f630800000000000000
+      internalID: 3960573686070613832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash3
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 33
+        width: 349
+        height: 333
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdcb7d48e740576b0800000000000000
+      internalID: -5299324445090399012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dash0: -228368356650814422
+      Dash1: -5956234547014544000
+      Dash2: 1080965750916303531
+      Dash3: -5299324445090399012
+      Fall: -2356193523792301532
+      JumpApex: -3312562724916090795
+      JumpRise: -871155624908712771
+      LandingDraft: 3960573686070613832
+      Player_Air_Dash_Clean_v02_0: -5952205322022446952
+      Player_Air_Dash_Clean_v02_1: -4688281453081915872
+      Player_Air_Dash_Clean_v02_10: 402157162672683092
+      Player_Air_Dash_Clean_v02_11: -1358610674017354306
+      Player_Air_Dash_Clean_v02_12: -1869385688742453222
+      Player_Air_Dash_Clean_v02_13: 9039455523827143405
+      Player_Air_Dash_Clean_v02_14: 6757734199825346999
+      Player_Air_Dash_Clean_v02_15: -7168705921079569953
+      Player_Air_Dash_Clean_v02_16: -6772532953369083160
+      Player_Air_Dash_Clean_v02_17: 9198529019016497227
+      Player_Air_Dash_Clean_v02_18: -5613998656305658642
+      Player_Air_Dash_Clean_v02_19: -7164336028886695147
+      Player_Air_Dash_Clean_v02_2: 4001147946286413784
+      Player_Air_Dash_Clean_v02_3: 6367481890419523907
+      Player_Air_Dash_Clean_v02_4: -1407102556736914487
+      Player_Air_Dash_Clean_v02_5: -6486293072035338039
+      Player_Air_Dash_Clean_v02_6: 1917845821190190601
+      Player_Air_Dash_Clean_v02_7: -8111732275573894657
+      Player_Air_Dash_Clean_v02_8: -7091550539934076943
+      Player_Air_Dash_Clean_v02_9: -4322883484049886590
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

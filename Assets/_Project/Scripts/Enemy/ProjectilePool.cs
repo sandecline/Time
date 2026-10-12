@@ -8,6 +8,7 @@ namespace TimeMetroidvania.Enemy
     /// </summary>
     public sealed class ProjectilePool : MonoBehaviour
     {
+        public const float HitRadius = 0.2f;
         [SerializeField, Min(1)] private int capacity = 12;
         [SerializeField] private Sprite projectileSprite;
         [SerializeField] private WorldTimeService worldTime;
@@ -29,7 +30,8 @@ namespace TimeMetroidvania.Enemy
 
                 GameObject visual = new("Visual");
                 visual.transform.SetParent(shot.transform, false);
-                visual.transform.localScale = Vector3.one * 0.06f;
+                float visualWidth = projectileSprite != null ? projectileSprite.bounds.size.x : 1f;
+                visual.transform.localScale = Vector3.one * (0.35f / Mathf.Max(0.01f, visualWidth));
                 SpriteRenderer sprite = visual.AddComponent<SpriteRenderer>();
                 sprite.sprite = projectileSprite;
                 sprite.color = Color.white;
@@ -37,7 +39,7 @@ namespace TimeMetroidvania.Enemy
 
                 CircleCollider2D collider = shot.AddComponent<CircleCollider2D>();
                 collider.isTrigger = true;
-                collider.radius = 0.2f;
+                collider.radius = HitRadius;
                 Rigidbody2D body = shot.AddComponent<Rigidbody2D>();
                 body.bodyType = RigidbodyType2D.Kinematic;
                 body.gravityScale = 0f;

@@ -21,6 +21,10 @@ namespace TimeMetroidvania.Level
         [SerializeField] private bool bossDefeated;
         [SerializeField] private bool bossBattleActive;
         [SerializeField] private bool showHud = true;
+        [SerializeField] private Sprite hudPanelSprite;
+        [SerializeField, Min(1)] private int roomCount = 7;
+        [SerializeField] private string bossRoomId = "R7";
+        [SerializeField] private bool useV2Objectives;
 
         private string feedback;
         private float feedbackUntil;
@@ -28,12 +32,15 @@ namespace TimeMetroidvania.Level
         private int promptFrame = -1;
         private int promptPriority;
         private GUIStyle labelStyle;
+        private readonly System.Collections.Generic.HashSet<string> missingCameraBounds = new();
 
         public string CurrentRoomId => currentRoomId;
         public string ActiveCheckpointId => activeCheckpointId;
         public WorldTimeService WorldTime => worldTime;
+        public Transform PlayerTransform => playerHealth != null ? playerHealth.transform : null;
         public bool BossDefeated => bossDefeated;
         public bool BossBattleActive => bossBattleActive && !bossDefeated;
+        public string BossRoomId => bossRoomId;
         public string ObjectiveText => BuildObjectiveText();
         public string CurrentPrompt => promptFrame == Time.frameCount ? prompt : null;
         public string CurrentFeedback => Time.unscaledTime < feedbackUntil ? feedback : null;
@@ -57,9 +64,28 @@ namespace TimeMetroidvania.Level
             }
         }
 
+        public void ConfigureLayout(int totalRooms, string bossRoom, bool v2Objectives)
+        {
+            roomCount = Mathf.Max(1, totalRooms);
+            bossRoomId = string.IsNullOrWhiteSpace(bossRoom) ? "R7" : bossRoom;
+            useV2Objectives = v2Objectives;
+        }
+
+        public bool IsBossRoom(string roomId)
+        {
+            return !string.IsNullOrEmpty(roomId) && roomId == bossRoomId;
+        }
+
         private void OnEnable()
         {
             SubscribeHealth();
+        }
+
+        private void Start()
+        {
+            ApplyCameraBounds(currentRoomId);
+            cameraFollow?.SnapToTarget();
+            BindFlyingEnemies();
         }
 
         private void OnDisable()
@@ -85,6 +111,7 @@ namespace TimeMetroidvania.Level
 
         public void TransitionRoom(string sourceRoomId, string destinationRoomId)
         {
+            worldTime?.EndTimeStopForTransition();
             RefreshRoom(sourceRoomId);
             RefreshRoom(destinationRoomId);
             projectilePool?.ClearActive();
@@ -126,8 +153,11 @@ namespace TimeMetroidvania.Level
         public void EnterRoom(string roomId)
         {
             currentRoomId = roomId;
+            ApplyCameraBounds(roomId);
+            cameraFollow?.SnapToTarget();
+            BindFlyingEnemies();
             RoomEntered?.Invoke(roomId);
-            ShowMessage(roomId == "R7"
+            ShowMessage(IsBossRoom(roomId)
                 ? bossDefeated
                     ? "Boss 已被击败。"
                     : "Boss 场地已抵达；穿过场地中央开始战斗。"
@@ -139,7 +169,7 @@ namespace TimeMetroidvania.Level
             bossDefeated = true;
             bossBattleActive = false;
             projectilePool?.ClearActive();
-            ShowMessage("Boss 已击败！测试流程完成，本次运行不会写入存档。");
+            ShowMessage("Boss 已击败！试玩流程完成，本次运行不会写入存档。");
             BossDefeatedConfirmed?.Invoke();
         }
 
@@ -162,6 +192,7 @@ namespace TimeMetroidvania.Level
             activeCheckpointId = checkpointId;
             checkpointRoomId = roomId;
             playerHealth.SetRespawnPoint(position);
+            playerHealth.RestoreToFull();
             RefreshArea(roomId);
             projectilePool?.ClearActive();
             ShowMessage($"已坐下休息：{checkpointId}，本区域敌人已重置（仅本次运行有效）");
@@ -176,6 +207,35 @@ namespace TimeMetroidvania.Level
         public void SnapCamera()
         {
             cameraFollow?.SnapToTarget();
+        }
+
+        private void ApplyCameraBounds(string roomId)
+        {
+            RoomViewportMask mask = cameraFollow != null
+                ? cameraFollow.GetComponent<RoomViewportMask>() : null;
+            foreach (RoomCameraBounds2D bounds in
+                FindObjectsByType<RoomCameraBounds2D>(FindObjectsSortMode.None))
+            {
+                if (bounds.RoomId == roomId)
+                {
+                    bounds.Apply(cameraFollow);
+                    mask?.SetRoom(bounds.WorldBounds);
+                    return;
+                }
+            }
+            if (missingCameraBounds.Add(roomId))
+                Debug.LogError($"房间 {roomId} 缺少镜头边界，已限制在角色附近。", this);
+            if (cameraFollow == null || playerHealth == null) return;
+            Bounds fallback = new(playerHealth.transform.position, new Vector3(1f, 1f, 1f));
+            cameraFollow.SetBounds(fallback);
+            mask?.SetRoom(fallback);
+        }
+
+        private void BindFlyingEnemies()
+        {
+            if (playerHealth == null) return;
+            foreach (V2FlyingEnemy enemy in FindObjectsByType<V2FlyingEnemy>(FindObjectsSortMode.None))
+                enemy.BindTarget(playerHealth.transform);
         }
 
         public void ShowMessage(string message)
@@ -203,7 +263,9 @@ namespace TimeMetroidvania.Level
 
         private void HandleRespawn()
         {
+            bossBattleActive = false;
             currentRoomId = checkpointRoomId;
+            ApplyCameraBounds(checkpointRoomId);
             SnapCamera();
             ShowMessage($"已返回检查点 {activeCheckpointId}");
         }
@@ -229,13 +291,15 @@ namespace TimeMetroidvania.Level
             };
 
             float left = Mathf.Max(20f, Screen.width - 510f);
-            GUI.Box(new Rect(left, 18f, 490f, 175f), GUIContent.none);
+            if (hudPanelSprite != null)
+                TimeMetroidvania.Presentation.V2GuiSprite.Draw(hudPanelSprite, new Rect(left, 18f, 490f, 175f));
+            else GUI.Box(new Rect(left, 18f, 490f, 175f), GUIContent.none);
             GUI.Label(new Rect(left + 14f, 30f, 460f, 27f),
-                $"阶段 5 · 房间 {currentRoomId[1..]}/7 · {activeCheckpointId}", labelStyle);
+                $"时序旅人 · 房间 {currentRoomId[1..]}/{roomCount} · {activeCheckpointId}", labelStyle);
             GUI.Label(new Rect(left + 14f, 59f, 460f, 27f),
                 worldTime != null && worldTime.IsTimeStopUnlocked
                     ? $"时停：已解锁    时长：{worldTime.TimeStopMaximum:0} 秒"
-                    : "目标：前往房间 3 获得时停", labelStyle);
+                    : (useV2Objectives ? "目标：前往房间 5 获得时停" : "目标：前往房间 3 获得时停"), labelStyle);
             GUI.Label(new Rect(left + 14f, 88f, 470f, 27f),
                 BuildObjectiveText(), labelStyle);
 
@@ -252,6 +316,28 @@ namespace TimeMetroidvania.Level
 
         private string BuildObjectiveText()
         {
+            if (useV2Objectives)
+            {
+                if (worldTime == null || !worldTime.IsTimeStopUnlocked)
+                {
+                    return currentRoomId switch
+                    {
+                        "R4" => "目标：时缓通过旋转机关，前往房间 5",
+                        "R5" => "目标：触碰能力核心，获得时停",
+                        _ => "路线：R1 → R2 → R3 → R4 → R5"
+                    };
+                }
+
+                return currentRoomId switch
+                {
+                    "R3" => "目标：时停冻结水面，前往房间 6",
+                    "R6" => "路线：先去房间 7 激活检查点，再进入房间 8",
+                    "R7" => "目标：按 W 激活 Boss 前检查点",
+                    "R8" => bossDefeated ? "目标完成：Boss 已击败" : "目标：击败两阶段 Boss",
+                    _ => "目标：返回房间 3，利用时停跨越水池"
+                };
+            }
+
             if (worldTime == null || !worldTime.IsTimeStopUnlocked)
             {
                 return "路线：房 1 → 房 2 → 房 3";

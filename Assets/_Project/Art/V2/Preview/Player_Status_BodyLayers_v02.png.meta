@@ -1,0 +1,397 @@
+fileFormatVersion: 2
+guid: d1d60cfbb2f14d5408253161f519dfc4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4783508385377266013
+    second: Player_Status_BodyLayers_v02_0
+  - first:
+      213: -2325102584486493468
+    second: Player_Status_BodyLayers_v02_1
+  - first:
+      213: 2632995756049607787
+    second: Player_Status_BodyLayers_v02_2
+  - first:
+      213: -5880742481341894469
+    second: Player_Status_BodyLayers_v02_3
+  - first:
+      213: -5401512977707363723
+    second: Player_Status_BodyLayers_v02_4
+  - first:
+      213: 4826786783926045641
+    second: Player_Status_BodyLayers_v02_5
+  - first:
+      213: 5872449324067577868
+    second: Player_Status_BodyLayers_v02_6
+  - first:
+      213: 8491942971828812035
+    second: Player_Status_BodyLayers_v02_7
+  - first:
+      213: 7093635705784653062
+    second: Player_Status_BodyLayers_v02_8
+  - first:
+      213: 5629558477557705024
+    second: Player_Status_BodyLayers_v02_9
+  - first:
+      213: 596199582375214033
+    second: Player_Status_BodyLayers_v02_10
+  - first:
+      213: 2899672327244227032
+    second: Player_Status_BodyLayers_v02_11
+  - first:
+      213: 9208670586883926888
+    second: Player_Status_BodyLayers_v02_12
+  - first:
+      213: -4698823313913432954
+    second: Player_Status_BodyLayers_v02_13
+  - first:
+      213: -4189736195019086782
+    second: Player_Status_BodyLayers_v02_14
+  - first:
+      213: 6587860160067576856
+    second: Player_Status_BodyLayers_v02_15
+  - first:
+      213: -5706386002076883624
+    second: Player_Status_BodyLayers_v02_16
+  - first:
+      213: 5309485314316605934
+    second: Player_Status_BodyLayers_v02_17
+  - first:
+      213: 5645550372582555705
+    second: Status0
+  - first:
+      213: -8921206634895725335
+    second: Status1
+  - first:
+      213: -2215624343030307822
+    second: Status2
+  - first:
+      213: 1153679932082532439
+    second: Status3
+  - first:
+      213: 3070763995129375016
+    second: Status4
+  - first:
+      213: 9107355845997783579
+    second: Status5
+  - first:
+      213: 7593354706765285072
+    second: Status6
+  - first:
+      213: 6892314662004076835
+    second: Status7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Status0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 432
+        width: 335
+        height: 388
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9308b570726095e40800000000000000
+      internalID: 5645550372582555705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Status1
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 432
+        width: 274
+        height: 267
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ecae2705d1813480800000000000000
+      internalID: -8921206634895725335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Status2
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 441
+        width: 341
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21468fd16658041e0800000000000000
+      internalID: -2215624343030307822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Status3
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 431
+        width: 421
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750b64829c1b20010800000000000000
+      internalID: 1153679932082532439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Status4
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 47
+        width: 222
+        height: 347
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 829eebe759b8d9a20800000000000000
+      internalID: 3070763995129375016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Status5
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 47
+        width: 219
+        height: 346
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a66cb93e3d36e70800000000000000
+      internalID: 9107355845997783579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Status6
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 47
+        width: 309
+        height: 353
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6094edfd3016960800000000000000
+      internalID: 7593354706765285072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Status7
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 47
+        width: 238
+        height: 344
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32138f40bab66af50800000000000000
+      internalID: 6892314662004076835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Player_Status_BodyLayers_v02_0: 4783508385377266013
+      Player_Status_BodyLayers_v02_1: -2325102584486493468
+      Player_Status_BodyLayers_v02_10: 596199582375214033
+      Player_Status_BodyLayers_v02_11: 2899672327244227032
+      Player_Status_BodyLayers_v02_12: 9208670586883926888
+      Player_Status_BodyLayers_v02_13: -4698823313913432954
+      Player_Status_BodyLayers_v02_14: -4189736195019086782
+      Player_Status_BodyLayers_v02_15: 6587860160067576856
+      Player_Status_BodyLayers_v02_16: -5706386002076883624
+      Player_Status_BodyLayers_v02_17: 5309485314316605934
+      Player_Status_BodyLayers_v02_2: 2632995756049607787
+      Player_Status_BodyLayers_v02_3: -5880742481341894469
+      Player_Status_BodyLayers_v02_4: -5401512977707363723
+      Player_Status_BodyLayers_v02_5: 4826786783926045641
+      Player_Status_BodyLayers_v02_6: 5872449324067577868
+      Player_Status_BodyLayers_v02_7: 8491942971828812035
+      Player_Status_BodyLayers_v02_8: 7093635705784653062
+      Player_Status_BodyLayers_v02_9: 5629558477557705024
+      Status0: 5645550372582555705
+      Status1: -8921206634895725335
+      Status2: -2215624343030307822
+      Status3: 1153679932082532439
+      Status4: 3070763995129375016
+      Status5: 9107355845997783579
+      Status6: 7593354706765285072
+      Status7: 6892314662004076835
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

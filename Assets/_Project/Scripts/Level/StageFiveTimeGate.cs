@@ -1,11 +1,10 @@
 using TimeMetroidvania.GameTime;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace TimeMetroidvania.Level
 {
     /// <summary>
-    /// 时停开启的回访关卡门；门前储能只补到一次时停所需的 60 点，避免资源耗尽卡关。
+    /// 时停开启的历史回访关卡门；V2 依赖时间槽自动上弦避免资源软锁。
     /// </summary>
     public sealed class StageFiveTimeGate : MonoBehaviour
     {
@@ -63,22 +62,9 @@ namespace TimeMetroidvania.Level
                 return;
             }
 
-            if (!worldTime.IsTimeStopUnlocked)
-            {
-                level.OfferPrompt("旧区域封闭路线：先取得时停能力", 3);
-                return;
-            }
-
-            level.OfferPrompt("W：补足一次时停所需时间槽；短按 I 开门", 3);
-            if (Keyboard.current?.wKey.wasPressedThisFrame == true)
-            {
-                float missing = Mathf.Max(0f, 60f - timeGauge.CurrentValue);
-                if (missing > 0f)
-                {
-                    timeGauge.Gain(missing);
-                }
-                level.ShowMessage("时间槽已备妥；在门前短按 I 发动时停。");
-            }
+            level.OfferPrompt(worldTime.IsTimeStopUnlocked
+                ? "按 I 开启时停，打开封闭路线"
+                : "旧区域封闭路线：先取得时停能力", 3);
         }
 
         public bool TryOpen()

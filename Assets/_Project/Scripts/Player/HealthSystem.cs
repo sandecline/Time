@@ -128,17 +128,23 @@ namespace TimeMetroidvania.Player
             respawnPosition = worldPosition;
         }
 
-        public void RestoreToFull()
+        public int Restore(int amount)
         {
             EnsureInitialized();
-
-            if (IsDead)
+            if (IsDead || amount <= 0 || CurrentHealth >= maxHealth)
             {
-                return;
+                return 0;
             }
 
-            CurrentHealth = maxHealth;
+            int previousHealth = CurrentHealth;
+            CurrentHealth = Mathf.Min(maxHealth, CurrentHealth + amount);
             HealthChanged?.Invoke(CurrentHealth, maxHealth);
+            return CurrentHealth - previousHealth;
+        }
+
+        public void RestoreToFull()
+        {
+            Restore(maxHealth);
         }
 
         public void ResetForEncounter()

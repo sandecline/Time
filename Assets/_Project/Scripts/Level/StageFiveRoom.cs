@@ -27,6 +27,10 @@ namespace TimeMetroidvania.Level
             {
                 enemy.ResetEncounter();
             }
+            foreach (V2FlyingEnemy enemy in GetComponentsInChildren<V2FlyingEnemy>(true))
+            {
+                enemy.ResetEncounter();
+            }
             foreach (BossBrain boss in GetComponentsInChildren<BossBrain>(true))
             {
                 boss.ResetEncounter();

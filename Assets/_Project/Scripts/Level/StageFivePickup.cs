@@ -66,13 +66,12 @@ namespace TimeMetroidvania.Level
             if (kind == StageFivePickupKind.TimeStop)
             {
                 worldTime.UnlockTimeStop();
-                timeGauge.Gain(60f);
-                level.ShowMessage("已获得时停！返回房间 1，用 I 开启旧区域封闭路线。");
+                timeGauge.Fill();
+                level.ShowMessage("已获得时停，时间槽已补满！按 I 可随时开启或关闭。");
             }
             else
             {
-                worldTime.UnlockDurationUpgrade();
-                level.ShowMessage("隐藏升级已取得：时停最长时间 5 秒 → 7 秒。");
+                level.ShowMessage("V2 已取消旧版 7 秒时停升级。");
             }
 
             GetComponent<Collider2D>().enabled = false;

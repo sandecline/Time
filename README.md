@@ -1,78 +1,46 @@
-# TimeMetroidvaniaDemo — Demo1 历史快照
+# 时序旅人｜2D 时间系银河恶魔城 Demo
 
-这是一个以局部时间操控为核心的 2D 横版类银河战士恶魔城测试 Demo，目标平台为 Windows PC。`demo1` 分支用于永久保留当前七房间灰盒、战斗系统、两阶段 Boss 和第一版“原创哥特钟表遗迹”美术，不代表后续地图与美术的最终效果。
+《时序旅人》是开发中的 Unity 6 横版动作探索 Demo，核心玩法是方向攻击、局部时缓与时停。当前版本提供八房间探索流程、四类普通敌人和两阶段 Boss；美术已接入可玩场景，仍需根据实机试玩继续调整。
 
-## 开发环境
+## 开发环境与试玩
 
-- Unity 6.3 LTS（6000.3.24f1）
-- Universal Render Pipeline / Universal 2D
-- Unity Input System 1.20.0
-- 目标平台：Windows PC
+- Unity 6.3 LTS（6000.3.24f1）、URP 2D、Input System；目标平台为 Windows x64。
+- 使用对应版本的 Unity Hub 打开项目。主场景为 `Assets/_Project/Scenes/V2/EightRoomArtPreview.unity`，已列入 Build Settings。
+- 在 Unity 中选择 **Tools → 时序旅人 → 构建 Windows Demo**，输出位于 `Builds/Windows/时序旅人.exe`。分享时需保留整个 `Builds/Windows` 文件夹的相对结构；详见 [Windows 打包说明](Docs/BuildWindowsDemo.md)。
+- `Builds`、`Library`、`Temp` 等生成目录不纳入 Git；克隆项目后需在 Unity 中自行构建。
 
-请使用 Unity Hub 和 Unity 6000.3.24f1 打开项目根目录，不要直接使用其他 Unity 版本升级工程。
+## 当前可玩内容
 
-## 当前版本内容
+- 移动、跳跃、Dash、横砍、上砍、空中下劈反弹、受伤与复活。三方向攻击分别使用对应刀光和攻击判定范围。
+- 时间槽、免费时缓、持续消耗时间槽的时停、治疗、时间回声，以及可斩毁与不可斩毁的弹幕。
+- 八房间探索、跨房间镜头、时停水池、时缓机关、能力拾取、捷径门、检查点和 Boss 战场封锁。
+- 守卫、机械虫、飞行敌人、远程敌人，以及两阶段 Boss。角色、敌人、场景和界面美术已接入当前可玩场景。
 
-- 玩家移动、跳跃、地面／空中平砍、受击、击退、死亡重生和无无敌帧 Dash。
-- 平 A 间隔为 0.72 秒；攻击动作期间可以移动，攻击有效段结束后可以衔接 Dash。
-- 普通攻击具有独立刀光和命中范围，可斩毁蓝色弹幕；橙色弹幕与紫色时间锚不可斩毁。
-- 攻击和斩弹补充时间槽；长按输入可以治疗。
-- 免费时缓、消耗型时停、提前结束时停并按剩余时间返还资源。
-- 发条近战守卫、高速机械虫、钟弩手，以及两阶段 Boss“时蚀守卫”。
-- 房间切换会刷新相关房间敌人；检查点和死亡流程会重置对应区域的临时战斗状态。
-- Boss 战开始后使用实体机关墙封锁出入口，Boss 击败或战斗重置后解除。
-- 标题、暂停、地图、统一 HUD、死亡遮罩和结尾流程。
-
-世界时间由对象局部倍率驱动，不修改全局 `Time.timeScale`。当前测试 Demo 不读取或写入磁盘存档，“继续游戏”保持禁用，运行进度在退出或重新加载场景后清空。
+世界时间通过对象的局部倍率处理，不依赖全局 `Time.timeScale` 实现时缓或时停。检查点与 Boss 进度仅在本次运行中有效；退出或重新加载场景后不会恢复磁盘存档。
 
 ## 操作
 
-- `A` / `D`：水平移动
-- `S`：向下／穿过单向平台
-- `K`：跳跃
-- `J`：按下立即平砍；持续按住 1 秒后松开，触发持续 3 秒、世界倍率 0.35 的免费时缓
-- `L`：Dash，仅提供位移，不提供无敌帧
-- 短按 `I`：消耗 60 点时间槽，触发 5 秒时停；时停中再次按下可提前结束并按剩余比例返还
-- 长按 `I`：0.3 秒后进入治疗准备，再持续 1.5 秒完成治疗
-- `W`：与检查点椅子、储能装置等场景物体交互
-- `M`：打开／关闭本次运行地图
-- `Esc`：暂停／继续
+| 按键 | 操作 |
+| --- | --- |
+| `A` / `D` | 水平移动 |
+| `K` | 跳跃 |
+| `J` | 攻击；按住 `W` 上砍，空中按住 `S` 下劈；按住 `J` 约 1 秒后松开触发时缓 |
+| `L` | Dash（无无敌帧） |
+| `I` | 开启或结束时停 |
+| 长按 `U` | 治疗 |
+| `W` | 向上；靠近检查点或机关时交互 |
+| `S` | 向下；穿过单向平台 |
+| `M` | 打开或关闭地图 |
+| `Esc` | 暂停或继续 |
 
-## 场景
+## 工程结构
 
-Build Settings 中包含四个测试场景：
+- `Assets/_Project/Scenes/V2/EightRoomArtPreview.unity`：当前可玩场景。
+- `Assets/_Project/Scenes/V2/EightRoomGreybox.unity`：八房间灰盒参考场景。
+- `Assets/_Project/Scenes/V2/V2RuntimeTemplate.unity`：供编辑器构建工具复用的模板，不参与打包。
+- `Assets/_Project/Scripts`：玩家、时间、敌人、Boss、关卡和界面运行时代码。
+- `Assets/_Project/Art`：接入 Unity 的美术资源；`ArtSource/V2` 保存对应源图。
+- `Assets/_Project/Editor`：场景、美术、验证和 Windows 构建工具。
+- [文档索引](Docs/README.md)：制作计划、设计、美术资料和历史记录。
 
-- `MovementPrototype`：移动与跳跃基线。
-- `CombatPrototype`：玩家战斗、资源、局部时间和弹幕对象池验证。
-- `EnemyEncounter`：三类普通敌人的两段混合遭遇。
-- `SevenRoomSlice`：当前主测试场景，包含七房间成长路线、检查点、能力解锁、Boss 和完整 Demo 流程。
-
-当前七房间布局只用于玩法验证，并非最终地图。房间入口使用开放缺口，玩家走过边界后自动切换房间。
-
-## 测试与灰盒重建
-
-通过 Unity Test Runner 运行 EditMode 测试，覆盖玩家状态与资源、时缓与时停、延迟伤害、敌人状态转换、局部时间、弹药上限和弹幕对象复用。
-
-可通过 Unity 菜单重建测试内容：
-
-- `Tools > Time Metroidvania > Build Current Prototype`
-- `Tools > Time Metroidvania > Build Phase 4 Encounter`
-- `Tools > Time Metroidvania > Build Phase 5 Seven Rooms`
-- `Tools > Time Metroidvania > Build Phase 6 Boss`
-- `Tools > Time Metroidvania > Build Phase 7 Demo Flow`
-
-## 目录
-
-- `Assets/_Project`：游戏脚本、场景、预制体、动画和 Unity 正式素材。
-- `ArtSource/ChatGPT`：第一版美术的原始生成图片。
-- `Docs/Design`：阶段计划、系统设计和决策记录。
-- `Docs/Art`：第一版美术规范、提示词和导入说明。
-
-## 已知限制与后续计划
-
-- 当前仍是测试用七房间灰盒，没有持久化存档。
-- 当前“原创哥特钟表遗迹”素材已经接入，但整体美术表现尚未达到最终目标，后续将整套替换。
-- 下一版地图将以新的八房间总览和后续逐房间地形草图为准；`demo1` 不提前实现或宣称这些内容。
-- 关卡尺寸、敌人配置、机关节奏、攻击反馈和性能仍需在最终地图中继续调优。
-
-`demo1` 是后续地图与美术重制前的可回退历史快照。
+V1／Demo1 保留在 `demo1` 分支。当前版本仍是开发中的可玩 Demo，战斗手感、关卡节奏与性能需继续通过完整实机试玩验证。
