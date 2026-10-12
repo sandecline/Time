@@ -1,0 +1,629 @@
+fileFormatVersion: 2
+guid: 134d2928ab084fe4584d028b220caef0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6969103693184761136
+    second: Enemy_Flying_Animation_v02_0
+  - first:
+      213: -4700602212916146403
+    second: Enemy_Flying_Animation_v02_1
+  - first:
+      213: 770203655225327929
+    second: Enemy_Flying_Animation_v02_2
+  - first:
+      213: 4849703199180350931
+    second: Enemy_Flying_Animation_v02_3
+  - first:
+      213: -4403111205571256269
+    second: Enemy_Flying_Animation_v02_4
+  - first:
+      213: -4996063459360095398
+    second: Enemy_Flying_Animation_v02_5
+  - first:
+      213: 979820730629416014
+    second: Enemy_Flying_Animation_v02_6
+  - first:
+      213: -5100695523746542503
+    second: Enemy_Flying_Animation_v02_7
+  - first:
+      213: -587891497786610985
+    second: Enemy_Flying_Animation_v02_8
+  - first:
+      213: -8637359077910193109
+    second: Enemy_Flying_Animation_v02_9
+  - first:
+      213: -1616581916428242365
+    second: Enemy_Flying_Animation_v02_10
+  - first:
+      213: -7313912125825662848
+    second: Enemy_Flying_Animation_v02_11
+  - first:
+      213: -5102380855800057005
+    second: Enemy_Flying_Animation_v02_12
+  - first:
+      213: -4419283000225085116
+    second: Enemy_Flying_Animation_v02_13
+  - first:
+      213: 7108391287554280340
+    second: Enemy_Flying_Animation_v02_14
+  - first:
+      213: 711650969640196730
+    second: Enemy_Flying_Animation_v02_15
+  - first:
+      213: -5624471695890905091
+    second: Enemy_Flying_Animation_v02_16
+  - first:
+      213: -9001563392043113038
+    second: Enemy_Flying_Animation_v02_17
+  - first:
+      213: 186528457206670460
+    second: Enemy_Flying_Animation_v02_18
+  - first:
+      213: -8059858369137647423
+    second: Enemy_Flying_Animation_v02_19
+  - first:
+      213: -1432004106347322111
+    second: Enemy_Flying_Animation_v02_20
+  - first:
+      213: 4258754708754029592
+    second: Enemy_Flying_Animation_v02_21
+  - first:
+      213: 1293054495548431184
+    second: Enemy_Flying_Animation_v02_22
+  - first:
+      213: 7143232669427122663
+    second: Enemy_Flying_Animation_v02_23
+  - first:
+      213: -4791376368443587907
+    second: Enemy_Flying_Animation_v02_24
+  - first:
+      213: -5346599959085115395
+    second: Enemy_Flying_Animation_v02_25
+  - first:
+      213: 8172150724770536522
+    second: Enemy_Flying_Animation_v02_26
+  - first:
+      213: -2091993440031309374
+    second: Enemy_Flying_Animation_v02_27
+  - first:
+      213: -3703342334721129498
+    second: Enemy_Flying_Animation_v02_28
+  - first:
+      213: 5989236717701429131
+    second: Enemy_Flying_Animation_v02_29
+  - first:
+      213: 7389961989874864060
+    second: Enemy_Flying_Animation_v02_30
+  - first:
+      213: 5375352565501665540
+    second: Enemy_Flying_Animation_v02_31
+  - first:
+      213: -8540802331466204696
+    second: Enemy_Flying_Animation_v02_32
+  - first:
+      213: -8821318497995128616
+    second: Enemy_Flying_Animation_v02_33
+  - first:
+      213: 5746960572346995328
+    second: Enemy_Flying_Animation_v02_34
+  - first:
+      213: 8759830826119244637
+    second: Enemy_Flying_Animation_v02_35
+  - first:
+      213: 816788128726077568
+    second: Enemy_Flying_Animation_v02_36
+  - first:
+      213: -7725397081781058529
+    second: Enemy_Flying_Animation_v02_37
+  - first:
+      213: 492445916832850214
+    second: Enemy_Flying_Animation_v02_38
+  - first:
+      213: -8553864831698106149
+    second: Enemy_Flying_Animation_v02_39
+  - first:
+      213: 1269610525702762828
+    second: Enemy_Flying_Animation_v02_40
+  - first:
+      213: 2559312493110742675
+    second: Enemy_Flying_Animation_v02_41
+  - first:
+      213: -724096713954948715
+    second: Enemy_Flying_Animation_v02_42
+  - first:
+      213: -1453004595843374966
+    second: Enemy_Flying_Animation_v02_43
+  - first:
+      213: -1319689782434496177
+    second: Enemy_Flying_Animation_v02_44
+  - first:
+      213: -4501219575926357127
+    second: Enemy_Flying_Animation_v02_45
+  - first:
+      213: -3859621218745189607
+    second: Enemy_Flying_Animation_v02_46
+  - first:
+      213: -4211061187078351747
+    second: Enemy_Flying_Animation_v02_47
+  - first:
+      213: 3568776994525792690
+    second: Enemy_Flying_Animation_v02_48
+  - first:
+      213: -3646382234283203821
+    second: Enemy_Flying_Animation_v02_49
+  - first:
+      213: 9177641566305655673
+    second: Flying0
+  - first:
+      213: 63081070347201626
+    second: Flying1
+  - first:
+      213: -4270262958555266643
+    second: Flying2
+  - first:
+      213: 3872737116185822782
+    second: Flying3
+  - first:
+      213: 2336611089241270665
+    second: Flying4
+  - first:
+      213: -2685845859269355712
+    second: Flying5
+  - first:
+      213: 4468851807934809720
+    second: Flying6
+  - first:
+      213: 223876920535665448
+    second: Flying7
+  - first:
+      213: -1682648469592834877
+    second: Flying8
+  - first:
+      213: 1761390117619409384
+    second: Flying9
+  - first:
+      213: 4829421930672057560
+    second: Flying10
+  - first:
+      213: -8815160166394337280
+    second: Flying11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Flying0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 784
+        width: 361
+        height: 197
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b128b11688d5f70800000000000000
+      internalID: 9177641566305655673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying1
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 786
+        width: 265
+        height: 242
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ca81636eb10e000800000000000000
+      internalID: 63081070347201626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying2
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 784
+        width: 342
+        height: 168
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da10ec9c67afcb4c0800000000000000
+      internalID: -4270262958555266643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying3
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 784
+        width: 356
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e360ab673e9beb530800000000000000
+      internalID: 3872737116185822782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying4
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 416
+        width: 150
+        height: 262
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989e670e76f4d6020800000000000000
+      internalID: 2336611089241270665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying5
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 440
+        width: 242
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047dbc4db65f9bad0800000000000000
+      internalID: -2685845859269355712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying6
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 422
+        width: 139
+        height: 260
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87601d5da0d840e30800000000000000
+      internalID: 4468851807934809720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying7
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 447
+        width: 355
+        height: 214
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82bcfe18fde5b1300800000000000000
+      internalID: 223876920535665448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying8
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 100
+        width: 238
+        height: 270
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cc7018c12806a8e0800000000000000
+      internalID: -1682648469592834877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying9
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 89
+        width: 260
+        height: 222
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1a69fcaf6b17810800000000000000
+      internalID: 1761390117619409384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying10
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 52
+        width: 239
+        height: 266
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc603898ad850340800000000000000
+      internalID: 4829421930672057560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying11
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 45
+        width: 291
+        height: 136
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00864eb88824aa580800000000000000
+      internalID: -8815160166394337280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Enemy_Flying_Animation_v02_0: 6969103693184761136
+      Enemy_Flying_Animation_v02_1: -4700602212916146403
+      Enemy_Flying_Animation_v02_10: -1616581916428242365
+      Enemy_Flying_Animation_v02_11: -7313912125825662848
+      Enemy_Flying_Animation_v02_12: -5102380855800057005
+      Enemy_Flying_Animation_v02_13: -4419283000225085116
+      Enemy_Flying_Animation_v02_14: 7108391287554280340
+      Enemy_Flying_Animation_v02_15: 711650969640196730
+      Enemy_Flying_Animation_v02_16: -5624471695890905091
+      Enemy_Flying_Animation_v02_17: -9001563392043113038
+      Enemy_Flying_Animation_v02_18: 186528457206670460
+      Enemy_Flying_Animation_v02_19: -8059858369137647423
+      Enemy_Flying_Animation_v02_2: 770203655225327929
+      Enemy_Flying_Animation_v02_20: -1432004106347322111
+      Enemy_Flying_Animation_v02_21: 4258754708754029592
+      Enemy_Flying_Animation_v02_22: 1293054495548431184
+      Enemy_Flying_Animation_v02_23: 7143232669427122663
+      Enemy_Flying_Animation_v02_24: -4791376368443587907
+      Enemy_Flying_Animation_v02_25: -5346599959085115395
+      Enemy_Flying_Animation_v02_26: 8172150724770536522
+      Enemy_Flying_Animation_v02_27: -2091993440031309374
+      Enemy_Flying_Animation_v02_28: -3703342334721129498
+      Enemy_Flying_Animation_v02_29: 5989236717701429131
+      Enemy_Flying_Animation_v02_3: 4849703199180350931
+      Enemy_Flying_Animation_v02_30: 7389961989874864060
+      Enemy_Flying_Animation_v02_31: 5375352565501665540
+      Enemy_Flying_Animation_v02_32: -8540802331466204696
+      Enemy_Flying_Animation_v02_33: -8821318497995128616
+      Enemy_Flying_Animation_v02_34: 5746960572346995328
+      Enemy_Flying_Animation_v02_35: 8759830826119244637
+      Enemy_Flying_Animation_v02_36: 816788128726077568
+      Enemy_Flying_Animation_v02_37: -7725397081781058529
+      Enemy_Flying_Animation_v02_38: 492445916832850214
+      Enemy_Flying_Animation_v02_39: -8553864831698106149
+      Enemy_Flying_Animation_v02_4: -4403111205571256269
+      Enemy_Flying_Animation_v02_40: 1269610525702762828
+      Enemy_Flying_Animation_v02_41: 2559312493110742675
+      Enemy_Flying_Animation_v02_42: -724096713954948715
+      Enemy_Flying_Animation_v02_43: -1453004595843374966
+      Enemy_Flying_Animation_v02_44: -1319689782434496177
+      Enemy_Flying_Animation_v02_45: -4501219575926357127
+      Enemy_Flying_Animation_v02_46: -3859621218745189607
+      Enemy_Flying_Animation_v02_47: -4211061187078351747
+      Enemy_Flying_Animation_v02_48: 3568776994525792690
+      Enemy_Flying_Animation_v02_49: -3646382234283203821
+      Enemy_Flying_Animation_v02_5: -4996063459360095398
+      Enemy_Flying_Animation_v02_6: 979820730629416014
+      Enemy_Flying_Animation_v02_7: -5100695523746542503
+      Enemy_Flying_Animation_v02_8: -587891497786610985
+      Enemy_Flying_Animation_v02_9: -8637359077910193109
+      Flying0: 9177641566305655673
+      Flying1: 63081070347201626
+      Flying10: 4829421930672057560
+      Flying11: -8815160166394337280
+      Flying2: -4270262958555266643
+      Flying3: 3872737116185822782
+      Flying4: 2336611089241270665
+      Flying5: -2685845859269355712
+      Flying6: 4468851807934809720
+      Flying7: 223876920535665448
+      Flying8: -1682648469592834877
+      Flying9: 1761390117619409384
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

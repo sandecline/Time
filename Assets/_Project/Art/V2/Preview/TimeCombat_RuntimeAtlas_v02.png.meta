@@ -1,0 +1,321 @@
+fileFormatVersion: 2
+guid: 0b613bed670335c42858328ac476e5e8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6847349037320868914
+    second: TimeCombat_RuntimeAtlas_v02_0
+  - first:
+      213: 1613685046803882474
+    second: TimeCombat_RuntimeAtlas_v02_1
+  - first:
+      213: -3843409129792639692
+    second: TimeCombat_RuntimeAtlas_v02_2
+  - first:
+      213: -6574619340927101910
+    second: TimeCombat_RuntimeAtlas_v02_3
+  - first:
+      213: -1001415592209754194
+    second: TimeCombat_RuntimeAtlas_v02_4
+  - first:
+      213: 2593893526088780558
+    second: TimeCombat_RuntimeAtlas_v02_5
+  - first:
+      213: 2326790569516882690
+    second: TimeCombat_RuntimeAtlas_v02_6
+  - first:
+      213: 3819545418378964456
+    second: TimeCombat_RuntimeAtlas_v02_7
+  - first:
+      213: -6997700123808599472
+    second: TimeCombat_RuntimeAtlas_v02_8
+  - first:
+      213: 276584652214568477
+    second: TimeCombat_RuntimeAtlas_v02_9
+  - first:
+      213: -3438584926609544720
+    second: TimeCombat_RuntimeAtlas_v02_10
+  - first:
+      213: -9149606080810001196
+    second: TimeCombat_RuntimeAtlas_v02_11
+  - first:
+      213: 2137015572817595806
+    second: BlueImpact
+  - first:
+      213: -8146005614592038806
+    second: OrangeImpact
+  - first:
+      213: 5899475061381437287
+    second: TimeRing
+  - first:
+      213: -6237786128388237660
+    second: HealGlint
+  - first:
+      213: 216025313107422508
+    second: BlueShatter
+  - first:
+      213: -3657526144961600272
+    second: AnchorCrack
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BlueImpact
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 581
+        width: 244
+        height: 283
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d4541575438ad10800000000000000
+      internalID: 2137015572817595806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImpact
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 581
+        width: 261
+        height: 284
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6867eb8d0393fe80800000000000000
+      internalID: -8146005614592038806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeRing
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 571
+        width: 309
+        height: 311
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7679ae2cf452fd150800000000000000
+      internalID: 5899475061381437287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealGlint
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 152
+        width: 233
+        height: 258
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a65f80c09eee69a0800000000000000
+      internalID: -6237786128388237660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueShatter
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 147
+        width: 277
+        height: 261
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2da242b0e97ff200800000000000000
+      internalID: 216025313107422508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnchorCrack
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 96
+        width: 376
+        height: 397
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f42cdc795bdd3dc0800000000000000
+      internalID: -3657526144961600272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AnchorCrack: -3657526144961600272
+      BlueImpact: 2137015572817595806
+      BlueShatter: 216025313107422508
+      HealGlint: -6237786128388237660
+      OrangeImpact: -8146005614592038806
+      TimeCombat_RuntimeAtlas_v02_0: 6847349037320868914
+      TimeCombat_RuntimeAtlas_v02_1: 1613685046803882474
+      TimeCombat_RuntimeAtlas_v02_10: -3438584926609544720
+      TimeCombat_RuntimeAtlas_v02_11: -9149606080810001196
+      TimeCombat_RuntimeAtlas_v02_2: -3843409129792639692
+      TimeCombat_RuntimeAtlas_v02_3: -6574619340927101910
+      TimeCombat_RuntimeAtlas_v02_4: -1001415592209754194
+      TimeCombat_RuntimeAtlas_v02_5: 2593893526088780558
+      TimeCombat_RuntimeAtlas_v02_6: 2326790569516882690
+      TimeCombat_RuntimeAtlas_v02_7: 3819545418378964456
+      TimeCombat_RuntimeAtlas_v02_8: -6997700123808599472
+      TimeCombat_RuntimeAtlas_v02_9: 276584652214568477
+      TimeRing: 5899475061381437287
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

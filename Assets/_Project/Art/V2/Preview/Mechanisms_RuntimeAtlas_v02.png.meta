@@ -1,0 +1,333 @@
+fileFormatVersion: 2
+guid: 6cd1f46befe1e79419fa01ad61884645
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1270511012887576811
+    second: Mechanisms_RuntimeAtlas_v02_0
+  - first:
+      213: 9217193939676843731
+    second: Mechanisms_RuntimeAtlas_v02_1
+  - first:
+      213: -8677949702250188980
+    second: Mechanisms_RuntimeAtlas_v02_2
+  - first:
+      213: -6333221268678552637
+    second: Mechanisms_RuntimeAtlas_v02_3
+  - first:
+      213: 4468197365516035463
+    second: Mechanisms_RuntimeAtlas_v02_4
+  - first:
+      213: -9083389670524764987
+    second: Mechanisms_RuntimeAtlas_v02_5
+  - first:
+      213: -5484421058724582584
+    second: Mechanisms_RuntimeAtlas_v02_6
+  - first:
+      213: 652827174688227032
+    second: Mechanisms_RuntimeAtlas_v02_7
+  - first:
+      213: 4425373487187641240
+    second: Mechanisms_RuntimeAtlas_v02_8
+  - first:
+      213: 6054311781830497104
+    second: Mechanisms_RuntimeAtlas_v02_9
+  - first:
+      213: -4138014415612993028
+    second: Mechanisms_RuntimeAtlas_v02_10
+  - first:
+      213: 6141734067280146853
+    second: Mechanisms_RuntimeAtlas_v02_11
+  - first:
+      213: 2169716787975896710
+    second: Mechanisms_RuntimeAtlas_v02_12
+  - first:
+      213: 756034899256692922
+    second: Mechanisms_RuntimeAtlas_v02_13
+  - first:
+      213: 3536766535506638714
+    second: Mechanisms_RuntimeAtlas_v02_14
+  - first:
+      213: 4747023472740852061
+    second: GateClosed
+  - first:
+      213: -4672075775555259362
+    second: GateOpen
+  - first:
+      213: -8968805505469212077
+    second: LeverOff
+  - first:
+      213: 7442989891162626957
+    second: LeverOn
+  - first:
+      213: 6943063581339443853
+    second: RotorOff
+  - first:
+      213: 7133334140539045320
+    second: RotorOn
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GateClosed
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 512
+        width: 401
+        height: 501
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d51e82992b0d0e140800000000000000
+      internalID: 4747023472740852061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GateOpen
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 512
+        width: 404
+        height: 501
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e14325af5d3792fb0800000000000000
+      internalID: -4672075775555259362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeverOff
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 538
+        width: 309
+        height: 360
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a90fa59e6688380800000000000000
+      internalID: -8968805505469212077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeverOn
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 69
+        width: 329
+        height: 443
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b52911fdfca4760800000000000000
+      internalID: 7442989891162626957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RotorOff
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 65
+        width: 414
+        height: 447
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8260b29a87ba5060800000000000000
+      internalID: 6943063581339443853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RotorOn
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 66
+        width: 412
+        height: 424
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c50ff65b91bef260800000000000000
+      internalID: 7133334140539045320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GateClosed: 4747023472740852061
+      GateOpen: -4672075775555259362
+      LeverOff: -8968805505469212077
+      LeverOn: 7442989891162626957
+      Mechanisms_RuntimeAtlas_v02_0: -1270511012887576811
+      Mechanisms_RuntimeAtlas_v02_1: 9217193939676843731
+      Mechanisms_RuntimeAtlas_v02_10: -4138014415612993028
+      Mechanisms_RuntimeAtlas_v02_11: 6141734067280146853
+      Mechanisms_RuntimeAtlas_v02_12: 2169716787975896710
+      Mechanisms_RuntimeAtlas_v02_13: 756034899256692922
+      Mechanisms_RuntimeAtlas_v02_14: 3536766535506638714
+      Mechanisms_RuntimeAtlas_v02_2: -8677949702250188980
+      Mechanisms_RuntimeAtlas_v02_3: -6333221268678552637
+      Mechanisms_RuntimeAtlas_v02_4: 4468197365516035463
+      Mechanisms_RuntimeAtlas_v02_5: -9083389670524764987
+      Mechanisms_RuntimeAtlas_v02_6: -5484421058724582584
+      Mechanisms_RuntimeAtlas_v02_7: 652827174688227032
+      Mechanisms_RuntimeAtlas_v02_8: 4425373487187641240
+      Mechanisms_RuntimeAtlas_v02_9: 6054311781830497104
+      RotorOff: 6943063581339443853
+      RotorOn: 7133334140539045320
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

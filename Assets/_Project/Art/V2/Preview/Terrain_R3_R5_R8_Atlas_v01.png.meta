@@ -1,0 +1,361 @@
+fileFormatVersion: 2
+guid: 24624d0f778372f4ca547c6837414600
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7354881128139499690
+    second: Terrain_R3_R5_R8_Atlas_v01_0
+  - first:
+      213: -6295302791574255210
+    second: Terrain_R3_R5_R8_Atlas_v01_1
+  - first:
+      213: -2076049290337268809
+    second: Terrain_R3_R5_R8_Atlas_v01_2
+  - first:
+      213: -5448907054983938928
+    second: Terrain_R3_R5_R8_Atlas_v01_3
+  - first:
+      213: -5352173188627509545
+    second: Terrain_R3_R5_R8_Atlas_v01_4
+  - first:
+      213: -2071303766479303278
+    second: Terrain_R3_R5_R8_Atlas_v01_5
+  - first:
+      213: -6159475012855878731
+    second: Terrain_R3_R5_R8_Atlas_v01_6
+  - first:
+      213: -4642018906730114852
+    second: Terrain_R3_R5_R8_Atlas_v01_7
+  - first:
+      213: 3718523526233396082
+    second: Terrain_R3_R5_R8_Atlas_v01_8
+  - first:
+      213: 1194764739402924364
+    second: Terrain_R3_R5_R8_Atlas_v01_9
+  - first:
+      213: 7462249706542573849
+    second: Terrain_R3_R5_R8_Atlas_v01_10
+  - first:
+      213: 7709097111902024754
+    second: Terrain_R3_R5_R8_Atlas_v01_11
+  - first:
+      213: -9207080723000160730
+    second: Terrain_R3_R5_R8_Atlas_v01_12
+  - first:
+      213: 7168568730480197793
+    second: Terrain_R3_R5_R8_Atlas_v01_13
+  - first:
+      213: 2183095489705929887
+    second: Terrain_R3_R5_R8_Atlas_v01_14
+  - first:
+      213: -5270829058192776452
+    second: Terrain_R3_R5_R8_Atlas_v01_15
+  - first:
+      213: 4172794220669035532
+    second: Terrain_R3_R5_R8_Atlas_v01_16
+  - first:
+      213: -7720309978198235277
+    second: Terrain_R3_R5_R8_Atlas_v01_17
+  - first:
+      213: 8887127700852486047
+    second: Terrain_R3_R5_R8_Atlas_v01_18
+  - first:
+      213: -6833620132902004861
+    second: Terrain_R3_R5_R8_Atlas_v01_19
+  - first:
+      213: -5052627195417530509
+    second: Terrain_R3_R5_R8_Atlas_v01_20
+  - first:
+      213: 3294429377215536249
+    second: Terrain_R3_R5_R8_Atlas_v01_21
+  - first:
+      213: 5747290061914358120
+    second: WetFill
+  - first:
+      213: -2948632954713749039
+    second: WetEdge
+  - first:
+      213: -5581980869800015329
+    second: BrassFill
+  - first:
+      213: -2244600117894529445
+    second: BrassEdge
+  - first:
+      213: 319168121746253933
+    second: DarkFill
+  - first:
+      213: 1278416212140881968
+    second: DarkEdge
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WetFill
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 356
+        width: 446
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 861c9816cd972cf40800000000000000
+      internalID: 5747290061914358120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WetEdge
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 145
+        width: 446
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9c64143f95417d0800000000000000
+      internalID: -2948632954713749039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrassFill
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 356
+        width: 448
+        height: 493
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a4b8839f1d882b0800000000000000
+      internalID: -5581980869800015329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrassEdge
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 145
+        width: 446
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5eb81ec51499d0e0800000000000000
+      internalID: -2244600117894529445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkFill
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 356
+        width: 446
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68605837b9ed6400800000000000000
+      internalID: 319168121746253933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkEdge
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 145
+        width: 446
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 038f1c785c8ddb110800000000000000
+      internalID: 1278416212140881968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BrassEdge: -2244600117894529445
+      BrassFill: -5581980869800015329
+      DarkEdge: 1278416212140881968
+      DarkFill: 319168121746253933
+      Terrain_R3_R5_R8_Atlas_v01_0: -7354881128139499690
+      Terrain_R3_R5_R8_Atlas_v01_1: -6295302791574255210
+      Terrain_R3_R5_R8_Atlas_v01_10: 7462249706542573849
+      Terrain_R3_R5_R8_Atlas_v01_11: 7709097111902024754
+      Terrain_R3_R5_R8_Atlas_v01_12: -9207080723000160730
+      Terrain_R3_R5_R8_Atlas_v01_13: 7168568730480197793
+      Terrain_R3_R5_R8_Atlas_v01_14: 2183095489705929887
+      Terrain_R3_R5_R8_Atlas_v01_15: -5270829058192776452
+      Terrain_R3_R5_R8_Atlas_v01_16: 4172794220669035532
+      Terrain_R3_R5_R8_Atlas_v01_17: -7720309978198235277
+      Terrain_R3_R5_R8_Atlas_v01_18: 8887127700852486047
+      Terrain_R3_R5_R8_Atlas_v01_19: -6833620132902004861
+      Terrain_R3_R5_R8_Atlas_v01_2: -2076049290337268809
+      Terrain_R3_R5_R8_Atlas_v01_20: -5052627195417530509
+      Terrain_R3_R5_R8_Atlas_v01_21: 3294429377215536249
+      Terrain_R3_R5_R8_Atlas_v01_3: -5448907054983938928
+      Terrain_R3_R5_R8_Atlas_v01_4: -5352173188627509545
+      Terrain_R3_R5_R8_Atlas_v01_5: -2071303766479303278
+      Terrain_R3_R5_R8_Atlas_v01_6: -6159475012855878731
+      Terrain_R3_R5_R8_Atlas_v01_7: -4642018906730114852
+      Terrain_R3_R5_R8_Atlas_v01_8: 3718523526233396082
+      Terrain_R3_R5_R8_Atlas_v01_9: 1194764739402924364
+      WetEdge: -2948632954713749039
+      WetFill: 5747290061914358120
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

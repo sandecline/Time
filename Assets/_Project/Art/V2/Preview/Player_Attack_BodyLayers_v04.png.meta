@@ -1,0 +1,517 @@
+fileFormatVersion: 2
+guid: be44255acd999544383076b5b421c7cf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3042820537911238129
+    second: Player_Attack_BodyLayers_v04_0
+  - first:
+      213: -5857774851299615110
+    second: Player_Attack_BodyLayers_v04_1
+  - first:
+      213: -7939832088911911799
+    second: Player_Attack_BodyLayers_v04_2
+  - first:
+      213: -5369688278136488208
+    second: Player_Attack_BodyLayers_v04_3
+  - first:
+      213: -2063352359576178615
+    second: Player_Attack_BodyLayers_v04_4
+  - first:
+      213: 4497656908088270585
+    second: Player_Attack_BodyLayers_v04_5
+  - first:
+      213: 7669129741664232651
+    second: Player_Attack_BodyLayers_v04_6
+  - first:
+      213: -597354289837529310
+    second: Player_Attack_BodyLayers_v04_7
+  - first:
+      213: -5270335949105429892
+    second: Player_Attack_BodyLayers_v04_8
+  - first:
+      213: -2598555524102864330
+    second: Player_Attack_BodyLayers_v04_9
+  - first:
+      213: 8649511152592565068
+    second: Player_Attack_BodyLayers_v04_10
+  - first:
+      213: -1237775175563971658
+    second: Player_Attack_BodyLayers_v04_11
+  - first:
+      213: -5593868222799915018
+    second: Player_Attack_BodyLayers_v04_12
+  - first:
+      213: 7577096358846503720
+    second: Player_Attack_BodyLayers_v04_13
+  - first:
+      213: 5410593130634489932
+    second: Player_Attack_BodyLayers_v04_14
+  - first:
+      213: 1838211229619432697
+    second: Player_Attack_BodyLayers_v04_15
+  - first:
+      213: 4842310929507910837
+    second: Player_Attack_BodyLayers_v04_16
+  - first:
+      213: 6129407085716433645
+    second: Player_Attack_BodyLayers_v04_17
+  - first:
+      213: 8513987558264722780
+    second: Player_Attack_BodyLayers_v04_18
+  - first:
+      213: -212858444852608676
+    second: Player_Attack_BodyLayers_v04_19
+  - first:
+      213: -8856996998931455482
+    second: Player_Attack_BodyLayers_v04_20
+  - first:
+      213: 4080007216200198464
+    second: Player_Attack_BodyLayers_v04_21
+  - first:
+      213: -2426995285501921631
+    second: AttackHorizontal0
+  - first:
+      213: 681279838304176823
+    second: AttackHorizontal1
+  - first:
+      213: -7597032407374078067
+    second: AttackHorizontal2
+  - first:
+      213: 8638784198495267953
+    second: AttackHorizontal3
+  - first:
+      213: 2538667802593061424
+    second: AttackUp0
+  - first:
+      213: -1811616270053495921
+    second: AttackUp1
+  - first:
+      213: 98442887347825060
+    second: AttackUp2
+  - first:
+      213: -2823826727696707786
+    second: AttackUp3
+  - first:
+      213: 2790265674339118022
+    second: AttackDown0
+  - first:
+      213: -8840241938747794316
+    second: AttackDown1
+  - first:
+      213: 6581866461990535041
+    second: AttackDown2
+  - first:
+      213: -6928778275680543057
+    second: AttackDown3
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AttackHorizontal0
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 715
+        width: 217
+        height: 335
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a63c1885a4915ed0800000000000000
+      internalID: -2426995285501921631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackHorizontal1
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 715
+        width: 273
+        height: 335
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ba81c24764647900800000000000000
+      internalID: 681279838304176823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackHorizontal2
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 718
+        width: 294
+        height: 330
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f565bb64be19690800000000000000
+      internalID: -7597032407374078067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackHorizontal3
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 715
+        width: 219
+        height: 334
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c6192557023e770800000000000000
+      internalID: 8638784198495267953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackUp0
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 339
+        width: 222
+        height: 307
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03ae7408ae82b3320800000000000000
+      internalID: 2538667802593061424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackUp1
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 338
+        width: 221
+        height: 306
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ba42ac998dbd6e0800000000000000
+      internalID: -1811616270053495921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackUp2
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 334
+        width: 227
+        height: 311
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9e703d84dbd5100800000000000000
+      internalID: 98442887347825060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackUp3
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 335
+        width: 215
+        height: 317
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63f426c6d80cfc8d0800000000000000
+      internalID: -2823826727696707786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDown0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 36
+        width: 223
+        height: 288
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cbe2fbe8d309b620800000000000000
+      internalID: 2790265674339118022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDown1
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 29
+        width: 216
+        height: 283
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c5d685bc6215580800000000000000
+      internalID: -8840241938747794316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDown2
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 30
+        width: 206
+        height: 266
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18fb00accac775b50800000000000000
+      internalID: 6581866461990535041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDown3
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 26
+        width: 220
+        height: 298
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae1e965ed808df90800000000000000
+      internalID: -6928778275680543057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AttackDown0: 2790265674339118022
+      AttackDown1: -8840241938747794316
+      AttackDown2: 6581866461990535041
+      AttackDown3: -6928778275680543057
+      AttackHorizontal0: -2426995285501921631
+      AttackHorizontal1: 681279838304176823
+      AttackHorizontal2: -7597032407374078067
+      AttackHorizontal3: 8638784198495267953
+      AttackUp0: 2538667802593061424
+      AttackUp1: -1811616270053495921
+      AttackUp2: 98442887347825060
+      AttackUp3: -2823826727696707786
+      Player_Attack_BodyLayers_v04_0: 3042820537911238129
+      Player_Attack_BodyLayers_v04_1: -5857774851299615110
+      Player_Attack_BodyLayers_v04_10: 8649511152592565068
+      Player_Attack_BodyLayers_v04_11: -1237775175563971658
+      Player_Attack_BodyLayers_v04_12: -5593868222799915018
+      Player_Attack_BodyLayers_v04_13: 7577096358846503720
+      Player_Attack_BodyLayers_v04_14: 5410593130634489932
+      Player_Attack_BodyLayers_v04_15: 1838211229619432697
+      Player_Attack_BodyLayers_v04_16: 4842310929507910837
+      Player_Attack_BodyLayers_v04_17: 6129407085716433645
+      Player_Attack_BodyLayers_v04_18: 8513987558264722780
+      Player_Attack_BodyLayers_v04_19: -212858444852608676
+      Player_Attack_BodyLayers_v04_2: -7939832088911911799
+      Player_Attack_BodyLayers_v04_20: -8856996998931455482
+      Player_Attack_BodyLayers_v04_21: 4080007216200198464
+      Player_Attack_BodyLayers_v04_3: -5369688278136488208
+      Player_Attack_BodyLayers_v04_4: -2063352359576178615
+      Player_Attack_BodyLayers_v04_5: 4497656908088270585
+      Player_Attack_BodyLayers_v04_6: 7669129741664232651
+      Player_Attack_BodyLayers_v04_7: -597354289837529310
+      Player_Attack_BodyLayers_v04_8: -5270335949105429892
+      Player_Attack_BodyLayers_v04_9: -2598555524102864330
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

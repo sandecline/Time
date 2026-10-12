@@ -1,0 +1,545 @@
+fileFormatVersion: 2
+guid: ed8f3c6d2aaaec54ab1493b424a2f7e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2269934553735734915
+    second: Enemy_Bug_Animation_v02_0
+  - first:
+      213: -1331427135943499428
+    second: Enemy_Bug_Animation_v02_1
+  - first:
+      213: 143355535547685882
+    second: Enemy_Bug_Animation_v02_2
+  - first:
+      213: 2501392098717270611
+    second: Enemy_Bug_Animation_v02_3
+  - first:
+      213: 690835037571973616
+    second: Enemy_Bug_Animation_v02_4
+  - first:
+      213: -2065597767790921862
+    second: Enemy_Bug_Animation_v02_5
+  - first:
+      213: 8135150864704069577
+    second: Enemy_Bug_Animation_v02_6
+  - first:
+      213: 2403811367206879389
+    second: Enemy_Bug_Animation_v02_7
+  - first:
+      213: -130523040544156378
+    second: Enemy_Bug_Animation_v02_8
+  - first:
+      213: 7533469164922369288
+    second: Enemy_Bug_Animation_v02_9
+  - first:
+      213: 5645218716339330008
+    second: Enemy_Bug_Animation_v02_10
+  - first:
+      213: -8677441271122989835
+    second: Enemy_Bug_Animation_v02_11
+  - first:
+      213: -1479581067227393508
+    second: Enemy_Bug_Animation_v02_12
+  - first:
+      213: -3330521911076387177
+    second: Enemy_Bug_Animation_v02_13
+  - first:
+      213: 4255481525884164598
+    second: Enemy_Bug_Animation_v02_14
+  - first:
+      213: -8644889942428432528
+    second: Enemy_Bug_Animation_v02_15
+  - first:
+      213: -8185057004590918574
+    second: Enemy_Bug_Animation_v02_16
+  - first:
+      213: 4181758440119277695
+    second: Enemy_Bug_Animation_v02_17
+  - first:
+      213: 8578964942837891042
+    second: Enemy_Bug_Animation_v02_18
+  - first:
+      213: 204343686272330855
+    second: Enemy_Bug_Animation_v02_19
+  - first:
+      213: -5356254272599118484
+    second: Enemy_Bug_Animation_v02_20
+  - first:
+      213: -2523931846263124720
+    second: Enemy_Bug_Animation_v02_21
+  - first:
+      213: 5095290876889690448
+    second: Enemy_Bug_Animation_v02_22
+  - first:
+      213: 3146032792081618523
+    second: Enemy_Bug_Animation_v02_23
+  - first:
+      213: 6002847333103363992
+    second: Enemy_Bug_Animation_v02_24
+  - first:
+      213: 4773452008227589947
+    second: Enemy_Bug_Animation_v02_25
+  - first:
+      213: 6046576158296191061
+    second: Enemy_Bug_Animation_v02_26
+  - first:
+      213: -288211138351338658
+    second: Enemy_Bug_Animation_v02_27
+  - first:
+      213: 5488515509177309648
+    second: Enemy_Bug_Animation_v02_28
+  - first:
+      213: -6654793443474744115
+    second: Bug0
+  - first:
+      213: 3707599583951334458
+    second: Bug1
+  - first:
+      213: -5854798947975067224
+    second: Bug2
+  - first:
+      213: -3192846810222143640
+    second: Bug3
+  - first:
+      213: 1175358245725205788
+    second: Bug4
+  - first:
+      213: 5569416810796326813
+    second: Bug5
+  - first:
+      213: 3251310317888584939
+    second: Bug6
+  - first:
+      213: 7131433052806841212
+    second: Bug7
+  - first:
+      213: -1136736643704377313
+    second: Bug8
+  - first:
+      213: 9025342671697106126
+    second: Bug9
+  - first:
+      213: 6589617803813323794
+    second: Bug10
+  - first:
+      213: 1610444651483269977
+    second: Bug11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bug0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 728
+        width: 344
+        height: 212
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dccd61c2f9c65a3a0800000000000000
+      internalID: -6654793443474744115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug1
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 728
+        width: 335
+        height: 205
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c2eca8d2a047330800000000000000
+      internalID: 3707599583951334458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug2
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 728
+        width: 333
+        height: 211
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a98d9a70639fbea0800000000000000
+      internalID: -5854798947975067224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug3
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 725
+        width: 343
+        height: 215
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86758761ebab0b3d0800000000000000
+      internalID: -3192846810222143640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug4
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 402
+        width: 355
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c15f640e816bf4010800000000000000
+      internalID: 1175358245725205788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug5
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 392
+        width: 350
+        height: 186
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f9a95d41b8a4d40800000000000000
+      internalID: 5569416810796326813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 396
+        width: 384
+        height: 202
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: becbf480289fe1d20800000000000000
+      internalID: 3251310317888584939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug7
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 402
+        width: 370
+        height: 205
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73080cd390f7f260800000000000000
+      internalID: 7131433052806841212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug8
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 67
+        width: 332
+        height: 250
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f10b4d49b008930f0800000000000000
+      internalID: -1136736643704377313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug9
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 70
+        width: 354
+        height: 202
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec45ea27755704d70800000000000000
+      internalID: 9025342671697106126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug10
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 62
+        width: 384
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21402e1ba76037b50800000000000000
+      internalID: 6589617803813323794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug11
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 67
+        width: 353
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95b8616c0e2795610800000000000000
+      internalID: 1610444651483269977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bug0: -6654793443474744115
+      Bug1: 3707599583951334458
+      Bug10: 6589617803813323794
+      Bug11: 1610444651483269977
+      Bug2: -5854798947975067224
+      Bug3: -3192846810222143640
+      Bug4: 1175358245725205788
+      Bug5: 5569416810796326813
+      Bug6: 3251310317888584939
+      Bug7: 7131433052806841212
+      Bug8: -1136736643704377313
+      Bug9: 9025342671697106126
+      Enemy_Bug_Animation_v02_0: -2269934553735734915
+      Enemy_Bug_Animation_v02_1: -1331427135943499428
+      Enemy_Bug_Animation_v02_10: 5645218716339330008
+      Enemy_Bug_Animation_v02_11: -8677441271122989835
+      Enemy_Bug_Animation_v02_12: -1479581067227393508
+      Enemy_Bug_Animation_v02_13: -3330521911076387177
+      Enemy_Bug_Animation_v02_14: 4255481525884164598
+      Enemy_Bug_Animation_v02_15: -8644889942428432528
+      Enemy_Bug_Animation_v02_16: -8185057004590918574
+      Enemy_Bug_Animation_v02_17: 4181758440119277695
+      Enemy_Bug_Animation_v02_18: 8578964942837891042
+      Enemy_Bug_Animation_v02_19: 204343686272330855
+      Enemy_Bug_Animation_v02_2: 143355535547685882
+      Enemy_Bug_Animation_v02_20: -5356254272599118484
+      Enemy_Bug_Animation_v02_21: -2523931846263124720
+      Enemy_Bug_Animation_v02_22: 5095290876889690448
+      Enemy_Bug_Animation_v02_23: 3146032792081618523
+      Enemy_Bug_Animation_v02_24: 6002847333103363992
+      Enemy_Bug_Animation_v02_25: 4773452008227589947
+      Enemy_Bug_Animation_v02_26: 6046576158296191061
+      Enemy_Bug_Animation_v02_27: -288211138351338658
+      Enemy_Bug_Animation_v02_28: 5488515509177309648
+      Enemy_Bug_Animation_v02_3: 2501392098717270611
+      Enemy_Bug_Animation_v02_4: 690835037571973616
+      Enemy_Bug_Animation_v02_5: -2065597767790921862
+      Enemy_Bug_Animation_v02_6: 8135150864704069577
+      Enemy_Bug_Animation_v02_7: 2403811367206879389
+      Enemy_Bug_Animation_v02_8: -130523040544156378
+      Enemy_Bug_Animation_v02_9: 7533469164922369288
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

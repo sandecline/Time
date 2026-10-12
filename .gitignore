@@ -52,3 +52,7 @@ Thumbs.db
 /[Aa]ssets/Addressables_Temp/
 /[Aa]ssets/StreamingAssets/aa*
 
+# 本机工作记录与个人简历
+/Docs/ConversationHandoff_*.md
+/Docs/Resume_*.md
+

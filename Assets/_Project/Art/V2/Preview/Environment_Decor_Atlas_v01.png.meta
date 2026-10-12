@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 4f9807d247c51d741a2d932a059a4671
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3856272322427860484
+    second: Environment_Decor_Atlas_v01_0
+  - first:
+      213: 3431281122817011321
+    second: Environment_Decor_Atlas_v01_1
+  - first:
+      213: -6345560480152693333
+    second: Environment_Decor_Atlas_v01_2
+  - first:
+      213: 2072408098044549802
+    second: Environment_Decor_Atlas_v01_3
+  - first:
+      213: -8535025119413604237
+    second: Environment_Decor_Atlas_v01_4
+  - first:
+      213: 5614889343059737916
+    second: Environment_Decor_Atlas_v01_5
+  - first:
+      213: -3004792658515402756
+    second: Environment_Decor_Atlas_v01_6
+  - first:
+      213: -1833027818992729091
+    second: Environment_Decor_Atlas_v01_7
+  - first:
+      213: -8504854478599187968
+    second: Environment_Decor_Atlas_v01_8
+  - first:
+      213: -1653104493384848295
+    second: Environment_Decor_Atlas_v01_9
+  - first:
+      213: 7326091762411415211
+    second: Environment_Decor_Atlas_v01_10
+  - first:
+      213: -8210224341737494116
+    second: Environment_Decor_Atlas_v01_11
+  - first:
+      213: -522893130942927953
+    second: Environment_Decor_Atlas_v01_12
+  - first:
+      213: 8448795438402771732
+    second: Environment_Decor_Atlas_v01_13
+  - first:
+      213: 3292389185521564236
+    second: Environment_Decor_Atlas_v01_14
+  - first:
+      213: -7458447619865567613
+    second: Environment_Decor_Atlas_v01_15
+  - first:
+      213: -3788250947357799579
+    second: Environment_Decor_Atlas_v01_16
+  - first:
+      213: 5566126062501447745
+    second: Environment_Decor_Atlas_v01_17
+  - first:
+      213: 770264125680051772
+    second: Environment_Decor_Atlas_v01_18
+  - first:
+      213: -2162460993026097523
+    second: Environment_Decor_Atlas_v01_19
+  - first:
+      213: -8533143492577849620
+    second: Environment_Decor_Atlas_v01_20
+  - first:
+      213: -2034603029229620621
+    second: Environment_Decor_Atlas_v01_21
+  - first:
+      213: -3996261037682177530
+    second: Environment_Decor_Atlas_v01_22
+  - first:
+      213: -5467425127869116491
+    second: Environment_Decor_Atlas_v01_23
+  - first:
+      213: -2435168802848612819
+    second: Environment_Decor_Atlas_v01_24
+  - first:
+      213: -2748424221474383693
+    second: Environment_Decor_Atlas_v01_25
+  - first:
+      213: 1331256977958991173
+    second: Environment_Decor_Atlas_v01_26
+  - first:
+      213: 5105785597916394149
+    second: Environment_Decor_Atlas_v01_27
+  - first:
+      213: 6085829574101316938
+    second: Environment_Decor_Atlas_v01_28
+  - first:
+      213: 3099421839307288449
+    second: Environment_Decor_Atlas_v01_29
+  - first:
+      213: 2583977643115597195
+    second: Environment_Decor_Atlas_v01_30
+  - first:
+      213: -2079612918007732388
+    second: Environment_Decor_Atlas_v01_31
+  - first:
+      213: 5453847291791293684
+    second: Environment_Decor_Atlas_v01_32
+  - first:
+      213: 762822850042494858
+    second: Environment_Decor_Atlas_v01_33
+  - first:
+      213: -2126427604602706208
+    second: Environment_Decor_Atlas_v01_34
+  - first:
+      213: 427914945998149024
+    second: Environment_Decor_Atlas_v01_35
+  - first:
+      213: 43285508523807976
+    second: Environment_Decor_Atlas_v01_36
+  - first:
+      213: 6002128922906832851
+    second: Environment_Decor_Atlas_v01_37
+  - first:
+      213: 6639127820733380883
+    second: Environment_Decor_Atlas_v01_38
+  - first:
+      213: -4964980534954688781
+    second: Environment_Decor_Atlas_v01_39
+  - first:
+      213: 8658044221885428634
+    second: Environment_Decor_Atlas_v01_40
+  - first:
+      213: 3740642067961813882
+    second: Environment_Decor_Atlas_v01_41
+  - first:
+      213: -6459553216073580697
+    second: Environment_Decor_Atlas_v01_42
+  - first:
+      213: 3628697175424694009
+    second: Environment_Decor_Atlas_v01_43
+  - first:
+      213: 3576308777138913313
+    second: Environment_Decor_Atlas_v01_44
+  - first:
+      213: -4152932953884086239
+    second: Environment_Decor_Atlas_v01_45
+  - first:
+      213: 8890970798809121277
+    second: Environment_Decor_Atlas_v01_46
+  - first:
+      213: 8291255983598054808
+    second: Environment_Decor_Atlas_v01_47
+  - first:
+      213: 5712920622545992765
+    second: Environment_Decor_Atlas_v01_48
+  - first:
+      213: 721630106186945127
+    second: Environment_Decor_Atlas_v01_49
+  - first:
+      213: 9109824098787781010
+    second: Environment_Decor_Atlas_v01_50
+  - first:
+      213: -1246770880805463821
+    second: Environment_Decor_Atlas_v01_51
+  - first:
+      213: 9043213916018847448
+    second: Environment_Decor_Atlas_v01_52
+  - first:
+      213: 2277849793245897417
+    second: Environment_Decor_Atlas_v01_53
+  - first:
+      213: -5224014411552739917
+    second: Environment_Decor_Atlas_v01_54
+  - first:
+      213: -335187694943803446
+    second: Environment_Decor_Atlas_v01_55
+  - first:
+      213: -2894491861826903592
+    second: Environment_Decor_Atlas_v01_56
+  - first:
+      213: 7399097598391343081
+    second: Environment_Decor_Atlas_v01_57
+  - first:
+      213: -4475363387242692112
+    second: Environment_Decor_Atlas_v01_58
+  - first:
+      213: -4045484085935577427
+    second: Environment_Decor_Atlas_v01_59
+  - first:
+      213: 749411908558062129
+    second: Environment_Decor_Atlas_v01_60
+  - first:
+      213: -3676665368247252647
+    second: Environment_Decor_Atlas_v01_61
+  - first:
+      213: 40221779506148470
+    second: Environment_Decor_Atlas_v01_62
+  - first:
+      213: 424161384698234749
+    second: Environment_Decor_Atlas_v01_63
+  - first:
+      213: -2895762081173162236
+    second: Environment_Decor_Atlas_v01_64
+  - first:
+      213: 116725226709510746
+    second: MossBlock
+  - first:
+      213: -1668701113588469822
+    second: StoneBlock
+  - first:
+      213: 4725308090451418647
+    second: BrassLedge
+  - first:
+      213: -2435270507825641780
+    second: Column
+  - first:
+      213: -2727699785648066001
+    second: Grass
+  - first:
+      213: 4930203465493719144
+    second: Rubble
+  - first:
+      213: -2132848409929805998
+    second: Stones
+  - first:
+      213: 8283128834614850637
+    second: Gear
+  - first:
+      213: -5844409634830938361
+    second: Ivy
+  - first:
+      213: -4229746076213977070
+    second: Root
+  - first:
+      213: -6086934270031072648
+    second: Banner
+  - first:
+      213: -1151591547343932099
+    second: BrokenClock
+  - first:
+      213: -5787710032970070120
+    second: Fern
+  - first:
+      213: -2239132023957402707
+    second: Flowers
+  - first:
+      213: 30013700022603703
+    second: Pedestal
+  - first:
+      213: -7756252004584242441
+    second: Fragments
+  - first:
+      213: 8995584315536252507
+    second: StoneFill
+  - first:
+      213: -6106057866774761247
+    second: MossEdge
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MossBlock
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 949
+        width: 271
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ae85aa9f0be9100800000000000000
+      internalID: 116725226709510746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoneBlock
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 949
+        width: 264
+        height: 173
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cfa248ad2597d8e0800000000000000
+      internalID: -1668701113588469822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrassLedge
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 945
+        width: 297
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ed2a92caaa39140800000000000000
+      internalID: 4725308090451418647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Column
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 911
+        width: 110
+        height: 305
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc64111306e243ed0800000000000000
+      internalID: -2435270507825641780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 670
+        width: 233
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22b9863f73452ad0800000000000000
+      internalID: -2727699785648066001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rubble
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 664
+        width: 259
+        height: 136
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86827273ee99b6440800000000000000
+      internalID: 4930203465493719144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stones
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 665
+        width: 208
+        height: 132
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f8066eba99662e0800000000000000
+      internalID: -2132848409929805998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gear
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 658
+        width: 280
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4473080ac593f270800000000000000
+      internalID: 8283128834614850637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ivy
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 318
+        width: 122
+        height: 281
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f0802f66c74eea0800000000000000
+      internalID: -5844409634830938361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Root
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 310
+        width: 111
+        height: 289
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210e9259a5cec45c0800000000000000
+      internalID: -4229746076213977070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banner
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 309
+        width: 221
+        height: 294
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87275a7088dd68ba0800000000000000
+      internalID: -6086934270031072648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrokenClock
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 346
+        width: 274
+        height: 179
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35f83ec699b400f0800000000000000
+      internalID: -1151591547343932099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fern
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 46
+        width: 259
+        height: 193
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 897caddb36cedafa0800000000000000
+      internalID: -5787710032970070120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowers
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 46
+        width: 190
+        height: 177
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dab41d2a9410de0e0800000000000000
+      internalID: -2239132023957402707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pedestal
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 43
+        width: 184
+        height: 208
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf0e381d41aa6000800000000000000
+      internalID: 30013700022603703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fragments
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 58
+        width: 218
+        height: 165
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2485e65e14c5490800000000000000
+      internalID: -7756252004584242441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoneFill
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 965
+        width: 236
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e1d9a364cb6dc70800000000000000
+      internalID: 8995584315536252507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MossEdge
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1094
+        width: 250
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e039e0b8bce24ba0800000000000000
+      internalID: -6106057866774761247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Banner: -6086934270031072648
+      BrassLedge: 4725308090451418647
+      BrokenClock: -1151591547343932099
+      Column: -2435270507825641780
+      Environment_Decor_Atlas_v01_0: 3856272322427860484
+      Environment_Decor_Atlas_v01_1: 3431281122817011321
+      Environment_Decor_Atlas_v01_10: 7326091762411415211
+      Environment_Decor_Atlas_v01_11: -8210224341737494116
+      Environment_Decor_Atlas_v01_12: -522893130942927953
+      Environment_Decor_Atlas_v01_13: 8448795438402771732
+      Environment_Decor_Atlas_v01_14: 3292389185521564236
+      Environment_Decor_Atlas_v01_15: -7458447619865567613
+      Environment_Decor_Atlas_v01_16: -3788250947357799579
+      Environment_Decor_Atlas_v01_17: 5566126062501447745
+      Environment_Decor_Atlas_v01_18: 770264125680051772
+      Environment_Decor_Atlas_v01_19: -2162460993026097523
+      Environment_Decor_Atlas_v01_2: -6345560480152693333
+      Environment_Decor_Atlas_v01_20: -8533143492577849620
+      Environment_Decor_Atlas_v01_21: -2034603029229620621
+      Environment_Decor_Atlas_v01_22: -3996261037682177530
+      Environment_Decor_Atlas_v01_23: -5467425127869116491
+      Environment_Decor_Atlas_v01_24: -2435168802848612819
+      Environment_Decor_Atlas_v01_25: -2748424221474383693
+      Environment_Decor_Atlas_v01_26: 1331256977958991173
+      Environment_Decor_Atlas_v01_27: 5105785597916394149
+      Environment_Decor_Atlas_v01_28: 6085829574101316938
+      Environment_Decor_Atlas_v01_29: 3099421839307288449
+      Environment_Decor_Atlas_v01_3: 2072408098044549802
+      Environment_Decor_Atlas_v01_30: 2583977643115597195
+      Environment_Decor_Atlas_v01_31: -2079612918007732388
+      Environment_Decor_Atlas_v01_32: 5453847291791293684
+      Environment_Decor_Atlas_v01_33: 762822850042494858
+      Environment_Decor_Atlas_v01_34: -2126427604602706208
+      Environment_Decor_Atlas_v01_35: 427914945998149024
+      Environment_Decor_Atlas_v01_36: 43285508523807976
+      Environment_Decor_Atlas_v01_37: 6002128922906832851
+      Environment_Decor_Atlas_v01_38: 6639127820733380883
+      Environment_Decor_Atlas_v01_39: -4964980534954688781
+      Environment_Decor_Atlas_v01_4: -8535025119413604237
+      Environment_Decor_Atlas_v01_40: 8658044221885428634
+      Environment_Decor_Atlas_v01_41: 3740642067961813882
+      Environment_Decor_Atlas_v01_42: -6459553216073580697
+      Environment_Decor_Atlas_v01_43: 3628697175424694009
+      Environment_Decor_Atlas_v01_44: 3576308777138913313
+      Environment_Decor_Atlas_v01_45: -4152932953884086239
+      Environment_Decor_Atlas_v01_46: 8890970798809121277
+      Environment_Decor_Atlas_v01_47: 8291255983598054808
+      Environment_Decor_Atlas_v01_48: 5712920622545992765
+      Environment_Decor_Atlas_v01_49: 721630106186945127
+      Environment_Decor_Atlas_v01_5: 5614889343059737916
+      Environment_Decor_Atlas_v01_50: 9109824098787781010
+      Environment_Decor_Atlas_v01_51: -1246770880805463821
+      Environment_Decor_Atlas_v01_52: 9043213916018847448
+      Environment_Decor_Atlas_v01_53: 2277849793245897417
+      Environment_Decor_Atlas_v01_54: -5224014411552739917
+      Environment_Decor_Atlas_v01_55: -335187694943803446
+      Environment_Decor_Atlas_v01_56: -2894491861826903592
+      Environment_Decor_Atlas_v01_57: 7399097598391343081
+      Environment_Decor_Atlas_v01_58: -4475363387242692112
+      Environment_Decor_Atlas_v01_59: -4045484085935577427
+      Environment_Decor_Atlas_v01_6: -3004792658515402756
+      Environment_Decor_Atlas_v01_60: 749411908558062129
+      Environment_Decor_Atlas_v01_61: -3676665368247252647
+      Environment_Decor_Atlas_v01_62: 40221779506148470
+      Environment_Decor_Atlas_v01_63: 424161384698234749
+      Environment_Decor_Atlas_v01_64: -2895762081173162236
+      Environment_Decor_Atlas_v01_7: -1833027818992729091
+      Environment_Decor_Atlas_v01_8: -8504854478599187968
+      Environment_Decor_Atlas_v01_9: -1653104493384848295
+      Fern: -5787710032970070120
+      Flowers: -2239132023957402707
+      Fragments: -7756252004584242441
+      Gear: 8283128834614850637
+      Grass: -2727699785648066001
+      Ivy: -5844409634830938361
+      MossBlock: 116725226709510746
+      MossEdge: -6106057866774761247
+      Pedestal: 30013700022603703
+      Root: -4229746076213977070
+      Rubble: 4930203465493719144
+      StoneBlock: -1668701113588469822
+      StoneFill: 8995584315536252507
+      Stones: -2132848409929805998
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

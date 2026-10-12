@@ -1,0 +1,335 @@
+fileFormatVersion: 2
+guid: 8fceeb71b16f28b4c9492819033a1ca6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7791171576822362251
+    second: Checkpoint_Clocks_v01_0
+  - first:
+      213: 3014926308366965846
+    second: Checkpoint_Clocks_v01_1
+  - first:
+      213: -1391829733636154491
+    second: Checkpoint_Clocks_v01_2
+  - first:
+      213: 2290423077802885859
+    second: Checkpoint_Clocks_v01_3
+  - first:
+      213: -1800636653638495931
+    second: Checkpoint_Clocks_v01_4
+  - first:
+      213: -3959085171357061419
+    second: Checkpoint_Clocks_v01_5
+  - first:
+      213: 9155925772178952455
+    second: Checkpoint_Clocks_v01_6
+  - first:
+      213: 7151796059845024179
+    second: Checkpoint_Clocks_v01_7
+  - first:
+      213: 3814020599921481561
+    second: Checkpoint_Clocks_v01_8
+  - first:
+      213: -3200197311192683882
+    second: Checkpoint_Clocks_v01_9
+  - first:
+      213: 8235056967426655070
+    second: Checkpoint_Clocks_v01_10
+  - first:
+      213: 3440067132373015775
+    second: Checkpoint_Clocks_v01_11
+  - first:
+      213: -6389789063513865743
+    second: Checkpoint_Clocks_v01_12
+  - first:
+      213: -3040478583128742305
+    second: Checkpoint_Clocks_v01_13
+  - first:
+      213: -5825264020121932545
+    second: Checkpoint_Clocks_v01_14
+  - first:
+      213: -9152241576997935760
+    second: Checkpoint_Clocks_v01_15
+  - first:
+      213: 4862650850979327246
+    second: Checkpoint_Clocks_v01_16
+  - first:
+      213: -6044151117642897818
+    second: Checkpoint_Clocks_v01_17
+  - first:
+      213: 7321650616332897963
+    second: Checkpoint_Clocks_v01_18
+  - first:
+      213: 6695538480091746716
+    second: Checkpoint_Clocks_v01_19
+  - first:
+      213: -8683142339679844490
+    second: Checkpoint_Clocks_v01_20
+  - first:
+      213: -2785112547854363340
+    second: Checkpoint_Clocks_v01_21
+  - first:
+      213: 4048885438211576938
+    second: Checkpoint_Clocks_v01_22
+  - first:
+      213: -6291530266562533152
+    second: Checkpoint_Clocks_v01_23
+  - first:
+      213: -3498046983434992980
+    second: Checkpoint_Clocks_v01_24
+  - first:
+      213: -5821558080275302452
+    second: Checkpoint_Clocks_v01_25
+  - first:
+      213: 1717080430543598551
+    second: Checkpoint_Clocks_v01_26
+  - first:
+      213: 5374602692864773572
+    second: Checkpoint_Clocks_v01_27
+  - first:
+      213: -280846055137295408
+    second: Checkpoint_Clocks_v01_28
+  - first:
+      213: 8421952645024128961
+    second: Checkpoint_Clocks_v01_29
+  - first:
+      213: -1417581202957018777
+    second: Checkpoint_Clocks_v01_30
+  - first:
+      213: 1642151481495120204
+    second: Checkpoint_Clocks_v01_31
+  - first:
+      213: 8362763293333780809
+    second: Checkpoint_Clocks_v01_32
+  - first:
+      213: 2608948802891567717
+    second: Checkpoint_Clocks_v01_33
+  - first:
+      213: 4002420422678954752
+    second: Checkpoint_Clocks_v01_34
+  - first:
+      213: 931335755413413228
+    second: ClockInactive
+  - first:
+      213: -4575416130885899834
+    second: ClockActive
+  - first:
+      213: 8009875636862872748
+    second: ClockComplete
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ClockInactive
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 66
+        width: 562
+        height: 695
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6d59046fe4ccec00800000000000000
+      internalID: 931335755413413228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockActive
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 65
+        width: 557
+        height: 698
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c924f2454bd080c0800000000000000
+      internalID: -4575416130885899834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockComplete
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 65
+        width: 560
+        height: 696
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac644e147bc82f60800000000000000
+      internalID: 8009875636862872748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Checkpoint_Clocks_v01_0: -7791171576822362251
+      Checkpoint_Clocks_v01_1: 3014926308366965846
+      Checkpoint_Clocks_v01_10: 8235056967426655070
+      Checkpoint_Clocks_v01_11: 3440067132373015775
+      Checkpoint_Clocks_v01_12: -6389789063513865743
+      Checkpoint_Clocks_v01_13: -3040478583128742305
+      Checkpoint_Clocks_v01_14: -5825264020121932545
+      Checkpoint_Clocks_v01_15: -9152241576997935760
+      Checkpoint_Clocks_v01_16: 4862650850979327246
+      Checkpoint_Clocks_v01_17: -6044151117642897818
+      Checkpoint_Clocks_v01_18: 7321650616332897963
+      Checkpoint_Clocks_v01_19: 6695538480091746716
+      Checkpoint_Clocks_v01_2: -1391829733636154491
+      Checkpoint_Clocks_v01_20: -8683142339679844490
+      Checkpoint_Clocks_v01_21: -2785112547854363340
+      Checkpoint_Clocks_v01_22: 4048885438211576938
+      Checkpoint_Clocks_v01_23: -6291530266562533152
+      Checkpoint_Clocks_v01_24: -3498046983434992980
+      Checkpoint_Clocks_v01_25: -5821558080275302452
+      Checkpoint_Clocks_v01_26: 1717080430543598551
+      Checkpoint_Clocks_v01_27: 5374602692864773572
+      Checkpoint_Clocks_v01_28: -280846055137295408
+      Checkpoint_Clocks_v01_29: 8421952645024128961
+      Checkpoint_Clocks_v01_3: 2290423077802885859
+      Checkpoint_Clocks_v01_30: -1417581202957018777
+      Checkpoint_Clocks_v01_31: 1642151481495120204
+      Checkpoint_Clocks_v01_32: 8362763293333780809
+      Checkpoint_Clocks_v01_33: 2608948802891567717
+      Checkpoint_Clocks_v01_34: 4002420422678954752
+      Checkpoint_Clocks_v01_4: -1800636653638495931
+      Checkpoint_Clocks_v01_5: -3959085171357061419
+      Checkpoint_Clocks_v01_6: 9155925772178952455
+      Checkpoint_Clocks_v01_7: 7151796059845024179
+      Checkpoint_Clocks_v01_8: 3814020599921481561
+      Checkpoint_Clocks_v01_9: -3200197311192683882
+      ClockActive: -4575416130885899834
+      ClockComplete: 8009875636862872748
+      ClockInactive: 931335755413413228
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

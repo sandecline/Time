@@ -1,0 +1,7 @@
+# 待机武器直线对齐修正
+
+工具：内置 imagegen；目标：`Player_Idle_Run_FrameDraft_v01.png` 的站姿武器。v02 单图修正仍有残余偏差，不接入游戏。v03 将站姿身体和完整武器分层，游戏中用同一根刚性武器被身体遮挡，保证两端共线。下排跑动仅保留作参考，游戏继续使用原跑动帧。
+
+## v03 最终提示词
+
+Edit this transparent animation atlas precisely for LAYERED SPRITE ASSEMBLY. Keep canvas 1983x793 and ALL character locations, body proportions, pixel colors, blue cloak, black clock-face hood, legs, and animation poses. TOP ROW: REMOVE ALL silver weapon pixels from the four standing characters: remove the protruding shoulder blade and remove the round counterweight at the lower-right wrist, restoring transparent space there and keeping the small black hands intact. These four top characters must be BODY-ONLY standing sprites with empty black hands; absolutely no silver fragments anywhere on those four characters. The six running sprites in the bottom row remain unchanged. In the previously EMPTY AREA at the UPPER LEFT of the canvas, entirely inside x=55..130 and y=55..360, add ONE isolated complete perfectly straight VERTICAL clock-pointer weapon: sharp silver-blue thin pointed blade at the TOP, long narrow symmetrical shaft, tiny ROUND silver counterweight at the very BOTTOM, no crossguard, no sword hilt. This separate weapon should be about 280 pixels long, no more than 35 pixels wide except its 28-pixel round counterweight, perfectly collinear from tip to counterweight center. It will be rotated behind each body in the game. Preserve actual transparent alpha everywhere else. No background, no glow, no text, no labels, no grid lines. Minimal surgical editing only.

@@ -1,0 +1,469 @@
+fileFormatVersion: 2
+guid: 81b8722cb51ce494984d75d78f93a60a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -790155726936912507
+    second: Boss_TimeWarden_BodyActions_v03_0
+  - first:
+      213: 1304155575573491233
+    second: Boss_TimeWarden_BodyActions_v03_1
+  - first:
+      213: 585779451637153302
+    second: Boss_TimeWarden_BodyActions_v03_2
+  - first:
+      213: -3183891290830114229
+    second: Boss_TimeWarden_BodyActions_v03_3
+  - first:
+      213: -5246783917616230437
+    second: Boss_TimeWarden_BodyActions_v03_4
+  - first:
+      213: -2021057530062562344
+    second: Boss_TimeWarden_BodyActions_v03_5
+  - first:
+      213: 7202515072167002671
+    second: Boss_TimeWarden_BodyActions_v03_6
+  - first:
+      213: 4161448186401617656
+    second: Boss_TimeWarden_BodyActions_v03_7
+  - first:
+      213: 7406949394251182515
+    second: Boss_TimeWarden_BodyActions_v03_8
+  - first:
+      213: -8662256904137999548
+    second: Boss_TimeWarden_BodyActions_v03_9
+  - first:
+      213: -2886893967862713527
+    second: BossAction0
+  - first:
+      213: 7311673638666895310
+    second: BossAction1
+  - first:
+      213: -7607576605690113527
+    second: BossAction2
+  - first:
+      213: -2101210008198502521
+    second: BossAction3
+  - first:
+      213: 3385001169708728498
+    second: BossAction4
+  - first:
+      213: 3548412354326822993
+    second: BossAction5
+  - first:
+      213: -1596771787699787673
+    second: BossAction6
+  - first:
+      213: -9017583470096886110
+    second: BossAction7
+  - first:
+      213: 5870844216494377050
+    second: BossAction8
+  - first:
+      213: -6515008440122608879
+    second: BossAction9
+  - first:
+      213: -3262669632185529419
+    second: BossAction10
+  - first:
+      213: 2756462211931973011
+    second: BossAction11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BossAction0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 698
+        width: 336
+        height: 371
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 943335d4b31bfe7d0800000000000000
+      internalID: -2886893967862713527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossAction1
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 701
+        width: 331
+        height: 367
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecff35a7f68487560800000000000000
+      internalID: 7311673638666895310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossAction2
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 697
+        width: 362
+        height: 372
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 902d44042657c6690800000000000000
+      internalID: -7607576605690113527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossAction3
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 688
+        width: 352
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78725d651a007d2e0800000000000000
+      internalID: -2101210008198502521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossAction4
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 341
+        width: 333
+        height: 344
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b045cc11a0f9fe20800000000000000
+      internalID: 3385001169708728498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossAction5
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 342
+        width: 357
+        height: 333
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15002486c3e7e3130800000000000000
+      internalID: 3548412354326822993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossAction6
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 342
+        width: 345
+        height: 271
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768e9c6e48027d9e0800000000000000
+      internalID: -1596771787699787673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossAction7
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 341
+        width: 322
+        height: 347
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6d0747c9b1bd280800000000000000
+      internalID: -9017583470096886110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossAction8
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 27
+        width: 322
+        height: 314
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a58cdc7b5bd697150800000000000000
+      internalID: 5870844216494377050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossAction9
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 32
+        width: 335
+        height: 279
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113f1d9775a0695a0800000000000000
+      internalID: -6515008440122608879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossAction10
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 24
+        width: 355
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb8022814ba8b2d0800000000000000
+      internalID: -3262669632185529419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossAction11
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 23
+        width: 332
+        height: 318
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3952ef207cbe04620800000000000000
+      internalID: 2756462211931973011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BossAction0: -2886893967862713527
+      BossAction1: 7311673638666895310
+      BossAction10: -3262669632185529419
+      BossAction11: 2756462211931973011
+      BossAction2: -7607576605690113527
+      BossAction3: -2101210008198502521
+      BossAction4: 3385001169708728498
+      BossAction5: 3548412354326822993
+      BossAction6: -1596771787699787673
+      BossAction7: -9017583470096886110
+      BossAction8: 5870844216494377050
+      BossAction9: -6515008440122608879
+      Boss_TimeWarden_BodyActions_v03_0: -790155726936912507
+      Boss_TimeWarden_BodyActions_v03_1: 1304155575573491233
+      Boss_TimeWarden_BodyActions_v03_2: 585779451637153302
+      Boss_TimeWarden_BodyActions_v03_3: -3183891290830114229
+      Boss_TimeWarden_BodyActions_v03_4: -5246783917616230437
+      Boss_TimeWarden_BodyActions_v03_5: -2021057530062562344
+      Boss_TimeWarden_BodyActions_v03_6: 7202515072167002671
+      Boss_TimeWarden_BodyActions_v03_7: 4161448186401617656
+      Boss_TimeWarden_BodyActions_v03_8: 7406949394251182515
+      Boss_TimeWarden_BodyActions_v03_9: -8662256904137999548
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
